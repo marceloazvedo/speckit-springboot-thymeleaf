@@ -1,7 +1,7 @@
 # Orientação do Agente — Spring Boot + Thymeleaf Spec Kit
 
 ## Projeto
-App Spring Boot 3 + Thymeleaf em Kotlin (JVM 21, virtual threads).
+App Spring Boot 4 + Thymeleaf em Kotlin (JVM 21, virtual threads).
 Stack e regras: ver `memory/constitution.md` (fonte da verdade, inviolável).
 
 ## Localização do código

@@ -1,6 +1,6 @@
 # Spec Kit — Spring Boot + Thymeleaf (Kotlin)
 
-Kit de **Spec-Driven Development (SDD)** para apps Spring Boot 3 + Thymeleaf em Kotlin.
+Kit de **Spec-Driven Development (SDD)** para apps Spring Boot 4 + Thymeleaf em Kotlin.
 O código é consequência da spec, nunca o ponto de partida.
 
 ## Fluxo
