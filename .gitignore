@@ -1,0 +1,42 @@
+# ── Projeto da aplicação ───────────────────────────────────────────────
+# O conteúdo de /app tem checkout e commit próprios; não faz parte deste
+# spec kit. Ignoramos tudo dentro de /app, mas mantemos o .gitkeep só para a
+# pasta existir no checkout.
+/app/*
+!/app/.gitkeep
+
+# ── Build / Gradle ─────────────────────────────────────────────────────
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
+out/
+bin/
+
+# ── Kotlin / Java ──────────────────────────────────────────────────────
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# ── IDEs ───────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+
+# ── Ferramentas / agente ───────────────────────────────────────────────
+.claude/settings.local.json
+# Marcador local da decisão de instalar o caveman completo (por clone)
+.claude/.caveman-setup-done
+
+# ── Sistema operacional ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Segredos / ambiente ────────────────────────────────────────────────
+.env
+.env.local
+*.local.env
