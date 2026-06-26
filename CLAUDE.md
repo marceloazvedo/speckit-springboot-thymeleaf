@@ -17,6 +17,8 @@ A governança (memory, .specify, specs, docs) fica na raiz.
 ## Proibições
 - **Nunca** rode build (`./gradlew build`), testes (`test`) ou `bootRun`
   por conta própria. Build e testes **somente** sob comando explícito.
+- **Nunca** commite ou faça push direto em main/master. Sempre via feature branch + PR.
+- **Nunca mergue PR sem comando explícito.** Abra PR, deixe aguardando revisão. Só mergue quando você disser.
 
 ## Convenções de código
 - **Código em inglês**; **commits em português**.
