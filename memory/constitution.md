@@ -4,7 +4,7 @@ Princípios invioláveis. Qualquer plano/spec/código que os viole deve ser corr
 Alterar exige emenda explícita (ver Governança no fim).
 
 ## Art. I — Stack fixada
-Spring Boot 3 (última), Thymeleaf (última), jQuery (última), Bootstrap,
+Spring Boot 4 (última), Thymeleaf (última), jQuery (última), Bootstrap,
 PostgreSQL, Spring Security, Spring Data JPA, Spring Session (JDBC/PostgreSQL).
 Versões pinadas; troca exige emenda.
 
@@ -58,6 +58,9 @@ variável de ambiente.
 
 ---
 ## Governança
-- Versão: 1.0.0
+- Versão: 1.1.0
+- Histórico:
+  - 1.1.0 — Art. I: Spring Boot 3 → 4 (3.5 é o último 3.x, EOL OSS 2026-06-30; 4.x é o recomendado para projetos novos).
+  - 1.0.0 — versão inicial.
 - Emendas: alterar um artigo exige PR dedicado, justificativa e bump de versão.
 - Em conflito, a constituição prevalece sobre qualquer plano ou preferência.
