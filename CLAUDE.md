@@ -18,7 +18,8 @@ A governança (memory, .specify, specs, docs) fica na raiz.
   por conta própria. Build e testes **somente** sob comando explícito.
 
 ## Convenções de código
-- **Código em inglês**; **comentários em português**; **commits em português**.
+- **Código em inglês**; **commits em português**.
+- **Sem comentários no código.** O desenvolvedor é experiente; se precisar entender código, ele solicitará explicação.
 - **ktlint** garante o estilo (rode só quando solicitado).
 
 ## Arquitetura (resumo; detalhe na constitution)
