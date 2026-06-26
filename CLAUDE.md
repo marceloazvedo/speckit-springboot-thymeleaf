@@ -12,13 +12,15 @@ A governança (memory, .specify, specs, docs) fica na raiz.
 1. **Planejar antes de executar.** Apresente o plano e aguarde confirmação.
 2. **Só execute (gerar/alterar arquivos) após o "ok" explícito do usuário.**
 3. Nunca assuma autorização de um passo anterior para o próximo.
+4. **SEMPRE trabalhe em branch `feature/*`** → **NUNCA NUNCA NUNCA faça merge direto em main/master.** Toda alteração vira PR.
 
 ## Proibições
 - **Nunca** rode build (`./gradlew build`), testes (`test`) ou `bootRun`
   por conta própria. Build e testes **somente** sob comando explícito.
 
 ## Convenções de código
-- **Código em inglês**; **comentários em português**; **commits em português**.
+- **Código em inglês**; **commits em português**.
+- **Sem comentários no código.** O desenvolvedor é experiente; se precisar entender código, ele solicitará explicação.
 - **ktlint** garante o estilo (rode só quando solicitado).
 
 ## Arquitetura (resumo; detalhe na constitution)
