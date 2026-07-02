@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "postgres-custocasa": {
+      "command": "pipx",
+      "args": ["run", "postgres-mcp", "--access-mode=unrestricted"],
+      "env": {
+        "DATABASE_URI": "postgresql://custocasa:custocasa@localhost:5432/custocasa"
+      }
+    }
+  }
+}
