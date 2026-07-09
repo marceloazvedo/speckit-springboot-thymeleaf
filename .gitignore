@@ -40,3 +40,7 @@ Thumbs.db
 .env
 .env.local
 *.local.env
+
+# ── Artefatos locais (specs descartáveis, exports de dados) ────────────
+.local-specs/
+*.csv
