@@ -178,19 +178,6 @@ def main():
                 qty_millisiths = parse_qty(qty_str)
                 unit_value_cents = parse_brl(unit_value_str)
 
-                # Booleans
-                paid_str = row[7].strip().lower() if len(row) > 7 else "não"
-                paid = paid_str in ["sim", "yes", "true", "1"]
-
-                delivered_str = row[8].strip().lower() if len(row) > 8 else "não"
-                delivered = delivered_str in ["sim", "yes", "true", "1"]
-
-                qty_delivered_str = row[9].strip() if len(row) > 9 else ""
-                qty_delivered = 0
-                if qty_delivered_str and qty_delivered_str.isdigit():
-                    qty_delivered = parse_qty(qty_delivered_str)
-                elif delivered_str == "uma parte":
-                    qty_delivered = qty_millisiths // 2
 
                 payment_method = row[10].strip() if len(row) > 10 else None
                 if not payment_method or payment_method == "--":
@@ -211,9 +198,6 @@ def main():
                     "quantity": qty_millisiths,
                     "unitValue": unit_value_cents,
                     "supplier": supplier,  # 🎯 ENRIQUECIDO
-                    "paid": paid,
-                    "delivered": delivered,
-                    "deliveredQty": qty_delivered,
                     "paymentMethod": payment_method,
                     "bank": bank,
                     "categoryId": category,  # 🎯 MELHORADO

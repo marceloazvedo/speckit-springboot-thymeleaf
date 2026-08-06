@@ -1,4 +1,4 @@
-import { ChevronRight, CircleAlert, Receipt, Truck } from 'lucide-react'
+import { ChevronRight, Receipt } from 'lucide-react'
 import { EmptyState, Screen } from '../components/Chrome'
 import { InstallBanner } from '../components/Banners'
 import { formatBRL, formatWhole } from '../lib/money'
@@ -8,7 +8,6 @@ import {
   monthTotal,
   sortedExpenses,
   total,
-  undeliveredCount,
 } from '../lib/selectors'
 import { useStore } from '../lib/store'
 import type { Expense } from '../lib/types'
@@ -16,7 +15,7 @@ import type { Expense } from '../lib/types'
 interface HomeProps {
   onLaunch: () => void
   onOpenExpense: (expense: Expense) => void
-  onSeeAll: (filter: 'undelivered' | null) => void
+  onSeeAll: (filter: null) => void
 }
 
 export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
@@ -25,7 +24,6 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
   const grand = total(state.expenses)
   const month = monthTotal(state.expenses)
   const slices = byCategory(state.expenses)
-  const undelivered = undeliveredCount(state.expenses)
   const recent = list.slice(0, 6)
 
   const showInstall = !demo && !state.installBannerSeen && state.launchCount >= 3
@@ -55,21 +53,7 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
         />
       ) : (
         <>
-          {undelivered > 0 ? (
-            <div className="mb-6">
-              <button
-                onClick={() => onSeeAll('undelivered')}
-                className="w-full rounded-xl border border-line bg-surface px-4 py-3 text-left transition-colors duration-150 ease-smooth hover:border-faint active:bg-light"
-              >
-                <span className="flex items-center gap-1.5 text-xs text-muted">
-                  <Truck className="size-3.5" /> Não entregue
-                </span>
-                <p className="tabular mt-1 text-lg font-semibold">
-                  {undelivered} {undelivered === 1 ? 'item' : 'itens'}
-                </p>
-              </button>
-            </div>
-          ) : null}
+
 
           <section className="mb-6">
             <h2 className="mb-3 text-sm font-semibold text-muted">Onde foi o dinheiro</h2>

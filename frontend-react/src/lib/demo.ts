@@ -16,9 +16,6 @@ export function buildDemoSnapshot(): Snapshot {
       quantity?: number
       unitValue?: number
       supplier?: string | null
-      paid?: boolean
-      delivered?: boolean
-      deliveredQty?: number
       paymentMethod?: string | null
       bank?: string | null
       categoryId?: string
@@ -58,9 +55,6 @@ export function buildDemoSnapshot(): Snapshot {
     quantity: row.quantity ?? 0,
     unitValue: row.unitValue ?? 0,
     supplier: row.supplier ?? null,
-    paid: row.paid ?? false,
-    delivered: row.delivered ?? false,
-    deliveredQty: row.deliveredQty ?? 0,
     paymentMethod: row.paymentMethod ?? null,
     bank: row.bank ?? null,
     categoryId: row.categoryId ?? 'other',

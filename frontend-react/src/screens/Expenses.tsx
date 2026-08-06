@@ -1,5 +1,5 @@
 import { useMemo, useState, type ComponentType } from 'react'
-import { Receipt, Search, SearchX, Truck } from 'lucide-react'
+import { Receipt, Search, SearchX } from 'lucide-react'
 import { EmptyState, Screen, ScreenTitle } from '../components/Chrome'
 import { SwipeRow } from '../components/SwipeRow'
 import { Input } from '../components/ui/input'
@@ -12,7 +12,7 @@ import { useStore } from '../lib/store'
 import { cn } from '../lib/utils'
 import type { Expense } from '../lib/types'
 
-export type ExpenseFilter = 'undelivered' | null
+export type ExpenseFilter = null
 
 interface ExpensesProps {
   filter: ExpenseFilter
@@ -28,10 +28,9 @@ export function Expenses({ filter, onFilterChange, onEdit, onLaunch }: ExpensesP
 
   const groups = useMemo(() => {
     let list = sortedExpenses(state.expenses)
-    if (filter === 'undelivered') list = list.filter((e) => !e.delivered)
     if (category) list = list.filter((e) => e.categoryId === category)
     return groupByMonth(search(list, term))
-  }, [state.expenses, filter, category, term])
+  }, [state.expenses, category, term])
 
   const remove = (expense: Expense) => {
     dispatch({ type: 'removeExpense', id: expense.id })
@@ -57,12 +56,6 @@ export function Expenses({ filter, onFilterChange, onEdit, onLaunch }: ExpensesP
       </div>
 
       <div className="-mx-4 mt-3 mb-5 flex gap-2 overflow-x-auto px-4 pb-1">
-        <Chip
-          label="Não entregue"
-          icon={Truck}
-          active={filter === 'undelivered'}
-          onClick={() => onFilterChange(filter === 'undelivered' ? null : 'undelivered')}
-        />
         {available.map((c) => (
           <Chip
             key={c.id}
@@ -115,12 +108,6 @@ export function Expenses({ filter, onFilterChange, onEdit, onLaunch }: ExpensesP
                             {expense.supplier ? <span>{expense.supplier}</span> : null}
                             {expense.categoryId ? (
                               <span>{categoryLabel(expense.categoryId)}</span>
-                            ) : null}
-                            {!expense.paid ? (
-                              <span className="font-medium text-warning-text">a pagar</span>
-                            ) : null}
-                            {!expense.delivered ? (
-                              <span className="font-medium text-warning-text">não entregue</span>
                             ) : null}
                           </span>
                         </span>

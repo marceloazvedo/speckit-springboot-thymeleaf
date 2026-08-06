@@ -6,7 +6,7 @@ import { Label } from './ui/label'
 import { Select } from './ui/select'
 import { Checkbox } from './ui/checkbox'
 import { MoneyInput } from './MoneyInput'
-import { SuggestField, ToggleRow } from './Field'
+import { SuggestField } from './Field'
 import { CATEGORIES, PAYMENT_METHODS, UNITS, categoryColors, needsBank } from '../lib/catalog'
 import { formatQuantity, multiplyCents, parseQuantity } from '../lib/money'
 import { today } from '../lib/dates'
@@ -28,9 +28,6 @@ interface FormState {
   quantityText: string
   unit: string | null
   unitAmount: Cents
-  paid: boolean
-  delivered: boolean
-  deliveredText: string
 }
 
 function emptyForm(): FormState {
@@ -47,9 +44,6 @@ function emptyForm(): FormState {
     quantityText: '',
     unit: null,
     unitAmount: 0,
-    paid: true,
-    delivered: true,
-    deliveredText: '',
   }
 }
 
@@ -67,10 +61,6 @@ function fromExpense(expense: Expense): FormState {
     quantityText: expense.quantity === null ? '' : formatQuantity(expense.quantity),
     unit: expense.unit,
     unitAmount: expense.unitAmount ?? 0,
-    paid: expense.paid,
-    delivered: expense.delivered,
-    deliveredText:
-      expense.deliveredQuantity === null ? '' : formatQuantity(expense.deliveredQuantity),
   }
 }
 
@@ -96,9 +86,6 @@ function toDraft(form: FormState): ExpenseDraft {
     unitAmount: form.detailed ? form.unitAmount : null,
     paymentMethod: form.paymentMethod,
     bank: keepsBank ? form.bank.trim() || null : null,
-    paid: form.paid,
-    delivered: form.delivered,
-    deliveredQuantity: form.delivered ? quantity : parseQuantity(form.deliveredText),
     notes: form.notes.trim() || null,
   }
 }
@@ -284,26 +271,6 @@ export function ExpenseSheet({ open, expense, history, onClose, onSave }: Expens
             onChange={(value) => set('bank', value)}
           />
         ) : null}
-
-        <div className="space-y-3">
-          <ToggleRow
-            label="Está entregue"
-            checked={form.delivered}
-            onChange={(v) => set('delivered', v)}
-          />
-          {form.delivered ? null : (
-            <div>
-              <Label htmlFor="expense-delivered">Quantos entregues</Label>
-              <Input
-                id="expense-delivered"
-                inputMode="decimal"
-                placeholder="0"
-                value={form.deliveredText}
-                onChange={(e) => set('deliveredText', e.target.value)}
-              />
-            </div>
-          )}
-        </div>
 
         <div>
           <Label htmlFor="expense-notes">Observação</Label>
