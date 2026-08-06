@@ -7,7 +7,7 @@ import { Select } from './ui/select'
 import { Checkbox } from './ui/checkbox'
 import { MoneyInput } from './MoneyInput'
 import { SuggestField, ToggleRow } from './Field'
-import { CATEGORIES, PAYMENT_METHODS, UNITS, needsBank } from '../lib/catalog'
+import { CATEGORIES, PAYMENT_METHODS, UNITS, categoryColors, needsBank } from '../lib/catalog'
 import { formatQuantity, multiplyCents, parseQuantity } from '../lib/money'
 import { today } from '../lib/dates'
 import { suggestions } from '../lib/selectors'
@@ -244,16 +244,17 @@ export function ExpenseSheet({ open, expense, history, onClose, onSave }: Expens
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((category) => {
               const active = form.categoryId === category.id
+              const colors = categoryColors(category.id)
               return (
                 <button
                   key={category.id}
                   type="button"
                   onClick={() => set('categoryId', active ? null : category.id)}
                   className={cn(
-                    'rounded-full px-3.5 py-2 text-sm transition-colors duration-150 ease-smooth',
+                    'rounded-full px-3.5 py-2 text-sm font-medium transition-all duration-150 ease-smooth border',
                     active
-                      ? 'bg-primary font-medium text-white'
-                      : 'border border-line bg-surface text-muted hover:border-faint hover:text-ink',
+                      ? 'ring-2 ring-offset-1 ring-primary scale-105 ' + colors.bgColor + ' ' + colors.textColor + ' border-current'
+                      : colors.borderColor + ' ' + colors.bgColor + ' ' + colors.textColor + ' ' + colors.hoverBgColor,
                   )}
                 >
                   {category.label}
