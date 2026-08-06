@@ -228,7 +228,7 @@ def main():
     data = {
         "project": {
             "id": "demo-project-id",
-            "name": "Reforma residencial - Coremas, PB",
+            "name": "Minha Casa",
             "createdAt": "2025-02-01T08:00:00Z",
             "updatedAt": "2025-02-01T08:00:00Z",
             "deletedAt": None,

@@ -1,14 +1,14 @@
 {
   "project": {
     "id": "demo-project-id",
-    "name": "Reforma residencial - Coremas, PB",
+    "name": "Minha Casa",
     "createdAt": "2025-02-01T08:00:00Z",
     "updatedAt": "2025-02-01T08:00:00Z",
     "deletedAt": null
   },
   "expenses": [
     {
-      "id": "b24a104c-215a-4059-a7d4-e71db9ee95df",
+      "id": "fe57088a-1f86-4e1f-afa6-7e216e6d713f",
       "projectId": "demo-project-id",
       "date": "2025-02-13",
       "description": "Inicio do contrato do Arq. (Valor total de R$ 4.900,00)",
@@ -29,7 +29,7 @@
       "deletedAt": null
     },
     {
-      "id": "603f6a26-1d66-4a0e-b2ac-316ce4b178f6",
+      "id": "dba2729c-8434-4377-b26c-a8e36e00fcab",
       "projectId": "demo-project-id",
       "date": "2025-04-07",
       "description": "Segunda parte do contrato arquitetônico (Valor total de R$ 4.900,00)",
@@ -50,7 +50,7 @@
       "deletedAt": null
     },
     {
-      "id": "ed05c9b0-19d3-48d8-adea-8cae940ac3ee",
+      "id": "79bb72b2-84fd-4628-926e-21782c9c82fe",
       "projectId": "demo-project-id",
       "date": "2025-06-07",
       "description": "Frete dos tijolos (Valor total de R$ 2.200,00)",
@@ -71,7 +71,7 @@
       "deletedAt": null
     },
     {
-      "id": "f6494279-83fa-4f09-a3ef-68347d9cfc2a",
+      "id": "b2394e3a-88cb-4866-b309-31cad2438ff3",
       "projectId": "demo-project-id",
       "date": "2025-06-07",
       "description": "Frete dos tijolos (Valor total de R$ 2.200,00)",
@@ -92,7 +92,7 @@
       "deletedAt": null
     },
     {
-      "id": "e9de19ea-1dff-4f7c-999b-730690cfcb28",
+      "id": "459ebe66-4756-4d7a-b7f4-70e1817c8e54",
       "projectId": "demo-project-id",
       "date": "2025-06-30",
       "description": "Ferro (Valor total de R$ 6.700,00)",
@@ -113,7 +113,7 @@
       "deletedAt": null
     },
     {
-      "id": "75d23823-7a2c-4d34-a83b-4274df708beb",
+      "id": "bec3cd6f-4b09-49ac-8e67-e318505f194b",
       "projectId": "demo-project-id",
       "date": "2025-06-30",
       "description": "Ferro 4.2 (Valor total de R$ 6.700,01)",
@@ -134,7 +134,7 @@
       "deletedAt": null
     },
     {
-      "id": "1cb281fd-e3be-4a88-b599-aeeeb36353da",
+      "id": "605bd8d1-d22f-47f6-864a-761e15c5e907",
       "projectId": "demo-project-id",
       "date": "2025-06-30",
       "description": "Arame de 18 (Valor total de R$ 6.700,02)",
@@ -155,7 +155,7 @@
       "deletedAt": null
     },
     {
-      "id": "2613f7e7-c358-4e9f-938f-7a025f275229",
+      "id": "e3c3aa7f-5d8f-4247-a48e-4a60d881b2e0",
       "projectId": "demo-project-id",
       "date": "2025-06-30",
       "description": "Cimento (Valor total de R$ 6.700,03)",
@@ -176,7 +176,7 @@
       "deletedAt": null
     },
     {
-      "id": "294da565-e44f-4012-b33e-d0c4a55168d2",
+      "id": "a3d6f69a-8e81-4b49-9a68-cf9eb36b6bb0",
       "projectId": "demo-project-id",
       "date": "2025-06-30",
       "description": "Carrada de Brita (Valor total de R$ 6.700,04)",
@@ -197,7 +197,7 @@
       "deletedAt": null
     },
     {
-      "id": "874db9fd-6b97-4fae-be73-2ae84f6528f2",
+      "id": "025c58c2-f12d-4a47-b149-24a23c260e28",
       "projectId": "demo-project-id",
       "date": "2025-06-30",
       "description": "Carrada de Areia",
@@ -218,7 +218,7 @@
       "deletedAt": null
     },
     {
-      "id": "a1fa486b-3489-4ef9-8d7c-60b490765e42",
+      "id": "9b196d2c-dd6c-41e4-b72a-c73a7b0be420",
       "projectId": "demo-project-id",
       "date": "2025-07-01",
       "description": "Arame de 18 (Valor total R$ 10.053,98)",
@@ -239,7 +239,7 @@
       "deletedAt": null
     },
     {
-      "id": "a104fb70-d5a2-4217-848d-255637b23424",
+      "id": "2fcb5ab9-b95d-4b63-9f3e-c107cf598967",
       "projectId": "demo-project-id",
       "date": "2025-07-01",
       "description": "Ferro 5mm (Valor total R$ 10.053,99)",
@@ -260,7 +260,7 @@
       "deletedAt": null
     },
     {
-      "id": "78776117-8d2d-4811-a2e3-b0606a485e79",
+      "id": "463b1718-c055-465f-b171-61fe4a14a560",
       "projectId": "demo-project-id",
       "date": "2025-07-01",
       "description": "Ferro 8mm 5/16 (Valor total R$ 10.053,100)",
@@ -281,7 +281,7 @@
       "deletedAt": null
     },
     {
-      "id": "c1d8a981-910e-40db-84ff-1568395799da",
+      "id": "d4466cfc-34df-4796-ae4a-160489b98d5f",
       "projectId": "demo-project-id",
       "date": "2025-07-01",
       "description": "Ferro 10mm 3/8 (Valor total R$ 10.053,101)",
@@ -302,7 +302,7 @@
       "deletedAt": null
     },
     {
-      "id": "b2bee8fa-518d-487a-8e7a-fcaf93f18292",
+      "id": "df734140-9af4-4221-9588-3a343aa11059",
       "projectId": "demo-project-id",
       "date": "2025-07-02",
       "description": "Cimento",
@@ -323,7 +323,7 @@
       "deletedAt": null
     },
     {
-      "id": "99703688-cda3-40ee-b831-c006ad022d57",
+      "id": "53141eac-e712-4244-9e93-94e69db6312d",
       "projectId": "demo-project-id",
       "date": "2025-07-02",
       "description": "Massa para impermeabilização (Valor total 400)",
@@ -344,7 +344,7 @@
       "deletedAt": null
     },
     {
-      "id": "88687593-d29e-4a27-b12e-59b66863c45f",
+      "id": "0de9c60e-3ddf-4268-8161-f649ee622616",
       "projectId": "demo-project-id",
       "date": "2025-07-02",
       "description": "Rebocel (Valor total 400)",
@@ -365,7 +365,7 @@
       "deletedAt": null
     },
     {
-      "id": "d1a112c5-284f-45ad-a090-48cb6719e6e6",
+      "id": "3f12b7c4-1403-4ebe-acb5-b50fac29dcca",
       "projectId": "demo-project-id",
       "date": "2025-07-02",
       "description": "Cano 25 (Valor total 400)",
@@ -386,7 +386,7 @@
       "deletedAt": null
     },
     {
-      "id": "1ab9d347-50b6-4e80-9a25-039542c50d95",
+      "id": "de64b1ef-a969-4ae6-b66f-b63c40dc3407",
       "projectId": "demo-project-id",
       "date": "2025-07-02",
       "description": "Disco de marquita para concreto (Valor total 400)",
@@ -407,7 +407,7 @@
       "deletedAt": null
     },
     {
-      "id": "8df57db2-47af-4bf5-9b7b-ebbcb13dd517",
+      "id": "4b42dbf3-25c5-41b9-b113-4326f67efd3b",
       "projectId": "demo-project-id",
       "date": "2025-07-02",
       "description": "Registro de 25 (Valor total 400)",
@@ -428,7 +428,7 @@
       "deletedAt": null
     },
     {
-      "id": "cec3fa1c-08f1-46d2-9aba-60382aef8c8b",
+      "id": "3af785e9-b1a4-413d-bea9-5f34cde8921a",
       "projectId": "demo-project-id",
       "date": "2025-07-02",
       "description": "Viscose de Reboco (Valor total 400)",
@@ -449,7 +449,7 @@
       "deletedAt": null
     },
     {
-      "id": "6f8005b0-43da-4007-ba99-120ca32bdb74",
+      "id": "f864d50c-8a20-4094-93c6-b7817d89920a",
       "projectId": "demo-project-id",
       "date": "2025-07-03",
       "description": "Ferros 5/16",
@@ -470,7 +470,7 @@
       "deletedAt": null
     },
     {
-      "id": "be91c58c-5366-4a67-be7f-9cda25e25964",
+      "id": "79c1d6ea-f455-413c-9590-74350e29dd50",
       "projectId": "demo-project-id",
       "date": "2025-07-03",
       "description": "Ferros 5/16",
@@ -491,7 +491,7 @@
       "deletedAt": null
     },
     {
-      "id": "a1dcf420-ed2f-42db-8f79-c0c8bc278c3e",
+      "id": "04d514a7-92d7-4acb-8975-d7a68709edd9",
       "projectId": "demo-project-id",
       "date": "2025-07-03",
       "description": "Pagamentos para divisão do terreno",
@@ -512,7 +512,7 @@
       "deletedAt": null
     },
     {
-      "id": "5fe9190d-e217-481e-9e3d-38aa7bb2e7ee",
+      "id": "8f4ce87d-ccc9-4ca9-8e15-23f33cb76f2f",
       "projectId": "demo-project-id",
       "date": "2025-07-03",
       "description": "Pagamentos para divisão do terreno",
@@ -533,7 +533,7 @@
       "deletedAt": null
     },
     {
-      "id": "5d993c96-4df1-4e71-83a5-d78ad944368e",
+      "id": "8c6e9d85-34e4-4e63-87b1-d06c28dbd453",
       "projectId": "demo-project-id",
       "date": "2025-07-03",
       "description": "Pagamentos para divisão do terreno",
@@ -554,7 +554,7 @@
       "deletedAt": null
     },
     {
-      "id": "c457fe50-9198-439a-a9d1-77062cc8d38f",
+      "id": "27612fc3-aaf7-4077-8663-23d7686bb375",
       "projectId": "demo-project-id",
       "date": "2025-07-04",
       "description": "Pedreiro José de Tutú (Pagamento semanal)",
@@ -575,7 +575,7 @@
       "deletedAt": null
     },
     {
-      "id": "9a34db7f-8674-495d-8f74-8239ee744b46",
+      "id": "628b7465-b5dc-438d-8f62-5d89d0cc7bb9",
       "projectId": "demo-project-id",
       "date": "2025-07-04",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -596,7 +596,7 @@
       "deletedAt": null
     },
     {
-      "id": "98bfb04e-61ef-4c18-b1f6-9d62d498e204",
+      "id": "33524a19-5e48-4f1b-b711-bf8facf15c2e",
       "projectId": "demo-project-id",
       "date": "2025-07-04",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -617,7 +617,7 @@
       "deletedAt": null
     },
     {
-      "id": "328636e7-0719-46b1-8751-3b37afffe23e",
+      "id": "390a4eaf-34be-403b-9048-43643e98c404",
       "projectId": "demo-project-id",
       "date": "2025-07-04",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -638,7 +638,7 @@
       "deletedAt": null
     },
     {
-      "id": "a0a4f342-d152-4822-b0da-a10ed9029d74",
+      "id": "76c968dd-f697-4413-a724-058333f51ab9",
       "projectId": "demo-project-id",
       "date": "2025-07-04",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -659,7 +659,7 @@
       "deletedAt": null
     },
     {
-      "id": "a9e92438-6488-4d42-b291-e2a6035604f4",
+      "id": "46e8d518-12c0-46d8-9ea2-ca70206ead7b",
       "projectId": "demo-project-id",
       "date": "2025-07-05",
       "description": "Gasolina vinda de Luan",
@@ -680,7 +680,7 @@
       "deletedAt": null
     },
     {
-      "id": "f6fef0d1-dfb0-46ce-8424-e1cbb62060d0",
+      "id": "1521b5bc-e85a-4c21-b989-ddf9528d6ba5",
       "projectId": "demo-project-id",
       "date": "2025-07-05",
       "description": "Compra dos pedreiros lá em edilson",
@@ -701,7 +701,7 @@
       "deletedAt": null
     },
     {
-      "id": "0c7a5519-329a-4c53-8dcc-3fc1e1fc8101",
+      "id": "ef8cb9ad-cbe9-4774-b723-dcfb75b239a3",
       "projectId": "demo-project-id",
       "date": "2025-07-09",
       "description": "Tabuas de 10 cm para fazer gabarito",
@@ -722,7 +722,7 @@
       "deletedAt": null
     },
     {
-      "id": "9a5ed53b-5f51-401c-bcca-f37a52c36d66",
+      "id": "3d0df968-5f1a-454c-ab01-d2724ce54912",
       "projectId": "demo-project-id",
       "date": "2025-07-11",
       "description": "Pedreiro José de Tutú (Pagamento semanal)",
@@ -743,7 +743,7 @@
       "deletedAt": null
     },
     {
-      "id": "089d8c05-7eb2-4673-a0d9-c432bd6fe6ca",
+      "id": "ce1f4c30-e7b1-4742-875e-570932421c88",
       "projectId": "demo-project-id",
       "date": "2025-07-11",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -764,7 +764,7 @@
       "deletedAt": null
     },
     {
-      "id": "637b97d5-2143-4992-97e2-b44b79b3e2d4",
+      "id": "4046abf3-430e-40e1-88c8-e39415c1bf2b",
       "projectId": "demo-project-id",
       "date": "2025-07-11",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -785,7 +785,7 @@
       "deletedAt": null
     },
     {
-      "id": "67ec2241-42f6-48a2-8e5e-4eca6aa7b083",
+      "id": "654c94d7-cd40-4143-a3ab-d08f6a29a6ec",
       "projectId": "demo-project-id",
       "date": "2025-07-11",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -806,7 +806,7 @@
       "deletedAt": null
     },
     {
-      "id": "a4494541-ef4a-4479-afad-0960b16efbf8",
+      "id": "396a2dc3-3eec-45dc-a1eb-ed301ad7e7e2",
       "projectId": "demo-project-id",
       "date": "2025-07-11",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -827,7 +827,7 @@
       "deletedAt": null
     },
     {
-      "id": "5d243ef1-f859-48ff-b569-fb3b66591899",
+      "id": "19cf6b7b-4dad-454b-9137-ce4629abd1b9",
       "projectId": "demo-project-id",
       "date": "2025-07-14",
       "description": "RRT de desmembramento do terreno",
@@ -848,7 +848,7 @@
       "deletedAt": null
     },
     {
-      "id": "15309249-1d7c-4241-9bfe-5ba097fda5a7",
+      "id": "905fd86d-1d12-4190-930a-011864625ccf",
       "projectId": "demo-project-id",
       "date": "2025-07-16",
       "description": "Casamba e escavadeira para tirar entulho",
@@ -869,7 +869,7 @@
       "deletedAt": null
     },
     {
-      "id": "80a02633-02d2-4547-bd11-646544920972",
+      "id": "7dfa9a17-3987-43a8-ad8c-1a688957c8e0",
       "projectId": "demo-project-id",
       "date": "2025-07-16",
       "description": "Carrara de Areia",
@@ -890,7 +890,7 @@
       "deletedAt": null
     },
     {
-      "id": "3c8eba9b-9950-4597-bbeb-41039a7d241c",
+      "id": "f67049c1-6728-46fc-90c3-e3fdb51beb3d",
       "projectId": "demo-project-id",
       "date": "2025-07-17",
       "description": "Ferros 1/2",
@@ -911,7 +911,7 @@
       "deletedAt": null
     },
     {
-      "id": "d4b7f142-8c16-4555-b8bf-cc8b919011d4",
+      "id": "94ee6a2a-9dc5-448d-8206-b4fa90a69d93",
       "projectId": "demo-project-id",
       "date": "2025-07-18",
       "description": "Pedreiro José de Tutú (Pagamento semanal)",
@@ -932,7 +932,7 @@
       "deletedAt": null
     },
     {
-      "id": "94d54ee4-806c-4ce4-8d4d-6aaebc0a12e8",
+      "id": "5e7600aa-6ddc-44db-85ae-726c878f6c4f",
       "projectId": "demo-project-id",
       "date": "2025-07-18",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -953,7 +953,7 @@
       "deletedAt": null
     },
     {
-      "id": "ca28b2df-1502-4d10-8792-ef5bce140764",
+      "id": "f7e43e03-8395-41b7-885a-9c800b2d02d1",
       "projectId": "demo-project-id",
       "date": "2025-07-18",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -974,7 +974,7 @@
       "deletedAt": null
     },
     {
-      "id": "052be418-2045-4d6c-a41f-ff55abac8df7",
+      "id": "b3745e68-4088-45a6-9f77-c500f96ca0b6",
       "projectId": "demo-project-id",
       "date": "2025-07-18",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -995,7 +995,7 @@
       "deletedAt": null
     },
     {
-      "id": "3975a25e-49a6-44fa-a3aa-7d5c20e76eb4",
+      "id": "c94f3078-b91c-44de-81e7-0967bb6aa782",
       "projectId": "demo-project-id",
       "date": "2025-07-18",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -1016,7 +1016,7 @@
       "deletedAt": null
     },
     {
-      "id": "e3c8614c-927c-4016-8960-35ef568c60c8",
+      "id": "de02321f-27ff-44ca-b421-7d6d581a2eaf",
       "projectId": "demo-project-id",
       "date": "2025-07-19",
       "description": "Itens da obra",
@@ -1037,7 +1037,7 @@
       "deletedAt": null
     },
     {
-      "id": "8a6c7ac1-caac-44cf-99b5-1d68669c6643",
+      "id": "da0f8e9c-5888-4236-8c30-a32476493c60",
       "projectId": "demo-project-id",
       "date": "2025-07-23",
       "description": "Carrada de Brita",
@@ -1058,7 +1058,7 @@
       "deletedAt": null
     },
     {
-      "id": "c4a0de9f-46c4-4b78-923b-2d1d92554e3b",
+      "id": "008f4821-ba4d-4084-84a6-cb6d36932c78",
       "projectId": "demo-project-id",
       "date": "2025-07-23",
       "description": "Ferro 1/2",
@@ -1079,7 +1079,7 @@
       "deletedAt": null
     },
     {
-      "id": "08863cdc-3ad3-4c29-b512-6dd91bf791f2",
+      "id": "7cf4eb3b-678d-48ab-92f6-c53a82c00a23",
       "projectId": "demo-project-id",
       "date": "2025-07-23",
       "description": "Lona",
@@ -1100,7 +1100,7 @@
       "deletedAt": null
     },
     {
-      "id": "8330cc6d-ab24-40ad-a50f-bbcc1fc103f2",
+      "id": "22fd58a2-85cd-4baf-9a0a-e15346d05475",
       "projectId": "demo-project-id",
       "date": "2025-07-28",
       "description": "Discos de corte de ferro",
@@ -1121,7 +1121,7 @@
       "deletedAt": null
     },
     {
-      "id": "d2645c6c-a216-49cb-99b8-eba281f4f9d0",
+      "id": "652fe666-11dc-4bfc-b2c8-ac51bbbcb354",
       "projectId": "demo-project-id",
       "date": "2025-07-29",
       "description": "Parafusos",
@@ -1142,7 +1142,7 @@
       "deletedAt": null
     },
     {
-      "id": "8ce692d7-1562-4ff8-a327-47b68b52ee50",
+      "id": "87b2539e-d4de-4c4e-a71c-376755df5c6a",
       "projectId": "demo-project-id",
       "date": "2025-07-29",
       "description": "Boleto certidões terreno",
@@ -1163,7 +1163,7 @@
       "deletedAt": null
     },
     {
-      "id": "79d381c7-b39e-44d3-9a3b-3442bb867f48",
+      "id": "26e5dba5-bbb6-4b13-8f4e-4a247bf45936",
       "projectId": "demo-project-id",
       "date": "2025-07-30",
       "description": "Boleto de transferência de terreno",
@@ -1184,7 +1184,7 @@
       "deletedAt": null
     },
     {
-      "id": "ca78b20b-75b7-41bc-bdee-44401c72db4b",
+      "id": "ee5ce69c-f84e-4e64-a063-8aafd8683990",
       "projectId": "demo-project-id",
       "date": "2025-07-30",
       "description": "Caçamba de entulho",
@@ -1205,7 +1205,7 @@
       "deletedAt": null
     },
     {
-      "id": "6097ab7c-203f-449f-a939-d1b6cde4f3e7",
+      "id": "11af086e-aa9e-408c-9e18-fe485c47a8b0",
       "projectId": "demo-project-id",
       "date": "2025-08-01",
       "description": "TJPB SARE (DOCUMENTO CASA)",
@@ -1226,7 +1226,7 @@
       "deletedAt": null
     },
     {
-      "id": "dceac315-540c-4be5-9314-0daf981c7338",
+      "id": "2caad3b0-19a0-41c1-b3b8-08a36693561d",
       "projectId": "demo-project-id",
       "date": "2025-08-01",
       "description": "TJPB SARE (DOCUMENTO CASA)",
@@ -1247,7 +1247,7 @@
       "deletedAt": null
     },
     {
-      "id": "10778c14-a458-4252-a10f-cea434960312",
+      "id": "781c8ee2-64b5-4950-b1ac-6c935f58840d",
       "projectId": "demo-project-id",
       "date": "2025-08-02",
       "description": "Pedreiro José de Tutú",
@@ -1268,7 +1268,7 @@
       "deletedAt": null
     },
     {
-      "id": "b1a3293a-2f84-4214-ba2d-c8b9ccff048f",
+      "id": "aa981d22-2672-4320-9ad1-0827e1a34fb0",
       "projectId": "demo-project-id",
       "date": "2025-08-04",
       "description": "Autenticação de documento",
@@ -1289,7 +1289,7 @@
       "deletedAt": null
     },
     {
-      "id": "b554cf26-eba2-4a01-9044-e1ff5014e84f",
+      "id": "8de7019c-6c34-4c48-bb4f-d9a1a09977bd",
       "projectId": "demo-project-id",
       "date": "2025-08-09",
       "description": "Gasolina vinda de Luan",
@@ -1310,7 +1310,7 @@
       "deletedAt": null
     },
     {
-      "id": "038c47eb-c1a8-4453-b423-237d5265a13e",
+      "id": "113b8c98-7b21-499e-a962-abdb000bf0bc",
       "projectId": "demo-project-id",
       "date": "2025-08-09",
       "description": "Pedreiro José de Tutú (Semana paga de José de Tutu)",
@@ -1331,7 +1331,7 @@
       "deletedAt": null
     },
     {
-      "id": "3fc4cd8e-219f-41bb-8e7a-a333daf9c2da",
+      "id": "1e04d3b8-4643-4e76-a1b9-ca2ad34feacf",
       "projectId": "demo-project-id",
       "date": "2025-08-09",
       "description": "Pedreiro Fabinho",
@@ -1352,7 +1352,7 @@
       "deletedAt": null
     },
     {
-      "id": "2aba96e1-4764-4dbf-afd0-d377c5102299",
+      "id": "51e48e0c-a5f4-45d3-a282-7e513a812d42",
       "projectId": "demo-project-id",
       "date": "2025-08-09",
       "description": "Servente Lulu",
@@ -1373,7 +1373,7 @@
       "deletedAt": null
     },
     {
-      "id": "6551aa70-69eb-45f9-98b0-2983de477558",
+      "id": "8d1cd6c4-e6b9-424b-a299-84c265a25af9",
       "projectId": "demo-project-id",
       "date": "2025-08-09",
       "description": "Servente Bruno",
@@ -1394,7 +1394,7 @@
       "deletedAt": null
     },
     {
-      "id": "8e214cc3-3cb7-47b8-8e7e-fa4425b3f5a8",
+      "id": "c408e093-d56f-47a2-bef6-e94e56b51b75",
       "projectId": "demo-project-id",
       "date": "2025-08-11",
       "description": "Carrada de areia",
@@ -1415,7 +1415,7 @@
       "deletedAt": null
     },
     {
-      "id": "d428ea77-56ba-4bcc-a2fa-40338954fe54",
+      "id": "c8e29ee7-33d1-42a5-aa9e-0e2b0f899d8b",
       "projectId": "demo-project-id",
       "date": "2025-08-11",
       "description": "Vedalit para baldrame",
@@ -1436,7 +1436,7 @@
       "deletedAt": null
     },
     {
-      "id": "c428a1c6-49de-46d3-b39c-8979668a3d88",
+      "id": "d0852f0d-6ff1-403c-a7c4-c1d76716297d",
       "projectId": "demo-project-id",
       "date": "2025-08-11",
       "description": "Solução plastificante para massa vedalit",
@@ -1457,7 +1457,7 @@
       "deletedAt": null
     },
     {
-      "id": "a44e3098-708a-4a1d-87f4-97718ffa0d83",
+      "id": "34b31309-ab9a-4087-a00c-bb5c5d1b6d9b",
       "projectId": "demo-project-id",
       "date": "2025-08-11",
       "description": "Outros itens",
@@ -1478,7 +1478,7 @@
       "deletedAt": null
     },
     {
-      "id": "98ee0d02-3988-4925-8027-260f5852eeb2",
+      "id": "b49ad0ac-0464-44bd-a22c-6d89dfaa917e",
       "projectId": "demo-project-id",
       "date": "2025-08-12",
       "description": "Brita da fina",
@@ -1499,7 +1499,7 @@
       "deletedAt": null
     },
     {
-      "id": "68189360-4575-45d4-9e52-d414d5198acc",
+      "id": "3d6dc04e-7cb7-4feb-abd4-e412cf38b59d",
       "projectId": "demo-project-id",
       "date": "2025-08-13",
       "description": "RRT construção",
@@ -1520,7 +1520,7 @@
       "deletedAt": null
     },
     {
-      "id": "e0964cab-bd01-4eb6-aa76-33208cb78b3c",
+      "id": "c0745d39-06af-4c64-9085-136fb0a03ff8",
       "projectId": "demo-project-id",
       "date": "2025-08-15",
       "description": "Pedreiro José de Tutú (Pagamento semanal)",
@@ -1541,7 +1541,7 @@
       "deletedAt": null
     },
     {
-      "id": "f8cab899-c350-4963-909a-155e53441346",
+      "id": "3e44a52f-d142-4c5d-966a-f2212ee6693f",
       "projectId": "demo-project-id",
       "date": "2025-08-15",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -1562,7 +1562,7 @@
       "deletedAt": null
     },
     {
-      "id": "e414d087-bc02-4a32-8beb-deb475493950",
+      "id": "595255a6-4fdb-430f-9f79-3f027e8fc55b",
       "projectId": "demo-project-id",
       "date": "2025-08-15",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -1583,7 +1583,7 @@
       "deletedAt": null
     },
     {
-      "id": "981e5673-4fcb-4d13-8ada-fe5d5e38ab42",
+      "id": "8a4c7465-ccfa-4085-b62e-7c354f7f2de7",
       "projectId": "demo-project-id",
       "date": "2025-08-15",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -1604,7 +1604,7 @@
       "deletedAt": null
     },
     {
-      "id": "9b751121-9135-4418-bfee-be49668a0b7b",
+      "id": "42bfb237-891b-4641-9bf9-d3ff3c78d0fb",
       "projectId": "demo-project-id",
       "date": "2025-08-15",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -1625,7 +1625,7 @@
       "deletedAt": null
     },
     {
-      "id": "2b085844-dad2-4e6a-8964-6cc1fae92448",
+      "id": "585eb3e5-35a6-470f-b37d-8845552b1344",
       "projectId": "demo-project-id",
       "date": "2025-08-16",
       "description": "Tijolos de Malta (Fiz o pagamento para dona Idalva pois dividimos 8 milheiros)",
@@ -1646,7 +1646,7 @@
       "deletedAt": null
     },
     {
-      "id": "08f30c98-46f7-4327-994e-eacd61ea77ab",
+      "id": "520d60e8-5c04-436e-bf92-7006e88ffba0",
       "projectId": "demo-project-id",
       "date": "2025-08-18",
       "description": "Pagamento Engenheiro Luan 1/3 (1/3 do valor)",
@@ -1667,7 +1667,7 @@
       "deletedAt": null
     },
     {
-      "id": "6e1c6aca-8532-4367-9a16-120452a540e3",
+      "id": "9f3df73f-66ef-4713-9edb-3dd4df1d2d7e",
       "projectId": "demo-project-id",
       "date": "2025-08-18",
       "description": "Cimento",
@@ -1688,7 +1688,7 @@
       "deletedAt": null
     },
     {
-      "id": "2dbaeb40-2acf-4717-9451-637fdf7bff5c",
+      "id": "f460fda4-94e4-4ee7-8f42-162f55869a35",
       "projectId": "demo-project-id",
       "date": "2025-08-20",
       "description": "Cimento",
@@ -1709,7 +1709,7 @@
       "deletedAt": null
     },
     {
-      "id": "ea9eebda-6eb0-46aa-b83a-b20a1937f948",
+      "id": "06459d6d-f1a5-403c-a3c8-0fc5d8a5edea",
       "projectId": "demo-project-id",
       "date": "2025-08-21",
       "description": "Caçamba de areia",
@@ -1730,7 +1730,7 @@
       "deletedAt": null
     },
     {
-      "id": "84885a2a-d8f9-46fa-b5a9-a7a26218939a",
+      "id": "b6d0ee9b-abf7-4930-9b48-26e87e8f1216",
       "projectId": "demo-project-id",
       "date": "2025-08-21",
       "description": "Ferro 5mm (Valor total R$ 8325,38)",
@@ -1751,7 +1751,7 @@
       "deletedAt": null
     },
     {
-      "id": "05a99b38-78b7-41dc-9eb6-973577552766",
+      "id": "d4c8bc0b-68dc-47c3-9c95-8af81b8cecc5",
       "projectId": "demo-project-id",
       "date": "2025-08-21",
       "description": "Ferro 8mm 5/16 (Valor total R$ 8325,38)",
@@ -1772,7 +1772,7 @@
       "deletedAt": null
     },
     {
-      "id": "ae161846-3d0a-4012-bc6a-448d8d4e2e11",
+      "id": "36e45fcf-34bc-4c9f-ab44-61e07d388f6d",
       "projectId": "demo-project-id",
       "date": "2025-08-21",
       "description": "Ferro 10mm 3/8 (Valor total R$ 8325,38)",
@@ -1793,7 +1793,7 @@
       "deletedAt": null
     },
     {
-      "id": "357a615d-6c83-4adc-be04-4b614f2444c4",
+      "id": "693f2cf3-bc8b-47be-874a-d49ed82ef01a",
       "projectId": "demo-project-id",
       "date": "2025-08-21",
       "description": "Ferro 12.5mm 1/5 (Valor total R$ 8325,38)",
@@ -1814,7 +1814,7 @@
       "deletedAt": null
     },
     {
-      "id": "0ab1308b-245b-4f14-8ff3-0f7559e07408",
+      "id": "d042ef83-f379-4fcb-bee0-4766edaf291d",
       "projectId": "demo-project-id",
       "date": "2025-08-21",
       "description": "Tela Q - 92 2,45x6,00m 15x15 (Valor total R$ 8325,38)",
@@ -1835,7 +1835,7 @@
       "deletedAt": null
     },
     {
-      "id": "67363621-e032-447b-996e-3faa068199f6",
+      "id": "284e94aa-a096-4701-8591-9d1b53934029",
       "projectId": "demo-project-id",
       "date": "2025-08-21",
       "description": "Torques Armador (Valor total R$ 8325,38)",
@@ -1856,7 +1856,7 @@
       "deletedAt": null
     },
     {
-      "id": "4459f401-dd88-4d66-bcdc-f6a08636a819",
+      "id": "27856171-4a28-4551-9f2e-baf2952261b1",
       "projectId": "demo-project-id",
       "date": "2025-08-22",
       "description": "1/2 armações da laje (Paguei a metade e depois pagarei o restante)",
@@ -1877,7 +1877,7 @@
       "deletedAt": null
     },
     {
-      "id": "900fc429-4072-4e74-8e4d-bae0c6c3cb2e",
+      "id": "6bbd05c3-23a2-43dd-8298-2693d578c3a8",
       "projectId": "demo-project-id",
       "date": "2025-08-29",
       "description": "Lona para hipermeabilidade",
@@ -1898,7 +1898,7 @@
       "deletedAt": null
     },
     {
-      "id": "6c99bc47-335d-4f20-a6b7-67e37bcfe699",
+      "id": "15362758-643c-4880-8d7e-b3631af61b27",
       "projectId": "demo-project-id",
       "date": "2025-08-29",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -1919,7 +1919,7 @@
       "deletedAt": null
     },
     {
-      "id": "e2b9eb25-6b3a-46e2-adde-6cc86252e732",
+      "id": "e7a0a785-641e-47ec-9be0-e7471f56b66d",
       "projectId": "demo-project-id",
       "date": "2025-08-29",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -1940,7 +1940,7 @@
       "deletedAt": null
     },
     {
-      "id": "68f735a0-8c47-4ead-9487-66df6e9dcaac",
+      "id": "c20aa1df-3364-401d-8412-394afadcd5b7",
       "projectId": "demo-project-id",
       "date": "2025-08-29",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -1961,7 +1961,7 @@
       "deletedAt": null
     },
     {
-      "id": "aaef4e56-0abe-48f6-9b83-b339218a7cd3",
+      "id": "6a73128a-60d5-448a-a3ea-71a6887ba666",
       "projectId": "demo-project-id",
       "date": "2025-08-29",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -1982,7 +1982,7 @@
       "deletedAt": null
     },
     {
-      "id": "48b07814-88f7-4df3-b4c1-dd72ee457afa",
+      "id": "c2df7534-da0a-45d1-9230-87c752da4908",
       "projectId": "demo-project-id",
       "date": "2025-08-30",
       "description": "Pedreiro José de Tutú (Pagamento semanal + sábado)",
@@ -2003,7 +2003,7 @@
       "deletedAt": null
     },
     {
-      "id": "cdfa38c6-f5ec-4e9d-b068-6c67ed54bdc6",
+      "id": "76511d2e-272a-4bc5-8b8d-8f1905a8d70f",
       "projectId": "demo-project-id",
       "date": "2025-08-30",
       "description": "Servente que ajudou José de Tutú (Limpeza de mato + trabalho do sábado dia inteiro)",
@@ -2024,7 +2024,7 @@
       "deletedAt": null
     },
     {
-      "id": "a844433b-3c6d-4c31-891c-7aa209c715fb",
+      "id": "fb1b6ce7-c1ce-44e8-89e9-75f8339e5d8d",
       "projectId": "demo-project-id",
       "date": "2025-09-01",
       "description": "Cimento",
@@ -2045,7 +2045,7 @@
       "deletedAt": null
     },
     {
-      "id": "79b14615-53cb-4dbe-9f39-94d545bf6af1",
+      "id": "522c428a-586b-4e0c-adfa-cdf35fe2965e",
       "projectId": "demo-project-id",
       "date": "2025-09-03",
       "description": "Caçamba de entulho",
@@ -2066,7 +2066,7 @@
       "deletedAt": null
     },
     {
-      "id": "325bb929-e635-4b95-ad32-14633a58beaf",
+      "id": "0e172f08-4d60-4cbb-93b0-9411d6695e04",
       "projectId": "demo-project-id",
       "date": "2025-09-03",
       "description": "Aluguel de betoneira (Esse mês mais mês passado pois esqueci de anotar)",
@@ -2087,7 +2087,7 @@
       "deletedAt": null
     },
     {
-      "id": "e25ab011-1850-4e9d-a606-dc196a54a84f",
+      "id": "5b88c154-72b5-4332-82f1-15c02c79c84e",
       "projectId": "demo-project-id",
       "date": "2025-09-03",
       "description": "Aluguel de vibrador (Esse mês mais mês passado pois esqueci de anotar)",
@@ -2108,7 +2108,7 @@
       "deletedAt": null
     },
     {
-      "id": "43350cbd-0ed9-4b98-b989-0f4adbeb6578",
+      "id": "8e9a40f8-401c-48a9-a0c3-64aaf52312cf",
       "projectId": "demo-project-id",
       "date": "2025-09-05",
       "description": "Pedreiro José de Tutú (Pagamento semanal)",
@@ -2129,7 +2129,7 @@
       "deletedAt": null
     },
     {
-      "id": "b85e57b6-9bd8-4362-8ed8-fc3695d02deb",
+      "id": "6ff47e3b-439f-4b79-a6ae-749d8db615a2",
       "projectId": "demo-project-id",
       "date": "2025-09-05",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -2150,7 +2150,7 @@
       "deletedAt": null
     },
     {
-      "id": "10f935c8-f6d6-4257-8c11-410ee0c97310",
+      "id": "f0fb6c85-213a-4612-948a-f205405d59b7",
       "projectId": "demo-project-id",
       "date": "2025-09-05",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -2171,7 +2171,7 @@
       "deletedAt": null
     },
     {
-      "id": "2ebf9a93-3f6f-4ac7-8a8c-9e3533dcc85f",
+      "id": "06bd4f63-2f3c-4cd0-b607-4c3149a47476",
       "projectId": "demo-project-id",
       "date": "2025-09-05",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -2192,7 +2192,7 @@
       "deletedAt": null
     },
     {
-      "id": "6817cebd-200f-45b1-a2e8-f5eb8b7dfb89",
+      "id": "2c4be1c3-b7ad-4c3d-ab89-996d044c04a8",
       "projectId": "demo-project-id",
       "date": "2025-09-05",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -2213,7 +2213,7 @@
       "deletedAt": null
     },
     {
-      "id": "a97210f8-1ccc-4f26-809a-62e94b59d0d5",
+      "id": "2bf34679-929a-4f2d-8300-01f2aac2adce",
       "projectId": "demo-project-id",
       "date": "2025-09-12",
       "description": "Pedreiro José de Tutú (Pagamento semanal)",
@@ -2234,7 +2234,7 @@
       "deletedAt": null
     },
     {
-      "id": "55171517-3535-468d-a2df-63ed64f6edda",
+      "id": "e5ef5313-6e09-4ac7-8e55-92e48f6b9e8d",
       "projectId": "demo-project-id",
       "date": "2025-09-12",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -2255,7 +2255,7 @@
       "deletedAt": null
     },
     {
-      "id": "2e15f152-40d4-4a0c-8fba-18274bd6e5a5",
+      "id": "87055b87-1b5d-4cea-b9d5-06b45266ce52",
       "projectId": "demo-project-id",
       "date": "2025-09-12",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -2276,7 +2276,7 @@
       "deletedAt": null
     },
     {
-      "id": "7deee1a0-6c63-4993-8777-6bd47729b95e",
+      "id": "7c6c94cb-585c-43da-bdc4-2a00b84bb40a",
       "projectId": "demo-project-id",
       "date": "2025-09-12",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -2297,7 +2297,7 @@
       "deletedAt": null
     },
     {
-      "id": "bb85d794-2268-4541-b65c-565e52465ab2",
+      "id": "88d77b26-59e3-45d5-8985-134600816046",
       "projectId": "demo-project-id",
       "date": "2025-09-12",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -2318,7 +2318,7 @@
       "deletedAt": null
     },
     {
-      "id": "1515e1d0-87e0-4017-9667-63c210bf5c96",
+      "id": "abbe52cc-97fb-4edd-a1d3-fc65e29a98e6",
       "projectId": "demo-project-id",
       "date": "2025-09-17",
       "description": "Caibros para escorar a laje",
@@ -2339,7 +2339,7 @@
       "deletedAt": null
     },
     {
-      "id": "f52cc359-2425-4773-a9ed-496254bfc052",
+      "id": "171f0653-7a85-4bb8-a175-1306f7be1864",
       "projectId": "demo-project-id",
       "date": "2025-09-18",
       "description": "20 ferros de 3/8 e outras coisas",
@@ -2360,7 +2360,7 @@
       "deletedAt": null
     },
     {
-      "id": "75c5b25e-26f6-4666-aff9-79448e713c08",
+      "id": "576fd8c5-3a33-4419-ae41-619e8b475910",
       "projectId": "demo-project-id",
       "date": "2025-09-19",
       "description": "Pedreiro José de Tutú (Pagamento semanal)",
@@ -2381,7 +2381,7 @@
       "deletedAt": null
     },
     {
-      "id": "fb995309-83b8-42c3-960c-2b3c28548f6a",
+      "id": "926b4a02-13a0-42a3-9797-0932cb7d8402",
       "projectId": "demo-project-id",
       "date": "2025-09-19",
       "description": "Pedreiro Fabinho (Pagamento semanal)",
@@ -2402,7 +2402,7 @@
       "deletedAt": null
     },
     {
-      "id": "edb5f900-c495-43a8-9bce-b1e0a439389b",
+      "id": "6ddd169b-6ab4-4645-bd7b-e85a3053ac54",
       "projectId": "demo-project-id",
       "date": "2025-09-19",
       "description": "Servente Bruno (Pagamento semanal)",
@@ -2423,7 +2423,7 @@
       "deletedAt": null
     },
     {
-      "id": "382de9ce-e15b-4915-a242-d5c54f6aba94",
+      "id": "7e55bd41-d761-4133-8018-d2dcfd708ac1",
       "projectId": "demo-project-id",
       "date": "2025-09-19",
       "description": "Servente Lulu (Pagamento semanal)",
@@ -2444,7 +2444,7 @@
       "deletedAt": null
     },
     {
-      "id": "e45111ce-e57a-460c-b673-b06156404025",
+      "id": "eaf4588e-eaf8-4ceb-bbe4-39c9a4553bda",
       "projectId": "demo-project-id",
       "date": "2025-09-19",
       "description": "Bônus de alimentação para os pedreiros (Pagamento semanal)",
@@ -2465,7 +2465,7 @@
       "deletedAt": null
     },
     {
-      "id": "8a903265-708f-454b-b6db-9dc30fbb2302",
+      "id": "4992d64a-fc10-492e-bd02-f216b45cd9d1",
       "projectId": "demo-project-id",
       "date": "2025-09-20",
       "description": "Carrada de areia",
@@ -2486,7 +2486,7 @@
       "deletedAt": null
     },
     {
-      "id": "74a73768-379c-4c98-b6c5-6244ca4d537c",
+      "id": "832b40f4-bbc6-4875-aaf6-0cca976f7afa",
       "projectId": "demo-project-id",
       "date": "2025-09-24",
       "description": "Canos",
@@ -2507,7 +2507,7 @@
       "deletedAt": null
     },
     {
-      "id": "ae41300f-dd2c-4abc-a0e3-e6d717f71246",
+      "id": "e045c1b3-7e07-4f89-871c-005e08494d89",
       "projectId": "demo-project-id",
       "date": "2025-09-24",
       "description": "Brita",
@@ -2528,7 +2528,7 @@
       "deletedAt": null
     },
     {
-      "id": "c08f6edb-bfb2-4fb1-a55a-b67f8fa28b1d",
+      "id": "ee001309-6121-4e34-a8f6-9173ef89bcb6",
       "projectId": "demo-project-id",
       "date": "2025-09-25",
       "description": "Carrada de areia da grossa",
@@ -2549,7 +2549,7 @@
       "deletedAt": null
     },
     {
-      "id": "0573f0d7-52a2-4f1c-9c72-4a22cf2d6a0b",
+      "id": "f2d2b055-8a4b-4ae0-87a6-177414ada2c9",
       "projectId": "demo-project-id",
       "date": "2025-09-25",
       "description": "Carrada de areia da grossa",
@@ -2570,7 +2570,7 @@
       "deletedAt": null
     },
     {
-      "id": "68932983-22e1-4e68-b7e4-3a03a4094cae",
+      "id": "dbb27238-5b98-4674-9d3a-81b23c95a80f",
       "projectId": "demo-project-id",
       "date": "2025-09-25",
       "description": "Baldes",
@@ -2591,7 +2591,7 @@
       "deletedAt": null
     },
     {
-      "id": "1c189365-5dd9-49d9-9524-ea494add5982",
+      "id": "e6066a5a-bab1-440e-9896-78ab39cca108",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Cimento",
@@ -2612,7 +2612,7 @@
       "deletedAt": null
     },
     {
-      "id": "02745dbd-0825-47bb-9bf2-c169c4ac6f26",
+      "id": "32935b46-0594-4281-bd36-57f0986d8228",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Cimento",
@@ -2633,7 +2633,7 @@
       "deletedAt": null
     },
     {
-      "id": "0ffd4e4f-c77d-4a1f-b3e6-f426fe273b3b",
+      "id": "8e395556-e3af-4185-a460-6ec1b943a972",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Pregos e canos",
@@ -2654,7 +2654,7 @@
       "deletedAt": null
     },
     {
-      "id": "6a7d4654-9e4a-4151-bd23-b3e8df4132d3",
+      "id": "f199fae3-e9f0-4ba4-9e2d-aa4613ba926e",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Serventes para a laje",
@@ -2675,7 +2675,7 @@
       "deletedAt": null
     },
     {
-      "id": "b4249c9e-faed-470e-93f9-275a3563dbc1",
+      "id": "47bd4308-0bf5-4343-8422-6eb15d94b5dc",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Pedreiro José de Tutú",
@@ -2696,7 +2696,7 @@
       "deletedAt": null
     },
     {
-      "id": "b6861ac9-acb9-40fc-8732-9f7a244ab2c9",
+      "id": "688efd15-bf23-4ce1-a983-47690794d61a",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Pedreiro Fabinho",
@@ -2717,7 +2717,7 @@
       "deletedAt": null
     },
     {
-      "id": "19659248-db4b-4e31-8c89-88c0ecdfb461",
+      "id": "8bbfdf89-d50f-4440-a0b6-d6808412d1b9",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Servente Bruno",
@@ -2738,7 +2738,7 @@
       "deletedAt": null
     },
     {
-      "id": "5a63b470-0f2e-4cf1-8f78-d76cd8caeafd",
+      "id": "363dbd0a-c0d1-40bc-99be-b176577bcfd8",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Servente Lulu",
@@ -2759,7 +2759,7 @@
       "deletedAt": null
     },
     {
-      "id": "87d0e249-1023-45da-85f7-ff7f022d04a6",
+      "id": "58202e53-7a39-4645-a533-53d5a6fe8cca",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Bônus de alimentação para os pedreiros",
@@ -2780,7 +2780,7 @@
       "deletedAt": null
     },
     {
-      "id": "ba66c712-2f7a-48a2-83ff-823693a2a1fd",
+      "id": "8f525008-77cc-46d1-bf22-580562631dc6",
       "projectId": "demo-project-id",
       "date": "2025-09-26",
       "description": "Bônus de laje batida",
@@ -2801,7 +2801,7 @@
       "deletedAt": null
     },
     {
-      "id": "93d5f97b-9bdf-4d28-a02f-58233c6c9035",
+      "id": "52c6a253-859a-45fb-82be-522a50322947",
       "projectId": "demo-project-id",
       "date": "2025-09-29",
       "description": "Boleto do alvará de construção",
@@ -2822,7 +2822,7 @@
       "deletedAt": null
     },
     {
-      "id": "72e236ec-d435-4b8e-b8fc-da3b769965d3",
+      "id": "507da501-5e19-4fb0-993f-08074083b244",
       "projectId": "demo-project-id",
       "date": "2025-10-02",
       "description": "Casa leo esquadrias (1 x 47.000 (total 94 mil))",
@@ -2843,7 +2843,7 @@
       "deletedAt": null
     },
     {
-      "id": "33dc4c27-5052-4642-a5e7-b65238e59e5c",
+      "id": "7657a882-8f81-4ce9-94dd-7c6ac90ff3d9",
       "projectId": "demo-project-id",
       "date": "2025-10-02",
       "description": "Cimento",
@@ -2864,7 +2864,7 @@
       "deletedAt": null
     },
     {
-      "id": "c400c0ea-e120-4e1c-b3c0-b73fa61caead",
+      "id": "85f2180c-823c-43a5-b237-2b7ef9de9375",
       "projectId": "demo-project-id",
       "date": "2025-10-03",
       "description": "Pedreiro José de Tutú",
@@ -2885,7 +2885,7 @@
       "deletedAt": null
     },
     {
-      "id": "e0524795-2264-445a-8a21-05bcd25ee9c4",
+      "id": "812b8cd5-ecb2-467b-8ef8-806edc9650a3",
       "projectId": "demo-project-id",
       "date": "2025-10-03",
       "description": "Pedreiro Fabinho",
@@ -2906,7 +2906,7 @@
       "deletedAt": null
     },
     {
-      "id": "9983306e-3281-4c33-bbc7-f62f36dbfbb7",
+      "id": "f6b5202e-e969-4287-a226-c337c7593985",
       "projectId": "demo-project-id",
       "date": "2025-10-03",
       "description": "Servente Bruno",
@@ -2927,7 +2927,7 @@
       "deletedAt": null
     },
     {
-      "id": "5c211b48-557b-4c4a-b608-88ebc9052d7a",
+      "id": "786cbd0f-fb94-4819-9079-ef85752b4c15",
       "projectId": "demo-project-id",
       "date": "2025-10-03",
       "description": "Servente Lulu",
@@ -2948,7 +2948,7 @@
       "deletedAt": null
     },
     {
-      "id": "574e37a8-efb1-429d-bc32-c96d2b51762c",
+      "id": "72fb59da-9886-4735-88ce-575a2d35c648",
       "projectId": "demo-project-id",
       "date": "2025-10-03",
       "description": "Bônus de alimentação para os pedreiros",
@@ -2969,7 +2969,7 @@
       "deletedAt": null
     },
     {
-      "id": "ed0deffe-63bf-4246-beaa-d13224488ec5",
+      "id": "e058a588-b10e-44de-9128-2588fd9f53cf",
       "projectId": "demo-project-id",
       "date": "2025-10-06",
       "description": "Cimento",
@@ -2990,7 +2990,7 @@
       "deletedAt": null
     },
     {
-      "id": "392906cd-704c-4115-a577-bde855feae2a",
+      "id": "e6a808f6-5dcb-4bc7-8da7-357dcbd2ed81",
       "projectId": "demo-project-id",
       "date": "2025-10-06",
       "description": "Ferro 5mm",
@@ -3011,7 +3011,7 @@
       "deletedAt": null
     },
     {
-      "id": "3c8194a5-a3e7-48e3-b2ff-2ba70a4a9455",
+      "id": "f1dace84-60a7-4e04-9d50-262ad866cfbf",
       "projectId": "demo-project-id",
       "date": "2025-10-10",
       "description": "Pedreiro José de Tutú",
@@ -3032,7 +3032,7 @@
       "deletedAt": null
     },
     {
-      "id": "a77ed42a-8198-49d3-8a85-50bf5488310f",
+      "id": "39952059-d4f1-4dd1-8a34-403ddba5d243",
       "projectId": "demo-project-id",
       "date": "2025-10-10",
       "description": "Pedreiro Fabinho",
@@ -3053,7 +3053,7 @@
       "deletedAt": null
     },
     {
-      "id": "d0c34752-a1b5-4fe7-8feb-ffd0a97ee490",
+      "id": "238e9d57-ecc4-49e2-8838-5945991485bb",
       "projectId": "demo-project-id",
       "date": "2025-10-10",
       "description": "Servente Bruno",
@@ -3074,7 +3074,7 @@
       "deletedAt": null
     },
     {
-      "id": "fb137b1b-7986-462e-83d6-3709ae1eb7cc",
+      "id": "4613eeb3-3d10-4594-b52f-e57de6d0e491",
       "projectId": "demo-project-id",
       "date": "2025-10-10",
       "description": "Servente Matheus (veio no lugar de Lulu)",
@@ -3095,7 +3095,7 @@
       "deletedAt": null
     },
     {
-      "id": "ff95ac8e-7e16-4377-8dc1-192c9ada67c5",
+      "id": "a3d4cb5d-ef16-427f-9c15-992b46c26e60",
       "projectId": "demo-project-id",
       "date": "2025-10-10",
       "description": "Bônus de alimentação para os pedreiros",
@@ -3116,7 +3116,7 @@
       "deletedAt": null
     },
     {
-      "id": "47892371-831c-4b6b-95b6-578ceefaedcd",
+      "id": "3d506234-ea31-458b-a911-6256f7052912",
       "projectId": "demo-project-id",
       "date": "2025-10-10",
       "description": "Carrada de Areia",
@@ -3137,7 +3137,7 @@
       "deletedAt": null
     },
     {
-      "id": "98d24835-c526-4520-85c2-e3819211a0ac",
+      "id": "bcd4e650-70c5-4d9f-afec-980ed353f044",
       "projectId": "demo-project-id",
       "date": "2025-10-13",
       "description": "Ferro 10mm 3/8",
@@ -3158,7 +3158,7 @@
       "deletedAt": null
     },
     {
-      "id": "2d5b290b-c6ac-42a5-a8e2-7ed93cca63e3",
+      "id": "1cea7d0b-ff85-4179-8fbf-bb39f56a2824",
       "projectId": "demo-project-id",
       "date": "2025-10-13",
       "description": "Ferro de 8mm 5/16",
@@ -3179,7 +3179,7 @@
       "deletedAt": null
     },
     {
-      "id": "1a594c8c-62c3-41b6-a41b-5d376545e834",
+      "id": "ae7a1a50-38cd-4325-8ac4-f1421188379a",
       "projectId": "demo-project-id",
       "date": "2025-10-15",
       "description": "Restante pagamento primeira laje",
@@ -3200,7 +3200,7 @@
       "deletedAt": null
     },
     {
-      "id": "a7c1932a-d918-4b21-98df-4246120a05aa",
+      "id": "4459fbea-eccd-48a0-9407-aab0361650ad",
       "projectId": "demo-project-id",
       "date": "2025-10-15",
       "description": "Ferro 5mm",
@@ -3221,7 +3221,7 @@
       "deletedAt": null
     },
     {
-      "id": "596d2156-cb21-4b93-be74-d4dbe757bbe2",
+      "id": "14c05d29-90c9-4a2d-b5e8-019b865aa326",
       "projectId": "demo-project-id",
       "date": "2025-10-17",
       "description": "Pedreiro José de Tutú",
@@ -3242,7 +3242,7 @@
       "deletedAt": null
     },
     {
-      "id": "0b31b28b-09dd-44e8-8f2d-43d4236178e5",
+      "id": "be9d397b-3a29-40a2-936f-0228ef0d2bbe",
       "projectId": "demo-project-id",
       "date": "2025-10-17",
       "description": "Pedreiro Fabinho",
@@ -3263,7 +3263,7 @@
       "deletedAt": null
     },
     {
-      "id": "5855f020-7316-4ec6-bfc9-12fa2bccd1a1",
+      "id": "779ec5f1-f257-43f4-abfb-42af7de7d6fe",
       "projectId": "demo-project-id",
       "date": "2025-10-17",
       "description": "Servente Bruno",
@@ -3284,7 +3284,7 @@
       "deletedAt": null
     },
     {
-      "id": "2f7aed43-e954-4ef8-8f8b-f9ade55ff11b",
+      "id": "bb05462f-51fe-45e0-9c29-37283ce2c015",
       "projectId": "demo-project-id",
       "date": "2025-10-17",
       "description": "Servente Lulu",
@@ -3305,7 +3305,7 @@
       "deletedAt": null
     },
     {
-      "id": "22bb8aed-2eeb-454d-9d78-3af3e469391e",
+      "id": "0ab4e26c-9f4b-4b40-8f44-e5aa01a9e59a",
       "projectId": "demo-project-id",
       "date": "2025-10-17",
       "description": "Bônus de alimentação para os pedreiros",
@@ -3326,7 +3326,7 @@
       "deletedAt": null
     },
     {
-      "id": "bc63e00e-04cf-417e-82d3-ac84eac13ae9",
+      "id": "3d104bda-fea6-4c57-aa6a-c566826110fa",
       "projectId": "demo-project-id",
       "date": "2025-10-20",
       "description": "Ferro 5mm",
@@ -3347,7 +3347,7 @@
       "deletedAt": null
     },
     {
-      "id": "e7b99a72-790e-476e-96d2-9a56ca67f863",
+      "id": "665e7319-32de-4c34-8516-524f8cdd6c0c",
       "projectId": "demo-project-id",
       "date": "2025-10-20",
       "description": "Ferro 10mm 3/8",
@@ -3368,7 +3368,7 @@
       "deletedAt": null
     },
     {
-      "id": "33c1bf44-df50-41e4-9453-2217792fe766",
+      "id": "b8dd28a9-7656-43db-9f83-1a2763b72f82",
       "projectId": "demo-project-id",
       "date": "2025-10-23",
       "description": "1 KG de Pregos + 1 lata de tinta vermelha óleo + pincel",
@@ -3389,7 +3389,7 @@
       "deletedAt": null
     },
     {
-      "id": "b52c8d6f-5943-4740-9648-a87b71e0098f",
+      "id": "dc4e8315-d00e-4a07-a23c-b349e1af8985",
       "projectId": "demo-project-id",
       "date": "2025-10-23",
       "description": "ART de engenharia",
@@ -3410,7 +3410,7 @@
       "deletedAt": null
     },
     {
-      "id": "74698446-65bd-4d54-9809-31aa16a710eb",
+      "id": "caaa73e5-6c96-4660-855a-421f046ec2de",
       "projectId": "demo-project-id",
       "date": "2025-10-24",
       "description": "Pedreiro José de Tutú",
@@ -3431,7 +3431,7 @@
       "deletedAt": null
     },
     {
-      "id": "dc17a5fb-34a8-47ba-b2fb-7f159e07c14e",
+      "id": "03d7a6e3-0f11-4fa2-bd27-8ea4800c8eb3",
       "projectId": "demo-project-id",
       "date": "2025-10-24",
       "description": "Pedreiro Fabinho",
@@ -3452,7 +3452,7 @@
       "deletedAt": null
     },
     {
-      "id": "1adba7e2-c4e7-4880-aca6-9eaebc240932",
+      "id": "304447d8-7cac-4669-b9a2-7161980b6bf1",
       "projectId": "demo-project-id",
       "date": "2025-10-24",
       "description": "Servente Bruno",
@@ -3473,7 +3473,7 @@
       "deletedAt": null
     },
     {
-      "id": "1d361826-475c-433e-812a-b9ecf663b23c",
+      "id": "80bc87b9-fe70-4f2f-96f7-37105ab0b7ee",
       "projectId": "demo-project-id",
       "date": "2025-10-24",
       "description": "Servente Lulu",
@@ -3494,7 +3494,7 @@
       "deletedAt": null
     },
     {
-      "id": "ede43a7e-c63c-46b0-87a9-ff9f8c4edfd4",
+      "id": "535b32a0-52a7-42ca-85d7-96ce57421548",
       "projectId": "demo-project-id",
       "date": "2025-10-24",
       "description": "Bônus de alimentação para os pedreiros",
@@ -3515,7 +3515,7 @@
       "deletedAt": null
     },
     {
-      "id": "095658bf-aa27-4346-9d8c-0e0450ed4692",
+      "id": "5a6511b7-1be7-41ee-beaf-547e33da7254",
       "projectId": "demo-project-id",
       "date": "2025-10-24",
       "description": "Carrada de Areia",
@@ -3536,7 +3536,7 @@
       "deletedAt": null
     },
     {
-      "id": "babbce7b-5c1b-430f-b91f-6ecbf5e391be",
+      "id": "45510b88-9a79-4195-af19-0b919f029635",
       "projectId": "demo-project-id",
       "date": "2025-10-27",
       "description": "Isolante hidráulico para laje e parede + brocha",
@@ -3557,7 +3557,7 @@
       "deletedAt": null
     },
     {
-      "id": "3a29ac2e-88bb-479b-b819-b9add1bf7c7d",
+      "id": "ec407e05-1638-49ce-bb9b-7364d1072658",
       "projectId": "demo-project-id",
       "date": "2025-10-28",
       "description": "Linhas de 14cm para escoras de pé direito duplos",
@@ -3578,7 +3578,7 @@
       "deletedAt": null
     },
     {
-      "id": "98131008-bec7-4979-ba7c-fba6b5e44b06",
+      "id": "384085d0-f33c-4140-a4e5-39de28a782a6",
       "projectId": "demo-project-id",
       "date": "2025-10-29",
       "description": "Ipermeabulizante",
@@ -3599,7 +3599,7 @@
       "deletedAt": null
     },
     {
-      "id": "11aba767-6435-4798-91dd-59543021569b",
+      "id": "bcf34e41-6410-46e9-8b67-c35b352c43d2",
       "projectId": "demo-project-id",
       "date": "2025-10-29",
       "description": "Pregos e outras coisas",
@@ -3620,7 +3620,7 @@
       "deletedAt": null
     },
     {
-      "id": "fa1cb14e-2e8e-4174-9de0-647a11b29159",
+      "id": "51613f10-30cc-44a4-84ca-47af7d075da5",
       "projectId": "demo-project-id",
       "date": "2025-10-30",
       "description": "malhas de 3x2",
@@ -3641,7 +3641,7 @@
       "deletedAt": null
     },
     {
-      "id": "24fbd632-e04d-4b94-9653-0253f9910561",
+      "id": "8abb4069-81c8-4695-a1ea-15e30bd53192",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Cimento",
@@ -3662,7 +3662,7 @@
       "deletedAt": null
     },
     {
-      "id": "75301cbf-aadf-49f1-9bfb-71b8cc761eaf",
+      "id": "bbd85a33-ff19-4f31-8a18-2360c6486867",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Carrada de Areia",
@@ -3683,7 +3683,7 @@
       "deletedAt": null
     },
     {
-      "id": "485617f6-bc71-4686-bf28-b55956e5f590",
+      "id": "7ee3ae3f-f639-4dd7-ad7f-95f291a4ad46",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Serventes batida da Laje",
@@ -3704,7 +3704,7 @@
       "deletedAt": null
     },
     {
-      "id": "c4f4ff1a-e7d4-46b0-9dce-62fdc6f25f91",
+      "id": "03e8e2da-81cb-4060-9662-ffd290b0f9ab",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Pedreiro José de Tutú",
@@ -3725,7 +3725,7 @@
       "deletedAt": null
     },
     {
-      "id": "58443f5a-c8bb-444b-b34a-66aaa4a4990a",
+      "id": "337ba583-fc55-4658-9e99-118f79f783d3",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Pedreiro Fabinho",
@@ -3746,7 +3746,7 @@
       "deletedAt": null
     },
     {
-      "id": "31ba6590-75de-4063-b863-2db0623a1742",
+      "id": "d104fc60-2240-4805-98da-8d03a670b740",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Servente Bruno",
@@ -3767,7 +3767,7 @@
       "deletedAt": null
     },
     {
-      "id": "ab8fcd96-b1e5-44cd-b798-878d477e1c16",
+      "id": "f38c9306-03df-468b-8a6b-a89df77b3f04",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Servente Lulu",
@@ -3788,7 +3788,7 @@
       "deletedAt": null
     },
     {
-      "id": "44f135c4-0a8d-4182-bff8-d849a558bd34",
+      "id": "8267cc8a-c31b-4fef-94a0-5083e1a97b83",
       "projectId": "demo-project-id",
       "date": "2025-10-31",
       "description": "Bônus de alimentação para os pedreiros",
@@ -3809,7 +3809,7 @@
       "deletedAt": null
     },
     {
-      "id": "469acc14-cca1-4e5d-8d98-89d76c97b788",
+      "id": "6165f675-12a9-4bcb-8667-18592a5039cf",
       "projectId": "demo-project-id",
       "date": "2025-11-01",
       "description": "--",
@@ -3830,7 +3830,7 @@
       "deletedAt": null
     },
     {
-      "id": "cfb01222-b36b-4203-b0d0-c48970f54168",
+      "id": "46dcff55-510d-439f-bf20-e106541b79ae",
       "projectId": "demo-project-id",
       "date": "2025-11-02",
       "description": "Pagamento Engenheiro Luan 3/3",
@@ -3851,7 +3851,7 @@
       "deletedAt": null
     },
     {
-      "id": "a316d00b-8333-4016-83ca-5eb2e48f9fd7",
+      "id": "d0b728ac-cc49-455f-b4da-c8b1aeb605bd",
       "projectId": "demo-project-id",
       "date": "2025-11-04",
       "description": "Cimento",
@@ -3872,7 +3872,7 @@
       "deletedAt": null
     },
     {
-      "id": "ad1564ed-46f2-4d71-bf3a-cd510eee26f7",
+      "id": "fcdcf345-9d3b-458b-9c0d-e9cff6af02d1",
       "projectId": "demo-project-id",
       "date": "2025-11-05",
       "description": "Cuvas PVC para esgoto",
@@ -3893,7 +3893,7 @@
       "deletedAt": null
     },
     {
-      "id": "aa502965-4fef-431a-833e-6204eaba2dd7",
+      "id": "717329f3-92c1-4801-9da3-b9b603066710",
       "projectId": "demo-project-id",
       "date": "2025-11-06",
       "description": "Curvas PVC para encanação",
@@ -3914,7 +3914,7 @@
       "deletedAt": null
     },
     {
-      "id": "5245a63a-9e48-4335-8708-20ebd4c31119",
+      "id": "0ce47217-a460-4133-9373-79f8fa4cbc03",
       "projectId": "demo-project-id",
       "date": "2025-11-07",
       "description": "Impermeabilizante, ferros e outras coisas",
@@ -3935,7 +3935,7 @@
       "deletedAt": null
     },
     {
-      "id": "9c4978eb-bf12-4e20-982e-9db28262cd33",
+      "id": "78450eef-4e55-42ab-8ed4-634eabd4011e",
       "projectId": "demo-project-id",
       "date": "2025-11-07",
       "description": "Laje pré moldada (Está faltando agora 2500 restantes)",
@@ -3956,7 +3956,7 @@
       "deletedAt": null
     },
     {
-      "id": "e7944071-771a-4af7-b244-82e74ef0110d",
+      "id": "80680b44-33fa-4dc9-aab8-8601ed614741",
       "projectId": "demo-project-id",
       "date": "2025-11-07",
       "description": "Pedreiro José de Tutú",
@@ -3977,7 +3977,7 @@
       "deletedAt": null
     },
     {
-      "id": "0bd44c42-7092-46d6-bd09-2b81ec2b7d82",
+      "id": "3b143fe6-9a31-4dee-bd20-2802ed1af292",
       "projectId": "demo-project-id",
       "date": "2025-11-07",
       "description": "Servente Bruno",
@@ -3998,7 +3998,7 @@
       "deletedAt": null
     },
     {
-      "id": "d2be0377-cf71-429e-b757-dae345d7e080",
+      "id": "49124dc7-b5dc-45a3-8e12-519a0c6d4cd0",
       "projectId": "demo-project-id",
       "date": "2025-11-07",
       "description": "Servente Lulu",
@@ -4019,7 +4019,7 @@
       "deletedAt": null
     },
     {
-      "id": "0ed9dc3a-9c86-4961-885e-13cceabd9f7f",
+      "id": "3b5794b3-17b6-450b-a0ca-6b8b2c6ca391",
       "projectId": "demo-project-id",
       "date": "2025-11-07",
       "description": "Bônus de alimentação para os pedreiros",
@@ -4040,7 +4040,7 @@
       "deletedAt": null
     },
     {
-      "id": "ae084844-cf70-4c0f-bb71-163d16d395f4",
+      "id": "1184c8e7-3fcb-432f-94dd-b492bd47649d",
       "projectId": "demo-project-id",
       "date": "2025-11-10",
       "description": "Marmoraria completa da casa",
@@ -4061,7 +4061,7 @@
       "deletedAt": null
     },
     {
-      "id": "b5a12211-a9d9-4a03-a2c4-5ac42f0949a4",
+      "id": "180b576d-92b0-4f19-80a5-01551c6ac043",
       "projectId": "demo-project-id",
       "date": "2025-11-12",
       "description": "Caixa de Água Fortlev 2.000 L",
@@ -4082,7 +4082,7 @@
       "deletedAt": null
     },
     {
-      "id": "04cc8b8b-f4b4-4d05-8f58-ba9a95a95675",
+      "id": "24de8573-55e5-4d4d-951d-ba1299dce452",
       "projectId": "demo-project-id",
       "date": "2025-11-12",
       "description": "Cimento",
@@ -4103,7 +4103,7 @@
       "deletedAt": null
     },
     {
-      "id": "a13b3f33-9633-4f0d-aac0-21786b861574",
+      "id": "dd0b554f-7ceb-4cc2-ae61-f296b64950b2",
       "projectId": "demo-project-id",
       "date": "2025-11-12",
       "description": "Areia",
@@ -4124,7 +4124,7 @@
       "deletedAt": null
     },
     {
-      "id": "c3ec4830-fc97-4a04-b5c7-62eb819ec5d8",
+      "id": "77850e10-3dcb-495f-82de-97d1a1814704",
       "projectId": "demo-project-id",
       "date": "2025-11-13",
       "description": "Canos",
@@ -4145,7 +4145,7 @@
       "deletedAt": null
     },
     {
-      "id": "6c3b66c9-ea7a-462b-91fe-3c6a902bf1fc",
+      "id": "2e4c9fde-c424-4313-9f46-b48c915c507a",
       "projectId": "demo-project-id",
       "date": "2025-11-13",
       "description": "Pedreiro José de Tutú",
@@ -4166,7 +4166,7 @@
       "deletedAt": null
     },
     {
-      "id": "897adba9-a0c0-414b-8bfb-88e3b01dd0a6",
+      "id": "8ba27a2f-2ba1-4b1a-9757-bd96bd1defbb",
       "projectId": "demo-project-id",
       "date": "2025-11-13",
       "description": "Servente Bruno",
@@ -4187,7 +4187,7 @@
       "deletedAt": null
     },
     {
-      "id": "742a8858-397c-4254-9af1-603847006b44",
+      "id": "108a47a3-4bcc-420f-b055-5f3a13aeef3a",
       "projectId": "demo-project-id",
       "date": "2025-11-13",
       "description": "Servente Lulu",
@@ -4208,7 +4208,7 @@
       "deletedAt": null
     },
     {
-      "id": "36e2b270-a774-46dc-877a-8660e6be80b5",
+      "id": "3aba17a5-db4d-4adc-a780-89eee93487f4",
       "projectId": "demo-project-id",
       "date": "2025-11-13",
       "description": "Bônus de alimentação para os pedreiros",
@@ -4229,7 +4229,7 @@
       "deletedAt": null
     },
     {
-      "id": "2d2c7c3e-1454-45b1-9724-7b97fb2d7c02",
+      "id": "84f2fa3e-1814-455a-8c16-c5d52e1bab7a",
       "projectId": "demo-project-id",
       "date": "2025-11-18",
       "description": "Ferro 5.0",
@@ -4250,7 +4250,7 @@
       "deletedAt": null
     },
     {
-      "id": "8e6caefe-fdc6-47af-94d3-810a1a7b9f35",
+      "id": "6a8f70dd-c2f9-4152-93b3-ffbe661efe37",
       "projectId": "demo-project-id",
       "date": "2025-11-18",
       "description": "Ferro 5/16",
@@ -4271,7 +4271,7 @@
       "deletedAt": null
     },
     {
-      "id": "405ab29a-688b-4ac4-9493-bdc23e159ce8",
+      "id": "e272ab30-471d-4ca7-baf5-4da7525dabdb",
       "projectId": "demo-project-id",
       "date": "2025-11-21",
       "description": "Carrada de areia",
@@ -4292,7 +4292,7 @@
       "deletedAt": null
     },
     {
-      "id": "cb5851b4-ab1d-42e9-85f8-d96fefbe45eb",
+      "id": "808323f2-ec96-4916-a075-f14ac58972c2",
       "projectId": "demo-project-id",
       "date": "2025-11-21",
       "description": "Pedreiro Fabinho",
@@ -4313,7 +4313,7 @@
       "deletedAt": null
     },
     {
-      "id": "b8187c6c-5464-427e-a5bd-94b6efbebb9b",
+      "id": "ee8ef072-fd44-4979-b2db-2c8386fb331e",
       "projectId": "demo-project-id",
       "date": "2025-11-21",
       "description": "Servente Bruno",
@@ -4334,7 +4334,7 @@
       "deletedAt": null
     },
     {
-      "id": "088daffb-4843-4a9f-a9ac-dc76ad965a07",
+      "id": "7b7d400e-8310-463a-964d-fd19f2b7e5e9",
       "projectId": "demo-project-id",
       "date": "2025-11-21",
       "description": "Servente Lulu",
@@ -4355,7 +4355,7 @@
       "deletedAt": null
     },
     {
-      "id": "936f0f2c-9b66-4ffc-b0f8-4fd5e927f77f",
+      "id": "cd56e665-4dcf-4358-ad1d-c43429b6a31c",
       "projectId": "demo-project-id",
       "date": "2025-11-21",
       "description": "Bônus de alimentação para os pedreiros",
@@ -4376,7 +4376,7 @@
       "deletedAt": null
     },
     {
-      "id": "e5d88ab0-8c41-45bd-9eac-9058ffc5186a",
+      "id": "aedf34b5-2f94-4b53-8d69-53bfc119d657",
       "projectId": "demo-project-id",
       "date": "2025-11-22",
       "description": "Porcelanato completo da casa, entrada (Total de 47800)",
@@ -4397,7 +4397,7 @@
       "deletedAt": null
     },
     {
-      "id": "0d37e702-8fdf-472d-9633-e18b2e54d18c",
+      "id": "6f00b16d-54e2-472f-8a95-49862731979a",
       "projectId": "demo-project-id",
       "date": "2025-11-25",
       "description": "Casa leo esquadrias (2 x 18.800 (ficam faltando 28.200))",
@@ -4418,7 +4418,7 @@
       "deletedAt": null
     },
     {
-      "id": "aa548ad6-77fe-4256-9c37-7e35d36548a6",
+      "id": "bd47fbad-477d-4fbe-83f0-dde1e3868bff",
       "projectId": "demo-project-id",
       "date": "2025-11-25",
       "description": "Porcelanato completo da casa, parcelas (10 x 2.780,00 R$)",
@@ -4439,7 +4439,7 @@
       "deletedAt": null
     },
     {
-      "id": "1f743dac-d4cb-4901-8adc-a8650935f753",
+      "id": "a49a5c10-ab04-4661-8be9-b57eee62bd53",
       "projectId": "demo-project-id",
       "date": "2025-11-28",
       "description": "Tranpor energia solar (Restaram 5 parcelas de 500,00 R$ todo dia 5 do mês, iniciando em Janeiro de 2026)",
@@ -4460,7 +4460,7 @@
       "deletedAt": null
     },
     {
-      "id": "80735ad6-49f3-4dba-b196-08ab1e5f199d",
+      "id": "9d914052-a695-410a-9c09-ae241d5bc0d5",
       "projectId": "demo-project-id",
       "date": "2025-11-28",
       "description": "Pedreiro Fabinho",
@@ -4481,7 +4481,7 @@
       "deletedAt": null
     },
     {
-      "id": "10ca2c83-b5a9-4b3c-a502-8234ecfaea50",
+      "id": "2c3c7fc6-d9a3-4604-9869-d046ea59802e",
       "projectId": "demo-project-id",
       "date": "2025-11-28",
       "description": "Servente Bruno",
@@ -4502,7 +4502,7 @@
       "deletedAt": null
     },
     {
-      "id": "64c901d7-321c-49b9-b50d-029b46feb86f",
+      "id": "1fa0aef5-38bb-47aa-9432-c3128cfaf4a3",
       "projectId": "demo-project-id",
       "date": "2025-11-28",
       "description": "Servente Lulu",
@@ -4523,7 +4523,7 @@
       "deletedAt": null
     },
     {
-      "id": "c0746090-a4c7-4d46-94cb-b6c4cc8c998c",
+      "id": "c815aece-5215-41ef-b50e-edf6c8d9d5a6",
       "projectId": "demo-project-id",
       "date": "2025-11-28",
       "description": "Bônus de alimentação para os pedreiros",
@@ -4544,7 +4544,7 @@
       "deletedAt": null
     },
     {
-      "id": "21584477-99b2-45a4-93be-f198b9ce1460",
+      "id": "28bc2123-b948-4335-94bb-5963d952beb3",
       "projectId": "demo-project-id",
       "date": "2025-11-29",
       "description": "Carrada de areia",
@@ -4565,7 +4565,7 @@
       "deletedAt": null
     },
     {
-      "id": "7addd681-3144-4871-bd56-4c65941f62fc",
+      "id": "ea77b76f-ac7e-40a7-8226-ed26c6a08159",
       "projectId": "demo-project-id",
       "date": "2025-12-02",
       "description": "Cimento",
@@ -4586,7 +4586,7 @@
       "deletedAt": null
     },
     {
-      "id": "1827dd47-6b4b-4c0a-94da-7b3687f8eb1f",
+      "id": "7c0b08a9-1c71-4a4c-b73a-7b2432c55347",
       "projectId": "demo-project-id",
       "date": "2025-12-02",
       "description": "Gesso 1/4",
@@ -4607,7 +4607,7 @@
       "deletedAt": null
     },
     {
-      "id": "08fbd334-6f27-4279-8616-82488a0001c6",
+      "id": "2f2b19e2-97b7-4392-8d0b-c31d64c7423d",
       "projectId": "demo-project-id",
       "date": "2025-12-05",
       "description": "Servente Bruno",
@@ -4628,7 +4628,7 @@
       "deletedAt": null
     },
     {
-      "id": "68578dd9-d4ba-42e9-965d-16a85cbd45fa",
+      "id": "b4c01a73-a2c3-4d7f-9d5c-9fd5c9cc2829",
       "projectId": "demo-project-id",
       "date": "2025-12-05",
       "description": "Servente Lulu",
@@ -4649,7 +4649,7 @@
       "deletedAt": null
     },
     {
-      "id": "bcfc01fe-400b-4c14-88c5-cb1516a64237",
+      "id": "0dc0e498-cf09-4ba2-98c4-1f78c94acc55",
       "projectId": "demo-project-id",
       "date": "2025-12-05",
       "description": "Pedreiro José de Tutú",
@@ -4670,7 +4670,7 @@
       "deletedAt": null
     },
     {
-      "id": "76527bab-927e-4a99-bf76-012fd71c3123",
+      "id": "4b254a8f-ceaf-4e5b-a19c-4b2b3073eb60",
       "projectId": "demo-project-id",
       "date": "2025-12-05",
       "description": "Carrada de Areia",
@@ -4691,7 +4691,7 @@
       "deletedAt": null
     },
     {
-      "id": "a6ec375b-0847-4ac2-b801-0e1d43df0db5",
+      "id": "d5175eff-83f0-4b0e-9471-c7a670c44b72",
       "projectId": "demo-project-id",
       "date": "2025-12-10",
       "description": "Tijolos e treliças",
@@ -4712,7 +4712,7 @@
       "deletedAt": null
     },
     {
-      "id": "3f3be28c-c7fb-4487-93e9-83aa7a3f34d3",
+      "id": "ca915940-7ad3-401c-ba34-092fbd470b89",
       "projectId": "demo-project-id",
       "date": "2025-12-11",
       "description": "Madeiras para reboco externo",
@@ -4733,7 +4733,7 @@
       "deletedAt": null
     },
     {
-      "id": "a0df9e5c-497a-4401-b54e-16ddcc65e177",
+      "id": "38bb6e16-92a0-4ce2-a4a9-2bd2f47af72f",
       "projectId": "demo-project-id",
       "date": "2025-12-11",
       "description": "Aluguel de betoneira",
@@ -4754,7 +4754,7 @@
       "deletedAt": null
     },
     {
-      "id": "c39be5c5-52a7-45b0-b839-b6da4e679992",
+      "id": "60a8b0f2-fcf8-404a-876b-3a20bd39b967",
       "projectId": "demo-project-id",
       "date": "2025-12-12",
       "description": "Servente Bruno",
@@ -4775,7 +4775,7 @@
       "deletedAt": null
     },
     {
-      "id": "f487aa34-051a-42a1-bf2b-50f4236ace42",
+      "id": "05fcf78a-53a1-4001-83f6-43ef674ff241",
       "projectId": "demo-project-id",
       "date": "2025-12-12",
       "description": "Servente Lulu",
@@ -4796,7 +4796,7 @@
       "deletedAt": null
     },
     {
-      "id": "95ac6f64-f349-4a4c-beef-e034add18a24",
+      "id": "eda687ac-c85e-4efd-bc6c-11b102c764a7",
       "projectId": "demo-project-id",
       "date": "2025-12-12",
       "description": "Pedreiro José de Tutú",
@@ -4817,7 +4817,7 @@
       "deletedAt": null
     },
     {
-      "id": "6b5930d7-7f33-4aae-b588-cd8fe6340289",
+      "id": "5aa54c79-b862-4fd4-8aaa-5c4b0dfdd3f8",
       "projectId": "demo-project-id",
       "date": "2025-12-12",
       "description": "Bônus de alimentação para os pedreiros",
@@ -4838,7 +4838,7 @@
       "deletedAt": null
     },
     {
-      "id": "be587a76-934f-43f1-a517-9470c239d8b0",
+      "id": "6e3be4a2-9664-4a90-b522-96bdf17252e3",
       "projectId": "demo-project-id",
       "date": "2025-12-15",
       "description": "Cimento",
@@ -4859,7 +4859,7 @@
       "deletedAt": null
     },
     {
-      "id": "b7e61836-33b3-4867-bfb5-54064cceb7a0",
+      "id": "43b97712-419f-433a-9437-1dc571babd3a",
       "projectId": "demo-project-id",
       "date": "2025-12-15",
       "description": "Tinta Coral Externa Sol e Chuva 19L",
@@ -4880,7 +4880,7 @@
       "deletedAt": null
     },
     {
-      "id": "c8389f22-87a3-4127-84e8-215df3be52ec",
+      "id": "519e6aff-7f36-4185-b50f-790f19466167",
       "projectId": "demo-project-id",
       "date": "2025-12-15",
       "description": "Frete tintas",
@@ -4901,7 +4901,7 @@
       "deletedAt": null
     },
     {
-      "id": "ba0417da-d84d-4542-818f-a511c9c36076",
+      "id": "35d56999-0d15-4b93-b18d-c6142f89186e",
       "projectId": "demo-project-id",
       "date": "2025-12-15",
       "description": "Laje pré moldada (Pix tá em nome de Cimentar pois eu transferí direto para lá conforme Sergio me pediu)",
@@ -4922,7 +4922,7 @@
       "deletedAt": null
     },
     {
-      "id": "ceb99265-4eaf-49eb-ab56-72b32ba20474",
+      "id": "4f77fab0-78e8-43f9-a2c3-cd687d12b0d1",
       "projectId": "demo-project-id",
       "date": "2025-12-17",
       "description": "Telha Brasilit 6mm",
@@ -4943,7 +4943,7 @@
       "deletedAt": null
     },
     {
-      "id": "521e1eaf-dfb6-44af-8115-8017d54e8a6f",
+      "id": "4a3ea688-766f-4179-a98a-9689361fb2c7",
       "projectId": "demo-project-id",
       "date": "2025-12-19",
       "description": "Pedreiro José de Tutú",
@@ -4964,7 +4964,7 @@
       "deletedAt": null
     },
     {
-      "id": "dc51ee71-4b7c-4362-80de-cfbdb1dedbb3",
+      "id": "17b2a508-8660-4c00-b5c5-026cccd11a2b",
       "projectId": "demo-project-id",
       "date": "2025-12-19",
       "description": "Servente Bruno",
@@ -4985,7 +4985,7 @@
       "deletedAt": null
     },
     {
-      "id": "3c51e4bf-8b90-4466-8bd9-77fa1c634bcc",
+      "id": "6cc30f31-d072-4f94-9f97-bc12c05749b1",
       "projectId": "demo-project-id",
       "date": "2025-12-19",
       "description": "Servente Lulu",
@@ -5006,7 +5006,7 @@
       "deletedAt": null
     },
     {
-      "id": "69a9b099-4334-4540-baa2-b14d6005240c",
+      "id": "52ceebe8-322b-44f9-bc89-76db9a26c8e5",
       "projectId": "demo-project-id",
       "date": "2025-12-20",
       "description": "Selador Acrílico Tinta",
@@ -5027,7 +5027,7 @@
       "deletedAt": null
     },
     {
-      "id": "5d8083a4-ddb5-473f-b374-6982dab210bf",
+      "id": "39466f59-476a-488d-a9b6-a1cb1faf8040",
       "projectId": "demo-project-id",
       "date": "2025-12-23",
       "description": "Servente Bruno",
@@ -5048,7 +5048,7 @@
       "deletedAt": null
     },
     {
-      "id": "7dbf1d43-7149-44b1-94c5-d7f60a3a2185",
+      "id": "90a2e202-75e9-4a95-914b-82a281f98ba2",
       "projectId": "demo-project-id",
       "date": "2025-12-23",
       "description": "Servente Lulu",
@@ -5069,7 +5069,7 @@
       "deletedAt": null
     },
     {
-      "id": "a5cdf533-db25-42d4-a084-e3a29b56185d",
+      "id": "b31eb68d-daad-4d45-a1e3-d509289294cc",
       "projectId": "demo-project-id",
       "date": "2025-12-23",
       "description": "Pedreiro José de Tutú",
@@ -5090,7 +5090,7 @@
       "deletedAt": null
     },
     {
-      "id": "2655e86f-5170-481d-a46e-1fe19d7a9513",
+      "id": "3f3536c2-e7b8-447c-a4df-8d786533615a",
       "projectId": "demo-project-id",
       "date": "2025-12-26",
       "description": "Caçamba de entulho",
@@ -5111,7 +5111,7 @@
       "deletedAt": null
     },
     {
-      "id": "61646908-a789-4389-a435-3e61419d1163",
+      "id": "274c6efc-8a35-4b43-8674-675044af08a2",
       "projectId": "demo-project-id",
       "date": "2025-12-26",
       "description": "Caçamba de areia",
@@ -5132,7 +5132,7 @@
       "deletedAt": null
     },
     {
-      "id": "83e26f16-cace-4718-a187-31b1332904b5",
+      "id": "e8b61af0-2e41-4b2a-8a92-ae1da549793b",
       "projectId": "demo-project-id",
       "date": "2025-12-26",
       "description": "Servente Bruno",
@@ -5153,7 +5153,7 @@
       "deletedAt": null
     },
     {
-      "id": "dc136b9e-51ea-44e3-9fbc-48ccf40d937b",
+      "id": "5461b032-533c-4fd8-b85d-08123a4a1a55",
       "projectId": "demo-project-id",
       "date": "2025-12-26",
       "description": "Servente Lulu",
@@ -5174,7 +5174,7 @@
       "deletedAt": null
     },
     {
-      "id": "d47041ed-06b4-4671-82c6-3d4a32434789",
+      "id": "27a5c6fe-4d4e-4567-afaa-421e8018697e",
       "projectId": "demo-project-id",
       "date": "2025-12-26",
       "description": "Pedreiro José de Tutú",
@@ -5195,7 +5195,7 @@
       "deletedAt": null
     },
     {
-      "id": "08b6c38b-e000-4540-a046-d1f082791c4f",
+      "id": "a1cee95b-cd32-4fbb-bc4d-e3e5a418e4d4",
       "projectId": "demo-project-id",
       "date": "2025-12-27",
       "description": "Itens de infraestrutura eletrica",
@@ -5216,7 +5216,7 @@
       "deletedAt": null
     },
     {
-      "id": "f12a94ac-64f3-48f4-8443-f61fb19a87eb",
+      "id": "9427cbed-c183-48fe-a809-09385811e339",
       "projectId": "demo-project-id",
       "date": "2025-12-31",
       "description": "Servente Bruno",
@@ -5237,7 +5237,7 @@
       "deletedAt": null
     },
     {
-      "id": "91bfe1e4-9c4e-420e-b8af-1c160723bc9e",
+      "id": "bc39d2a4-766e-4ff3-8ac5-0be89cbca7f6",
       "projectId": "demo-project-id",
       "date": "2025-12-31",
       "description": "Servente Lulu",
@@ -5258,7 +5258,7 @@
       "deletedAt": null
     },
     {
-      "id": "04ac1732-14af-4a21-a2ab-4e54beb7c96c",
+      "id": "a7d5b7f3-31b1-4187-8d95-14f9bd253dec",
       "projectId": "demo-project-id",
       "date": "2025-12-31",
       "description": "Pedreiro José de Tutú",
@@ -5279,7 +5279,7 @@
       "deletedAt": null
     },
     {
-      "id": "9c83046b-3174-442b-8bf8-bcb8e6bb1a98",
+      "id": "db5ef9b8-1070-437d-ae6f-ae55a120a4b8",
       "projectId": "demo-project-id",
       "date": "2026-01-02",
       "description": "Pedreiro José de Tutú",
@@ -5300,7 +5300,7 @@
       "deletedAt": null
     },
     {
-      "id": "8796230e-d3cf-448a-989d-0eeeab21e429",
+      "id": "23fac39b-8387-4637-8916-a0551a78f954",
       "projectId": "demo-project-id",
       "date": "2026-01-02",
       "description": "Servente Bruno",
@@ -5321,7 +5321,7 @@
       "deletedAt": null
     },
     {
-      "id": "48dba7a2-39c4-4501-a890-7c0f7c7d6574",
+      "id": "3d8c47bd-a647-4355-a9fe-67a7e36afd00",
       "projectId": "demo-project-id",
       "date": "2026-01-02",
       "description": "Servente Lulu",
@@ -5342,7 +5342,7 @@
       "deletedAt": null
     },
     {
-      "id": "77b2d901-6ff7-4ad7-9f03-643753225728",
+      "id": "1cd712bb-d8d5-4195-990f-9765f8797823",
       "projectId": "demo-project-id",
       "date": "2026-01-03",
       "description": "Cimento",
@@ -5363,7 +5363,7 @@
       "deletedAt": null
     },
     {
-      "id": "37360b24-c042-418e-b338-20c90c6cbb94",
+      "id": "3cd13abd-0972-46f6-b2e5-859aeca477bf",
       "projectId": "demo-project-id",
       "date": "2026-01-03",
       "description": "Caixa de Água Fortlev 2.000 L",
@@ -5384,7 +5384,7 @@
       "deletedAt": null
     },
     {
-      "id": "9bca732f-9b95-426c-b23a-3a7b1951b1df",
+      "id": "f0bcfa59-c19b-49ea-acda-7af518124365",
       "projectId": "demo-project-id",
       "date": "2026-01-09",
       "description": "Tijolo Travertino Rockface (em 10 vezes)",
@@ -5405,7 +5405,7 @@
       "deletedAt": null
     },
     {
-      "id": "5903c371-2927-41ae-8e5e-128d5129d161",
+      "id": "c90fdf25-2bb3-46fb-9245-51050242b5e0",
       "projectId": "demo-project-id",
       "date": "2026-01-09",
       "description": "Massa Acrílica + Resina (2 massa acrílica para uso externo e 2 latas de resina acrílica (em 10 vezes))",
@@ -5426,7 +5426,7 @@
       "deletedAt": null
     },
     {
-      "id": "8135affc-bbbd-4829-b110-e7125a434898",
+      "id": "3cbbce2a-3006-4211-a52d-86ad14d259e0",
       "projectId": "demo-project-id",
       "date": "2026-01-09",
       "description": "Pedreiro José de Tutú",
@@ -5447,7 +5447,7 @@
       "deletedAt": null
     },
     {
-      "id": "e856658e-e45f-4309-be18-cbb06e537a74",
+      "id": "a0c77b38-785b-4e44-8ccc-1fb48cdb4ea4",
       "projectId": "demo-project-id",
       "date": "2026-01-09",
       "description": "Servente Bruno",
@@ -5468,7 +5468,7 @@
       "deletedAt": null
     },
     {
-      "id": "cc13c9c3-bc24-442c-9f4b-de3f7f59c9fc",
+      "id": "781720b0-c558-4255-8134-cc8688baf6f1",
       "projectId": "demo-project-id",
       "date": "2026-01-09",
       "description": "Servente Lulu",
@@ -5489,7 +5489,7 @@
       "deletedAt": null
     },
     {
-      "id": "1550bca9-4805-4eac-bc3f-e26343a39f62",
+      "id": "2f525a96-6a91-4e3c-88a9-b2e260c44854",
       "projectId": "demo-project-id",
       "date": "2026-01-17",
       "description": "Pedreiro José de Tutú",
@@ -5510,7 +5510,7 @@
       "deletedAt": null
     },
     {
-      "id": "8022f885-b426-4a61-981e-8a2b2731b58d",
+      "id": "91b2301e-4670-40b5-a56e-01079930a918",
       "projectId": "demo-project-id",
       "date": "2026-01-17",
       "description": "Servente Bruno",
@@ -5531,7 +5531,7 @@
       "deletedAt": null
     },
     {
-      "id": "59192671-15fd-4e63-ba2d-285dd1a2fa2b",
+      "id": "43c19855-abf1-4af8-9840-9fa059dd197b",
       "projectId": "demo-project-id",
       "date": "2026-01-17",
       "description": "Servente Lulu",
@@ -5552,7 +5552,7 @@
       "deletedAt": null
     },
     {
-      "id": "4555b957-06f0-46f9-8ecb-9cf5aaac1eff",
+      "id": "08a16a52-4a36-4320-856d-a2cc07807df4",
       "projectId": "demo-project-id",
       "date": "2026-01-17",
       "description": "Cimento",
@@ -5573,7 +5573,7 @@
       "deletedAt": null
     },
     {
-      "id": "a84af865-74eb-4875-90d6-0cbcba634803",
+      "id": "8dcbf625-329e-4a2d-a74a-a403706431fd",
       "projectId": "demo-project-id",
       "date": "2026-01-23",
       "description": "Pedreiro José de Tutú",
@@ -5594,7 +5594,7 @@
       "deletedAt": null
     },
     {
-      "id": "56c4abde-b51f-42d5-b9db-a19a7e1c769c",
+      "id": "01192a92-0260-468f-8eaf-d00ec2f09d6b",
       "projectId": "demo-project-id",
       "date": "2026-01-23",
       "description": "Servente Bruno",
@@ -5615,7 +5615,7 @@
       "deletedAt": null
     },
     {
-      "id": "c535ab90-eb23-41fd-97ad-993df1490281",
+      "id": "cbe50df7-46b5-47e6-bb06-9610efe2f66c",
       "projectId": "demo-project-id",
       "date": "2026-01-23",
       "description": "Servente Lulu",
@@ -5636,7 +5636,7 @@
       "deletedAt": null
     },
     {
-      "id": "b1112d3e-04b1-4def-863a-ac7e1242b2a6",
+      "id": "2d9ac8a3-179f-40c7-9bf7-c364ee01d1c6",
       "projectId": "demo-project-id",
       "date": "2026-01-28",
       "description": "Treliças, laje, pingadeiras",
@@ -5657,7 +5657,7 @@
       "deletedAt": null
     },
     {
-      "id": "bcf5eb8b-adda-4bb5-9850-07859ce8f8cb",
+      "id": "3bee40bb-2d43-4dc6-ad75-019aa2119fd6",
       "projectId": "demo-project-id",
       "date": "2026-01-30",
       "description": "Cimento",
@@ -5678,7 +5678,7 @@
       "deletedAt": null
     },
     {
-      "id": "1d900a66-e4e0-4457-a151-53148fc8e84e",
+      "id": "4292eed4-cb90-4849-8d6c-1fdecdc31870",
       "projectId": "demo-project-id",
       "date": "2026-01-30",
       "description": "Eletricista + Itens (Foi pago 3.000,00 R$ do Serviço que é 10.000,00 R$ e mais 1.000,00 R$ de itens que ele colocou na obra)",
@@ -5699,7 +5699,7 @@
       "deletedAt": null
     },
     {
-      "id": "5b1a74c6-9a03-4f65-a0ed-323ba52485e9",
+      "id": "11b3298a-979e-4af0-abc7-95bc12e6a678",
       "projectId": "demo-project-id",
       "date": "2026-01-30",
       "description": "Servente Daniel",
@@ -5720,7 +5720,7 @@
       "deletedAt": null
     },
     {
-      "id": "790fc911-7000-4117-9ac2-c6432afd6810",
+      "id": "dc5d5fb9-dddb-4dd7-b913-477cdfb81157",
       "projectId": "demo-project-id",
       "date": "2026-01-30",
       "description": "Servente Françoelio",
@@ -5741,7 +5741,7 @@
       "deletedAt": null
     },
     {
-      "id": "f540d5e6-777a-4d63-9e7d-1a2591955c55",
+      "id": "3b8fb982-8509-4e3c-b16c-e1dc05af3bb3",
       "projectId": "demo-project-id",
       "date": "2026-01-30",
       "description": "Pedreiro Zé de Tutú",
@@ -5762,7 +5762,7 @@
       "deletedAt": null
     },
     {
-      "id": "ad504381-109b-4069-9596-a8cd407046e1",
+      "id": "97d32ee8-59e3-4d79-b346-d1ada0eef781",
       "projectId": "demo-project-id",
       "date": "2026-01-30",
       "description": "Pedreiro Marcos",
@@ -5783,7 +5783,7 @@
       "deletedAt": null
     },
     {
-      "id": "eaf92f9e-6ad0-4a5b-98d5-790b188b88fc",
+      "id": "1e8fe7ee-47bf-4549-be1e-302b302de344",
       "projectId": "demo-project-id",
       "date": "2026-02-04",
       "description": "Cimento",
@@ -5804,7 +5804,7 @@
       "deletedAt": null
     },
     {
-      "id": "176ac343-3b5c-49c6-b1bf-d04d6649112f",
+      "id": "10d755db-47ec-472c-9cb0-ef77b722a42f",
       "projectId": "demo-project-id",
       "date": "2026-02-04",
       "description": "Impermeabilizante",
@@ -5825,7 +5825,7 @@
       "deletedAt": null
     },
     {
-      "id": "09045c7b-a688-4c30-afbb-de79b36ed503",
+      "id": "36ac3e8b-7ed2-498c-815d-47673e19cb5e",
       "projectId": "demo-project-id",
       "date": "2026-02-04",
       "description": "Carrada de areia",
@@ -5846,7 +5846,7 @@
       "deletedAt": null
     },
     {
-      "id": "f18cedc2-14e5-4ee7-a045-04c870aee1c1",
+      "id": "54658a3a-c9fa-4922-9d24-d464630e1d0b",
       "projectId": "demo-project-id",
       "date": "2026-02-06",
       "description": "Servente Daniel",
@@ -5867,7 +5867,7 @@
       "deletedAt": null
     },
     {
-      "id": "acd12fbf-b19f-4e41-a02f-e126460f9963",
+      "id": "54aabef0-c971-4d40-b34c-0648206d5c72",
       "projectId": "demo-project-id",
       "date": "2026-02-06",
       "description": "Servente Françoelio",
@@ -5888,7 +5888,7 @@
       "deletedAt": null
     },
     {
-      "id": "32b0d796-07c6-4189-a8e2-6fb25cdc4088",
+      "id": "26c94bcb-e638-4999-a784-e7e82cf30470",
       "projectId": "demo-project-id",
       "date": "2026-02-06",
       "description": "Pedreiro Zé de Tutú",
@@ -5909,7 +5909,7 @@
       "deletedAt": null
     },
     {
-      "id": "8ce1e9fd-7a7f-439c-9b0d-45ac52e2685b",
+      "id": "9950b127-4b92-4b60-b992-d433ec0ca183",
       "projectId": "demo-project-id",
       "date": "2026-02-06",
       "description": "Pedreiro Marcos",
@@ -5930,7 +5930,7 @@
       "deletedAt": null
     },
     {
-      "id": "ccdf59f4-84ff-489b-a936-c4bb2712c190",
+      "id": "be1aa744-9f59-4035-b51d-9e424c137106",
       "projectId": "demo-project-id",
       "date": "2026-02-07",
       "description": "Lumiart (Quadro de energia)",
@@ -5951,7 +5951,7 @@
       "deletedAt": null
     },
     {
-      "id": "7e422ba2-2b9f-476f-8fbd-5e08bf291bf6",
+      "id": "87195be4-bc85-4b30-a2dc-c5ece5c1cd06",
       "projectId": "demo-project-id",
       "date": "2026-02-11",
       "description": "Hidrofugante de concreto",
@@ -5972,7 +5972,7 @@
       "deletedAt": null
     },
     {
-      "id": "aa0518bc-917b-4d14-afe5-010855b051cf",
+      "id": "02a95ba1-c196-4178-9f31-a2bd51c5c476",
       "projectId": "demo-project-id",
       "date": "2026-02-13",
       "description": "Cimento",
@@ -5993,7 +5993,7 @@
       "deletedAt": null
     },
     {
-      "id": "6eaea3e3-376b-475b-a673-3fa01feef753",
+      "id": "c8c0bf5b-5f5d-4df0-8219-885db713995c",
       "projectId": "demo-project-id",
       "date": "2026-02-13",
       "description": "Pedreiro Zé de Tutú",
@@ -6014,7 +6014,7 @@
       "deletedAt": null
     },
     {
-      "id": "aed28e8b-9a01-45f7-87b1-f4930c5f6f6d",
+      "id": "c494a163-f6e6-41bf-bcf3-d48c20b58d79",
       "projectId": "demo-project-id",
       "date": "2026-02-13",
       "description": "Servente Daniel",
@@ -6035,7 +6035,7 @@
       "deletedAt": null
     },
     {
-      "id": "011a9d96-f498-4e62-866e-1f60c49e748b",
+      "id": "77d5b345-109b-4863-9273-d479d23dbedb",
       "projectId": "demo-project-id",
       "date": "2026-02-13",
       "description": "Servente Françoelio",
@@ -6056,7 +6056,7 @@
       "deletedAt": null
     },
     {
-      "id": "fed813ea-6233-47cc-b4c9-fa57978632f4",
+      "id": "84d18f04-2571-4ebf-a4e0-74960e7e35d7",
       "projectId": "demo-project-id",
       "date": "2026-02-13",
       "description": "Pedreiro Marcos",
@@ -6077,7 +6077,7 @@
       "deletedAt": null
     },
     {
-      "id": "11d3c29b-78e7-4fe4-9537-414db422654e",
+      "id": "3ba72e7d-0734-49f7-ae80-da76e7d19ff5",
       "projectId": "demo-project-id",
       "date": "2026-02-23",
       "description": "Carrada de areia",
@@ -6098,7 +6098,7 @@
       "deletedAt": null
     },
     {
-      "id": "052d5553-4e27-4013-8d2f-dbedfcfd6dce",
+      "id": "9f6a04fe-8a2d-4902-87d1-44eca8b0165c",
       "projectId": "demo-project-id",
       "date": "2026-02-26",
       "description": "Cimento",
@@ -6119,7 +6119,7 @@
       "deletedAt": null
     },
     {
-      "id": "2dc4a48d-58a5-43fc-bd81-840bc6639fdc",
+      "id": "2d83794d-f67e-4937-a3d5-7536f743ca2b",
       "projectId": "demo-project-id",
       "date": "2026-02-27",
       "description": "Pedreiro Zé de Tutú (Teve 100,00 R$ aqui que foi da câmera que ele me pediu para comprar e ele trabalhou no final de semana, transferi dia 02)",
@@ -6140,7 +6140,7 @@
       "deletedAt": null
     },
     {
-      "id": "1f59b233-cb1e-40c4-9e89-39a4718c9b3d",
+      "id": "1318fe5a-f9db-4da4-ab27-a0150575636e",
       "projectId": "demo-project-id",
       "date": "2026-02-27",
       "description": "Servente Daniel",
@@ -6161,7 +6161,7 @@
       "deletedAt": null
     },
     {
-      "id": "fdaf1bd5-df67-4c7d-810b-bc89fe9467aa",
+      "id": "ff732165-6ca2-4547-9a8d-b9b86df6350a",
       "projectId": "demo-project-id",
       "date": "2026-02-27",
       "description": "Servente Françoelio",
@@ -6182,7 +6182,7 @@
       "deletedAt": null
     },
     {
-      "id": "99e574d9-d3ce-4726-b36e-c6e41ce590d7",
+      "id": "2b6ab464-0c3b-4ca5-97d4-b2fd7fc47acb",
       "projectId": "demo-project-id",
       "date": "2026-02-27",
       "description": "Pedreiro Marcos",
@@ -6203,7 +6203,7 @@
       "deletedAt": null
     },
     {
-      "id": "caf3a599-e2c0-4d32-aa1c-3abfc42c4595",
+      "id": "81d8d23c-9558-46b6-b150-21f5872588c0",
       "projectId": "demo-project-id",
       "date": "2026-02-28",
       "description": "Itens de infraestrutura hidrica e outros",
@@ -6224,7 +6224,7 @@
       "deletedAt": null
     },
     {
-      "id": "9e57f595-6dac-4c10-b040-0573bd009b15",
+      "id": "728ed062-0f78-4d8d-8ba9-61f95ff52a0d",
       "projectId": "demo-project-id",
       "date": "2026-03-02",
       "description": "20m de manta + 2 potes de prime",
@@ -6245,7 +6245,7 @@
       "deletedAt": null
     },
     {
-      "id": "8bec6227-e4d5-4b58-9047-2542086f0a79",
+      "id": "c5e678a0-fec1-4b80-b5ba-7507f4c1b397",
       "projectId": "demo-project-id",
       "date": "2026-03-05",
       "description": "Tijolos",
@@ -6266,7 +6266,7 @@
       "deletedAt": null
     },
     {
-      "id": "2ea4911b-a063-421f-ac4e-e8c8c300fb56",
+      "id": "580fb9d9-651c-42ea-a76f-60c9da17e43f",
       "projectId": "demo-project-id",
       "date": "2026-03-05",
       "description": "Cimento",
@@ -6287,7 +6287,7 @@
       "deletedAt": null
     },
     {
-      "id": "e11eace7-2fd7-41db-871c-24decd711d7a",
+      "id": "b00e04fe-6633-4f20-9562-57990513a15b",
       "projectId": "demo-project-id",
       "date": "2026-03-09",
       "description": "Pedreiro Zé de Tutú",
@@ -6308,7 +6308,7 @@
       "deletedAt": null
     },
     {
-      "id": "662fe828-7334-4b50-9732-4e618f035e79",
+      "id": "47dd5ebc-afd2-4272-8f7e-1d7216ed0cf4",
       "projectId": "demo-project-id",
       "date": "2026-03-09",
       "description": "Servente Daniel",
@@ -6329,7 +6329,7 @@
       "deletedAt": null
     },
     {
-      "id": "067f2719-26ec-4161-86ba-3d12ce4dd9d5",
+      "id": "ff260551-dee4-4ce8-898f-831311558049",
       "projectId": "demo-project-id",
       "date": "2026-03-09",
       "description": "Servente Françoelio",
@@ -6350,7 +6350,7 @@
       "deletedAt": null
     },
     {
-      "id": "c456012b-7045-4ac9-ad2b-2e25af8a3e98",
+      "id": "e7f079c1-3ad0-4490-93e9-c782a716136c",
       "projectId": "demo-project-id",
       "date": "2026-03-09",
       "description": "Pedreiro Marcos",
@@ -6371,7 +6371,7 @@
       "deletedAt": null
     },
     {
-      "id": "3439b402-4c4f-47aa-8d6f-bc393b3991cc",
+      "id": "fc1a25d0-3e7d-4859-bb16-c4455bac2303",
       "projectId": "demo-project-id",
       "date": "2026-03-12",
       "description": "Cimento (Anotei assim pois fizemos negócios em uns arames de 18 em KG)",
@@ -6392,7 +6392,7 @@
       "deletedAt": null
     },
     {
-      "id": "f5c8d884-0ceb-4d22-b229-c3e84d642325",
+      "id": "570ec5d4-220e-40ad-a293-b66b53aa24c6",
       "projectId": "demo-project-id",
       "date": "2026-03-12",
       "description": "Areia",
@@ -6413,7 +6413,7 @@
       "deletedAt": null
     },
     {
-      "id": "f065aad4-8230-48ac-8d7e-7abde3272fa3",
+      "id": "d2c8b3d3-6667-4e18-b48c-42a953536da4",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Pedreiro Zé de Tutú",
@@ -6434,7 +6434,7 @@
       "deletedAt": null
     },
     {
-      "id": "cc6c7989-3098-4282-9729-287586652e49",
+      "id": "d2e45061-b4e0-4c90-b236-f09466fc0e1d",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Servente Daniel",
@@ -6455,7 +6455,7 @@
       "deletedAt": null
     },
     {
-      "id": "5d7a8ed0-dc0f-45c2-b7d2-cc78005a02cd",
+      "id": "80d5d4d4-c64b-41c3-8f8e-1d0f96af65a5",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Servente Françoelio",
@@ -6476,7 +6476,7 @@
       "deletedAt": null
     },
     {
-      "id": "0efe7a77-5b0a-4ef2-8511-a86fd41cf1f8",
+      "id": "75c111eb-3881-47f0-ae44-cacbb2746941",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Pedreiro Marcos",
@@ -6497,7 +6497,7 @@
       "deletedAt": null
     },
     {
-      "id": "a700cece-79e4-4baa-938e-869bf6db4783",
+      "id": "9142078e-32f5-400e-a932-cd4a7487c80d",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Rufo Telhado Externo Kit 6 metros (Comprei em dias variádos)",
@@ -6518,7 +6518,7 @@
       "deletedAt": null
     },
     {
-      "id": "2ae23568-b7dc-4cf4-9c2c-e57d3c6c8124",
+      "id": "810e6ca2-6835-4597-81d1-1a1cdd4b8971",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Hipermeabilizante de Laje",
@@ -6539,7 +6539,7 @@
       "deletedAt": null
     },
     {
-      "id": "6f4ee796-e28d-4192-bbc7-b1af591ebccb",
+      "id": "8e5070a8-bd7d-46a6-ac28-493c20084dcb",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Pistola para PU",
@@ -6560,7 +6560,7 @@
       "deletedAt": null
     },
     {
-      "id": "742e8410-4482-415c-ab0e-9b510e553755",
+      "id": "23cf2374-6822-4943-9ffc-8e84bc44dc12",
       "projectId": "demo-project-id",
       "date": "2026-02-13",
       "description": "PU",
@@ -6581,7 +6581,7 @@
       "deletedAt": null
     },
     {
-      "id": "58ebdf52-4ddf-4340-98f4-919f06472d64",
+      "id": "16bb6e88-da00-4da7-a2a1-ac0764110fcf",
       "projectId": "demo-project-id",
       "date": "2026-03-17",
       "description": "Cobres e instalações dos cobres dos ar condicionados (São 4.200,00 R$ mas ficou combinado de pagar os 2.000,00 R$ restantes dias 01/04/2026)",
@@ -6602,7 +6602,7 @@
       "deletedAt": null
     },
     {
-      "id": "5448b16a-f28c-4628-9482-5a42e96f847b",
+      "id": "05fb5c86-1145-4dfa-9948-f91bca0cc247",
       "projectId": "demo-project-id",
       "date": "2026-03-18",
       "description": "Cimento",
@@ -6623,7 +6623,7 @@
       "deletedAt": null
     },
     {
-      "id": "4bac592d-1228-45e8-a46c-7168c3c381a0",
+      "id": "d0b1f386-458d-4f95-b7e1-5dfeaf7fbcb4",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Fios de cobre",
@@ -6644,7 +6644,7 @@
       "deletedAt": null
     },
     {
-      "id": "1f57fba5-ef8e-4256-a013-7dc8225beb9f",
+      "id": "24e1e232-9f62-4242-bccf-ddcd34634ab8",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Caçamba de entulho",
@@ -6665,7 +6665,7 @@
       "deletedAt": null
     },
     {
-      "id": "fb9dfe82-efd6-4256-b076-3704306fd344",
+      "id": "03ee66c7-8c33-4d71-a718-3ebd38643258",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Pedreiro Zé de Tutú",
@@ -6686,7 +6686,7 @@
       "deletedAt": null
     },
     {
-      "id": "058d5b70-949d-414e-a61d-5d6eb51bbcd8",
+      "id": "dc8f0fc7-89a0-454b-9be5-c6f4dcb9a076",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Servente Daniel",
@@ -6707,7 +6707,7 @@
       "deletedAt": null
     },
     {
-      "id": "a2cf8294-a326-4f08-b929-ae553a94984b",
+      "id": "a1be7ae0-b872-4f86-ba24-6d7e172fb942",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Servente Zé Eduardo",
@@ -6728,7 +6728,7 @@
       "deletedAt": null
     },
     {
-      "id": "ede17cfd-720b-4e08-bb58-145ae20b7b60",
+      "id": "8815f8d2-7551-4e6c-ac2d-2ec35928cc4d",
       "projectId": "demo-project-id",
       "date": "2026-03-13",
       "description": "Pedreiro Marcos",
@@ -6749,7 +6749,7 @@
       "deletedAt": null
     },
     {
-      "id": "a2b34a79-8f19-4f8f-b3bf-1a81aefbe506",
+      "id": "eeabffeb-9903-4c79-92ed-da9bb30528a0",
       "projectId": "demo-project-id",
       "date": "2026-03-16",
       "description": "Fios de cobre",
@@ -6770,7 +6770,7 @@
       "deletedAt": null
     },
     {
-      "id": "ac5c83ec-7d7d-49b7-ab30-c34191bb7038",
+      "id": "f0d16218-e37f-4797-a302-18bdbc0861dc",
       "projectId": "demo-project-id",
       "date": "2026-03-16",
       "description": "Frete dos fios de cobre",
@@ -6791,7 +6791,7 @@
       "deletedAt": null
     },
     {
-      "id": "0b43680d-1680-41a1-910b-e1556f24b3df",
+      "id": "ea52529a-136e-4270-8960-b2a641c1520c",
       "projectId": "demo-project-id",
       "date": "2026-03-17",
       "description": "Instalações do ar condicionado (Ficou 2.000,00 R$ para quando eu receber novamente, dia 01 do outro mês)",
@@ -6812,7 +6812,7 @@
       "deletedAt": null
     },
     {
-      "id": "f0eb291f-d723-4042-b0b9-aa98306f41ab",
+      "id": "03caf4c1-5247-4e18-b4e8-063211c26edf",
       "projectId": "demo-project-id",
       "date": "2026-03-18",
       "description": "Cimento",
@@ -6833,7 +6833,7 @@
       "deletedAt": null
     },
     {
-      "id": "4f7f05b0-4d0f-4cf6-a4ac-e934248f20ad",
+      "id": "7575aa38-397d-4a3f-af78-06d53f08c66d",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Fios de cobre",
@@ -6854,7 +6854,7 @@
       "deletedAt": null
     },
     {
-      "id": "9cbab8cb-690d-41d2-96a6-fe3202905785",
+      "id": "8c7ed7fd-0ed3-4b4b-9a6a-77a7370aa0fa",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Caçambas de entulho",
@@ -6875,7 +6875,7 @@
       "deletedAt": null
     },
     {
-      "id": "2afcdd0e-df24-4a3e-bd32-ab36fbe241ce",
+      "id": "2931f99d-b0b6-4c97-8c47-f83f593f91aa",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Pedreiro Zé de Tutú",
@@ -6896,7 +6896,7 @@
       "deletedAt": null
     },
     {
-      "id": "5c083abb-a42a-4f8d-9b9b-7477a33aea02",
+      "id": "18de79d1-501c-4886-8dfd-0b03c4a5334e",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Servente Daniel",
@@ -6917,7 +6917,7 @@
       "deletedAt": null
     },
     {
-      "id": "50ec0eac-7ff7-4206-9b6a-19a605180b9e",
+      "id": "dc4bfbd5-7933-4645-b4a6-87a7deee703b",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Servente Zé Eduardo",
@@ -6938,7 +6938,7 @@
       "deletedAt": null
     },
     {
-      "id": "72ec54af-67ca-4c84-a76f-4e884b924bed",
+      "id": "f9cad680-6be6-45e0-826a-13261d5a7245",
       "projectId": "demo-project-id",
       "date": "2026-03-20",
       "description": "Pedreiro Marcos",
@@ -6959,7 +6959,7 @@
       "deletedAt": null
     },
     {
-      "id": "3f817e03-6410-4451-8c3d-581330d18a4c",
+      "id": "60d0c3ae-58ed-4ef0-968e-5286da6413fd",
       "projectId": "demo-project-id",
       "date": "2026-03-23",
       "description": "Frete dos fios de cobre",
@@ -6980,7 +6980,7 @@
       "deletedAt": null
     },
     {
-      "id": "d416c2be-4cc7-4aa1-8a64-c875be49c223",
+      "id": "0a868259-c8fa-48fc-a513-a557a9dd3b69",
       "projectId": "demo-project-id",
       "date": "2026-03-26",
       "description": "Pingadeiras das Janelas (Ainda falta uma parte)",
@@ -7001,7 +7001,7 @@
       "deletedAt": null
     },
     {
-      "id": "97c13a57-ed53-44f5-8941-b20739e7d7b8",
+      "id": "f27c50bb-fa53-4fe1-89c6-0ee6b6cdef21",
       "projectId": "demo-project-id",
       "date": "2026-03-27",
       "description": "Pedreiro Zé de Tutú",
@@ -7022,7 +7022,7 @@
       "deletedAt": null
     },
     {
-      "id": "7aa1b639-5b62-4d22-a722-75ed35459809",
+      "id": "f1421d2a-2ca9-4c8a-862f-0ab0a4118388",
       "projectId": "demo-project-id",
       "date": "2026-03-27",
       "description": "Servente Daniel",
@@ -7043,7 +7043,7 @@
       "deletedAt": null
     },
     {
-      "id": "6fb598cf-7c7f-48f7-8b66-f76649d3821b",
+      "id": "46fd2fc9-b4c2-4d45-b426-a3e0afe48c2f",
       "projectId": "demo-project-id",
       "date": "2026-03-27",
       "description": "Servente Zé Eduardo",
@@ -7064,7 +7064,7 @@
       "deletedAt": null
     },
     {
-      "id": "fac475b4-2494-4c15-be65-85f34d694237",
+      "id": "3ad803ac-17e9-4596-88d5-2a4551fab2e4",
       "projectId": "demo-project-id",
       "date": "2026-03-27",
       "description": "Pedreiro Marcos",
@@ -7085,7 +7085,7 @@
       "deletedAt": null
     },
     {
-      "id": "c1b2aefc-0502-4740-8f99-b61cefb91c89",
+      "id": "dca585ba-cbd3-4d01-8971-6efdcfb35612",
       "projectId": "demo-project-id",
       "date": "2026-03-30",
       "description": "Fios de cobre",
@@ -7106,7 +7106,7 @@
       "deletedAt": null
     },
     {
-      "id": "429d6b8b-46dd-49da-8f18-876df8124155",
+      "id": "9ba8db64-8dc9-4d76-8ba4-80e8c304b8eb",
       "projectId": "demo-project-id",
       "date": "2026-03-30",
       "description": "Frete dos fios de cobre",
@@ -7127,7 +7127,7 @@
       "deletedAt": null
     },
     {
-      "id": "cbc652d5-37d4-401c-a6cb-309466233082",
+      "id": "363f9f04-3f38-42e0-b60e-96c3e53be98d",
       "projectId": "demo-project-id",
       "date": "2026-03-31",
       "description": "Carrada de areia",
@@ -7148,7 +7148,7 @@
       "deletedAt": null
     },
     {
-      "id": "674a36fd-df92-4303-acd7-a0602c5e34b3",
+      "id": "dfdd77ee-ac89-4095-80ae-b7b123c1e55d",
       "projectId": "demo-project-id",
       "date": "2026-03-31",
       "description": "Cimento",
@@ -7169,7 +7169,7 @@
       "deletedAt": null
     },
     {
-      "id": "3f3ed553-fe30-4ae2-a10c-c11652061dcc",
+      "id": "7f00d943-32b9-4996-8580-3e22168b4e53",
       "projectId": "demo-project-id",
       "date": "2026-03-31",
       "description": "Instalações do ar condicionado",
@@ -7190,7 +7190,7 @@
       "deletedAt": null
     },
     {
-      "id": "b4f3a205-079c-44a1-9b7e-872cc0e7d9ef",
+      "id": "55fbd562-e191-4b3c-8e6f-fbbe8d56455c",
       "projectId": "demo-project-id",
       "date": "2026-04-01",
       "description": "Pedreiro Zé de Tutú",
@@ -7211,7 +7211,7 @@
       "deletedAt": null
     },
     {
-      "id": "739c5997-1eac-4304-a1e0-5bff1ef65dca",
+      "id": "a466b89e-b2d9-4ae9-8de7-1d9eab476445",
       "projectId": "demo-project-id",
       "date": "2026-04-01",
       "description": "Servente Daniel",
@@ -7232,7 +7232,7 @@
       "deletedAt": null
     },
     {
-      "id": "b6a49f62-2583-47f8-8995-6396202878ee",
+      "id": "dc2ecda4-39df-4710-8562-aa191433d4d3",
       "projectId": "demo-project-id",
       "date": "2026-04-01",
       "description": "Servente Zé Eduardo",
@@ -7253,7 +7253,7 @@
       "deletedAt": null
     },
     {
-      "id": "a5976b0e-f29f-4562-80f6-f01bcf089dd8",
+      "id": "3daeaa2a-ba93-4638-964d-ef7d20aacff6",
       "projectId": "demo-project-id",
       "date": "2026-04-01",
       "description": "Pedreiro Marcos",
@@ -7274,7 +7274,7 @@
       "deletedAt": null
     },
     {
-      "id": "86e15d20-2629-414a-8fd6-ec8fab53a0d7",
+      "id": "7d5250d8-a418-4340-87da-c479e918deda",
       "projectId": "demo-project-id",
       "date": "2026-04-04",
       "description": "Pedreiro Marcos",
@@ -7295,7 +7295,7 @@
       "deletedAt": null
     },
     {
-      "id": "e7aea50d-b99c-4486-8792-f10c3a36f732",
+      "id": "ef739916-25a6-4c5c-8c11-c65e8eca2da8",
       "projectId": "demo-project-id",
       "date": "2026-04-04",
       "description": "Pedreiro Zé de Tutú",
@@ -7316,7 +7316,7 @@
       "deletedAt": null
     },
     {
-      "id": "535b17ad-1db0-4678-803c-ca7154b400b2",
+      "id": "a1c99eb9-f973-4a4e-9b10-cf489bd0dca6",
       "projectId": "demo-project-id",
       "date": "2026-04-08",
       "description": "Fios de 1.5mm (Paguei pelo PJ)",
@@ -7337,7 +7337,7 @@
       "deletedAt": null
     },
     {
-      "id": "3a680ba4-1df6-4e4c-8838-a345cfbf079a",
+      "id": "3a83ebb0-2937-42c4-a5dd-2bbc31c716d7",
       "projectId": "demo-project-id",
       "date": "2026-04-08",
       "description": "Gesso 2/4 (Ele pediu um aumento no valor por conta de uns cortineiros e LEDs. Aumentou 600,00 R$. Valor total agora de 11.100,00 R$. Ficou restando agora 4.500,00 R$.)",
@@ -7358,7 +7358,7 @@
       "deletedAt": null
     },
     {
-      "id": "dd27622c-20d3-4ec7-a1d8-d3afac3d2397",
+      "id": "d7921459-2362-4c22-a760-34faff7ea52c",
       "projectId": "demo-project-id",
       "date": "2026-04-08",
       "description": "Caixa de Tomada (Pago pelo PJ e tem mais de 1 item ai, tem uma tomadinha pequena)",
@@ -7379,7 +7379,7 @@
       "deletedAt": null
     },
     {
-      "id": "abb03b6d-1f90-44a1-897c-1cdbf69aa824",
+      "id": "8c62b8df-69f5-4b23-b2be-e6b721bc6de2",
       "projectId": "demo-project-id",
       "date": "2026-04-10",
       "description": "Servente Daniel (Paguei pelo PJ)",
@@ -7400,7 +7400,7 @@
       "deletedAt": null
     },
     {
-      "id": "217effba-3884-4edf-abee-820b79a5683a",
+      "id": "71709700-d0d8-49b1-a622-5a73bec855e0",
       "projectId": "demo-project-id",
       "date": "2026-04-10",
       "description": "Servente Zé Eduardo (Paguei pelo PJ)",
@@ -7421,7 +7421,7 @@
       "deletedAt": null
     },
     {
-      "id": "7f59c910-d65c-4989-9d06-479d6786e027",
+      "id": "569820ce-e7c9-4957-8d22-e817fe188f83",
       "projectId": "demo-project-id",
       "date": "2026-04-10",
       "description": "Pedreiro Marcos (Paguei pelo PJ)",
@@ -7442,7 +7442,7 @@
       "deletedAt": null
     },
     {
-      "id": "a7691c34-88ec-4b7c-b54c-b1cd5293bd4c",
+      "id": "29016537-843b-48fd-b3ef-5d0a20ee1e0e",
       "projectId": "demo-project-id",
       "date": "2026-04-10",
       "description": "Pedreiro Zé de Tutú",
@@ -7463,7 +7463,7 @@
       "deletedAt": null
     },
     {
-      "id": "c5b00ce5-cd0b-41bf-81ad-fa9632309111",
+      "id": "7ce5d8af-64e9-4484-a332-84683df144f8",
       "projectId": "demo-project-id",
       "date": "2026-04-17",
       "description": "Pingadeiras das Janelas",
@@ -7484,7 +7484,7 @@
       "deletedAt": null
     },
     {
-      "id": "b1aa9376-41c3-4fa5-958e-27d7ccc4df28",
+      "id": "0b890d37-063d-4cfc-955d-5f6db6d2ceee",
       "projectId": "demo-project-id",
       "date": "2026-04-17",
       "description": "Carrada de areia",
@@ -7505,7 +7505,7 @@
       "deletedAt": null
     },
     {
-      "id": "01c8ebb8-3150-4c36-a547-880eadd79fa0",
+      "id": "d4a6c4fa-ca19-48f0-b601-e7e3b84409e4",
       "projectId": "demo-project-id",
       "date": "2026-04-17",
       "description": "Pedreiro Zé de Tutú",
@@ -7526,7 +7526,7 @@
       "deletedAt": null
     },
     {
-      "id": "30b0f884-9bc4-4730-b434-5dab2fea51cb",
+      "id": "9166370a-2c61-4b00-812f-604ec523ab4d",
       "projectId": "demo-project-id",
       "date": "2026-04-17",
       "description": "Servente Daniel",
@@ -7547,7 +7547,7 @@
       "deletedAt": null
     },
     {
-      "id": "5cc23c8e-e06e-497b-ae45-c1dd4524d84b",
+      "id": "9eb24a1d-6169-4202-b4d9-2170ef93563a",
       "projectId": "demo-project-id",
       "date": "2026-04-17",
       "description": "Servente Zé Eduardo",
@@ -7568,7 +7568,7 @@
       "deletedAt": null
     },
     {
-      "id": "d11cd36d-b729-40bf-923d-51ac8ac753cc",
+      "id": "1f8c6812-c2a8-447d-9b73-3df6e69caece",
       "projectId": "demo-project-id",
       "date": "2026-04-17",
       "description": "Pedreiro Marcos",
@@ -7589,7 +7589,7 @@
       "deletedAt": null
     },
     {
-      "id": "02d7fbb9-e150-4731-9f55-266e465ad8fd",
+      "id": "e0a134ab-4bd2-47fb-b46a-52c266c1ac35",
       "projectId": "demo-project-id",
       "date": "2026-04-20",
       "description": "Cimento e ferros",
@@ -7610,7 +7610,7 @@
       "deletedAt": null
     },
     {
-      "id": "99ebd612-36b9-4930-a47d-9ada9ac39803",
+      "id": "33bd6fa7-b4f4-49d5-bf9e-32bbb44d6724",
       "projectId": "demo-project-id",
       "date": "2026-04-22",
       "description": "Fios",
@@ -7631,7 +7631,7 @@
       "deletedAt": null
     },
     {
-      "id": "90b05f1c-0b30-4de3-bf81-10cc2267678b",
+      "id": "3a671449-f6d5-4687-8752-e2a4ba45924a",
       "projectId": "demo-project-id",
       "date": "2026-04-23",
       "description": "Barra de ferro de 5/16",
@@ -7652,7 +7652,7 @@
       "deletedAt": null
     },
     {
-      "id": "c34ad26e-3104-4399-bc37-7a11f8996ba6",
+      "id": "121546d5-0122-41e2-b2c4-3493e906e98f",
       "projectId": "demo-project-id",
       "date": "2026-04-23",
       "description": "Carrada de areia",
@@ -7673,7 +7673,7 @@
       "deletedAt": null
     },
     {
-      "id": "67c50665-2363-49e1-8b88-3aa5459999b6",
+      "id": "a23d0213-eee8-434e-b266-a72d1aca4c53",
       "projectId": "demo-project-id",
       "date": "2026-04-24",
       "description": "Pedreiro Zé de Tutú",
@@ -7694,7 +7694,7 @@
       "deletedAt": null
     },
     {
-      "id": "0f915477-f6dd-47f3-9c62-828ff237fe0d",
+      "id": "63c9bbd0-948c-458d-a0b8-7dced52b800f",
       "projectId": "demo-project-id",
       "date": "2026-04-24",
       "description": "Servente Daniel",
@@ -7715,7 +7715,7 @@
       "deletedAt": null
     },
     {
-      "id": "229e84c1-60a8-4355-a4bb-6a4c96aa7ff5",
+      "id": "9b2ce8a0-3e0f-499b-9e19-615e9d08bc8e",
       "projectId": "demo-project-id",
       "date": "2026-04-24",
       "description": "Servente Zé Eduardo",
@@ -7736,7 +7736,7 @@
       "deletedAt": null
     },
     {
-      "id": "39cdbc12-f5fc-47f0-99cb-48166c0261c1",
+      "id": "fdcefe7b-7c27-47e5-8e46-4609b405e765",
       "projectId": "demo-project-id",
       "date": "2026-04-24",
       "description": "Pedreiro Marcos",
@@ -7757,7 +7757,7 @@
       "deletedAt": null
     },
     {
-      "id": "837e7ad5-d6fd-4244-bed7-71ecfce72155",
+      "id": "abfaf2b9-f48f-4b8d-ae7d-3a850b13dcae",
       "projectId": "demo-project-id",
       "date": "2026-04-28",
       "description": "Milheiro de tijolos",
@@ -7778,7 +7778,7 @@
       "deletedAt": null
     },
     {
-      "id": "96e0c140-3747-4c1d-86ee-95e3a000bc46",
+      "id": "84ef9d71-06f5-4d9f-84bc-6562c6347b04",
       "projectId": "demo-project-id",
       "date": "2026-04-28",
       "description": "Brita",
@@ -7799,7 +7799,7 @@
       "deletedAt": null
     },
     {
-      "id": "60b7eb1a-2063-4b07-805f-f4198e62f793",
+      "id": "1976602b-9e71-45cb-96d3-093b34e3a147",
       "projectId": "demo-project-id",
       "date": "2026-05-01",
       "description": "Servente Daniel",
@@ -7820,7 +7820,7 @@
       "deletedAt": null
     },
     {
-      "id": "de98b1b7-696b-434a-bf47-ec6b03c218e9",
+      "id": "0406bf2c-bdd5-42f2-941c-e29f7faaf1a5",
       "projectId": "demo-project-id",
       "date": "2026-05-01",
       "description": "Servente Zé Eduardo",
@@ -7841,7 +7841,7 @@
       "deletedAt": null
     },
     {
-      "id": "59fdcb8d-a6c9-4f2b-900c-cc4b39dddb16",
+      "id": "6063a5d4-6c35-43b2-b790-c51085080033",
       "projectId": "demo-project-id",
       "date": "2026-05-01",
       "description": "Pedreiro Marcos",
@@ -7862,7 +7862,7 @@
       "deletedAt": null
     },
     {
-      "id": "2eb1f6af-e164-4126-95c9-55c9f77a1387",
+      "id": "f0e75832-401b-4bc9-9248-17c9363ae68b",
       "projectId": "demo-project-id",
       "date": "2026-05-04",
       "description": "Ferros, Cimentos e outros itens",
@@ -7883,7 +7883,7 @@
       "deletedAt": null
     },
     {
-      "id": "30cbe32f-19a0-4749-9c94-23633bbec211",
+      "id": "48c29a5a-bd8c-452a-9146-34cef882b0a0",
       "projectId": "demo-project-id",
       "date": "2026-05-04",
       "description": "Canos, Tubos e outros itens",
@@ -7904,7 +7904,7 @@
       "deletedAt": null
     },
     {
-      "id": "dfa0f943-1e52-4daf-bfcf-fd1feaefeef1",
+      "id": "55dfbbcd-d500-4cbd-9948-ebbd00017e69",
       "projectId": "demo-project-id",
       "date": "2026-05-04",
       "description": "Final da parte do projeto arquitetônico",
@@ -7925,7 +7925,7 @@
       "deletedAt": null
     },
     {
-      "id": "27e6500a-04f4-45eb-a355-fde5b7eb2924",
+      "id": "35552a7a-488a-4e4f-a516-857a1a851aa7",
       "projectId": "demo-project-id",
       "date": "2026-05-08",
       "description": "Servente Daniel",
@@ -7946,7 +7946,7 @@
       "deletedAt": null
     },
     {
-      "id": "78460a2e-57c9-4fa8-864c-3818f5e1200a",
+      "id": "79f7a2b1-3915-466a-bb9d-c50a3f38498e",
       "projectId": "demo-project-id",
       "date": "2026-05-08",
       "description": "Servente Zé Eduardo",
@@ -7967,7 +7967,7 @@
       "deletedAt": null
     },
     {
-      "id": "718ce343-bca3-4fed-b790-f8da98efd3a5",
+      "id": "b105ca87-bf07-42e6-94fc-020c2a3c82bf",
       "projectId": "demo-project-id",
       "date": "2026-05-08",
       "description": "Pedreiro Marcos",
@@ -7988,7 +7988,7 @@
       "deletedAt": null
     },
     {
-      "id": "65a85d48-1fd1-4972-b71b-d1b02791337b",
+      "id": "a3f28673-4fb7-4fb3-956e-27613b940f9a",
       "projectId": "demo-project-id",
       "date": "2026-05-13",
       "description": "Madeiras para forma",
@@ -8009,7 +8009,7 @@
       "deletedAt": null
     },
     {
-      "id": "803d08cc-b950-4e33-8ffd-c9e39424da2c",
+      "id": "f1d8c4a5-b1a0-4861-86bb-39b8a894596c",
       "projectId": "demo-project-id",
       "date": "2026-05-15",
       "description": "Servente Daniel",
@@ -8030,7 +8030,7 @@
       "deletedAt": null
     },
     {
-      "id": "047bb676-69af-42f5-aab0-a0db725c749d",
+      "id": "7e009946-011a-4e6b-b3af-834225bdecd6",
       "projectId": "demo-project-id",
       "date": "2026-05-15",
       "description": "Servente Zé Eduardo",
@@ -8051,7 +8051,7 @@
       "deletedAt": null
     },
     {
-      "id": "5ff0f919-ea25-44b9-8777-725cef3c063a",
+      "id": "4b076522-bda6-46ed-8640-a2ebb29fe41b",
       "projectId": "demo-project-id",
       "date": "2026-05-15",
       "description": "Pedreiro Marcos",
@@ -8072,7 +8072,7 @@
       "deletedAt": null
     },
     {
-      "id": "51d478db-5918-4a63-a498-017f4cabf6be",
+      "id": "6dd4318f-25b8-406e-befd-dbfcfe78b983",
       "projectId": "demo-project-id",
       "date": "2026-05-18",
       "description": "Carrada de areia",
@@ -8093,7 +8093,7 @@
       "deletedAt": null
     },
     {
-      "id": "e7af1bf1-f05a-41e9-9929-502f580f3ad1",
+      "id": "5edb1c13-e2d1-48b2-998d-d5269decde31",
       "projectId": "demo-project-id",
       "date": "2026-05-18",
       "description": "Aluguel de betoneira",
@@ -8114,7 +8114,7 @@
       "deletedAt": null
     },
     {
-      "id": "6561953e-2e01-4794-acee-8893954d8037",
+      "id": "afb228b4-9bf2-4c77-b40c-3aad1ea00a02",
       "projectId": "demo-project-id",
       "date": "2026-05-19",
       "description": "Caçambinha de Entulho",
@@ -8135,7 +8135,7 @@
       "deletedAt": null
     },
     {
-      "id": "caa5560a-5131-4e6e-856d-60d5e25d9ac4",
+      "id": "73842a90-e2bd-4f4f-989f-797389e97b9d",
       "projectId": "demo-project-id",
       "date": "2026-05-21",
       "description": "Selador Acrílico Tinta",
@@ -8156,7 +8156,7 @@
       "deletedAt": null
     },
     {
-      "id": "7b2984c0-4919-4dc4-a1ca-b7c9b0c3d29e",
+      "id": "df2a6615-000b-4a10-aa96-060cac4a455a",
       "projectId": "demo-project-id",
       "date": "2026-05-22",
       "description": "Servente Daniel",
@@ -8177,7 +8177,7 @@
       "deletedAt": null
     },
     {
-      "id": "903976bc-6ddc-492c-9f33-9604cec927dc",
+      "id": "9f8a3cdf-9176-40bc-94bb-6b5cdca45aff",
       "projectId": "demo-project-id",
       "date": "2026-05-22",
       "description": "Servente Zé Eduardo",
@@ -8198,7 +8198,7 @@
       "deletedAt": null
     },
     {
-      "id": "3b3c083b-379a-49a6-9686-52ac894b05f3",
+      "id": "d80f2fab-962d-4fb6-8475-526078a1e622",
       "projectId": "demo-project-id",
       "date": "2026-05-22",
       "description": "Pedreiro Marcos",
@@ -8219,7 +8219,7 @@
       "deletedAt": null
     },
     {
-      "id": "49886b15-ee79-4238-beb6-199aebe33def",
+      "id": "2a436d87-2452-46b8-82bd-1e57b59a4e63",
       "projectId": "demo-project-id",
       "date": "2026-05-26",
       "description": "Brita",
@@ -8240,7 +8240,7 @@
       "deletedAt": null
     },
     {
-      "id": "f9176e36-9a8e-4fc9-b298-f0c926b1b35e",
+      "id": "b8085ffb-0fca-46db-83f1-0ec38b46e342",
       "projectId": "demo-project-id",
       "date": "2026-05-27",
       "description": "Carrada de areia",
@@ -8261,7 +8261,7 @@
       "deletedAt": null
     },
     {
-      "id": "247424f8-2cd8-4e12-b677-4db13ac1e342",
+      "id": "e2e5904e-dcc7-465e-85b2-d00d708351c7",
       "projectId": "demo-project-id",
       "date": "2026-05-27",
       "description": "Selador Acrílico Tinta",
@@ -8282,7 +8282,7 @@
       "deletedAt": null
     },
     {
-      "id": "3cb30adc-9da1-443e-864e-4b13dc3b3a55",
+      "id": "eb4b509d-5fd0-46fe-beaa-56c0e0ab25fc",
       "projectId": "demo-project-id",
       "date": "2026-05-28",
       "description": "Massa Acrílica",
@@ -8303,7 +8303,7 @@
       "deletedAt": null
     },
     {
-      "id": "92e01763-2497-474b-9952-5dc4c0b60572",
+      "id": "2ccd0e79-aa6b-4492-995b-d33d12d1840b",
       "projectId": "demo-project-id",
       "date": "2026-05-29",
       "description": "Servente Daniel",
@@ -8324,7 +8324,7 @@
       "deletedAt": null
     },
     {
-      "id": "9ae6dae1-6012-4691-8276-459dfd1ee507",
+      "id": "6ba058a2-7d3d-4dbe-83e3-9c6a918948d0",
       "projectId": "demo-project-id",
       "date": "2026-05-29",
       "description": "Servente Zé Eduardo",
@@ -8345,7 +8345,7 @@
       "deletedAt": null
     },
     {
-      "id": "991f74b0-e3ff-4359-993c-d693fcc50168",
+      "id": "dfcbffcf-57c6-4c2d-a0b7-53ebd6a556e0",
       "projectId": "demo-project-id",
       "date": "2026-05-29",
       "description": "Pedreiro Marcos",
@@ -8366,7 +8366,7 @@
       "deletedAt": null
     },
     {
-      "id": "022e7aae-7a07-48ca-98d5-0073bfee960f",
+      "id": "3c1996d0-afcd-49ec-b23d-cd5bf4c4dc13",
       "projectId": "demo-project-id",
       "date": "2026-05-29",
       "description": "Pedreiro Dodinha",
@@ -8387,7 +8387,7 @@
       "deletedAt": null
     },
     {
-      "id": "8c70ddb6-8cf5-455f-a4e1-d7e4a2992ed8",
+      "id": "13b25abd-c96b-4923-b380-d1f337ce50b6",
       "projectId": "demo-project-id",
       "date": "2026-05-29",
       "description": "Servente Iroito",
@@ -8408,7 +8408,7 @@
       "deletedAt": null
     },
     {
-      "id": "f0532429-155c-49d7-96c0-973a31c1fa38",
+      "id": "a24bf5f2-259f-4ef6-a9c9-4f4c9495e721",
       "projectId": "demo-project-id",
       "date": "2026-05-30",
       "description": "Pedreiro Marcos",
@@ -8429,7 +8429,7 @@
       "deletedAt": null
     },
     {
-      "id": "0567b48a-b7ca-4ffe-a5c6-84f8752565e1",
+      "id": "0d961213-ebea-4ddc-8ca5-adaea1772396",
       "projectId": "demo-project-id",
       "date": "2026-05-30",
       "description": "Servente Iroito",
@@ -8450,7 +8450,7 @@
       "deletedAt": null
     },
     {
-      "id": "b192fff8-7de2-4bbc-95fb-3dcdb78cc181",
+      "id": "31830ad8-9b59-4328-a065-7d6d746c947b",
       "projectId": "demo-project-id",
       "date": "2026-06-01",
       "description": "Aluguel de betoneira",
@@ -8471,7 +8471,7 @@
       "deletedAt": null
     },
     {
-      "id": "15679710-0d94-4102-827c-2f2245a213d5",
+      "id": "d785ac1d-c98e-4e65-a1ad-46213be6355b",
       "projectId": "demo-project-id",
       "date": "2026-06-05",
       "description": "Servente Daniel",
@@ -8492,7 +8492,7 @@
       "deletedAt": null
     },
     {
-      "id": "0cabd6c1-f783-4317-8047-38b31aee63a8",
+      "id": "d4770b51-f23e-42b3-a223-a3ac820b8c4f",
       "projectId": "demo-project-id",
       "date": "2026-06-05",
       "description": "Servente Iroito",
@@ -8513,7 +8513,7 @@
       "deletedAt": null
     },
     {
-      "id": "f67d7011-e390-40b0-b917-287c03e8e59a",
+      "id": "9c16f043-89b9-438b-a0f4-a7df74cf5d1d",
       "projectId": "demo-project-id",
       "date": "2026-06-05",
       "description": "Pedreiro Marcos",
@@ -8534,7 +8534,7 @@
       "deletedAt": null
     },
     {
-      "id": "b488dafe-b627-4bd3-bc6d-885ff5daaf55",
+      "id": "20c79fe6-9c33-4555-bf50-55e790d15e90",
       "projectId": "demo-project-id",
       "date": "2026-06-05",
       "description": "Pedreiro Dodinha",
@@ -8555,7 +8555,7 @@
       "deletedAt": null
     },
     {
-      "id": "98f54cfb-eb23-4f1c-8fe8-eb6df7d4a087",
+      "id": "4ebf1f18-693d-49ec-b39d-933c1cb81338",
       "projectId": "demo-project-id",
       "date": "2026-06-12",
       "description": "Servente Daniel",
@@ -8576,7 +8576,7 @@
       "deletedAt": null
     },
     {
-      "id": "ded0ec1a-5753-4ff3-a608-dbe2b465a79a",
+      "id": "73a64504-f0a0-4bee-ae34-30b6df340eb5",
       "projectId": "demo-project-id",
       "date": "2026-06-12",
       "description": "Servente Iroito",
@@ -8597,7 +8597,7 @@
       "deletedAt": null
     },
     {
-      "id": "7ca6bba6-0dd9-4afd-9714-79a05a49ce6e",
+      "id": "8be995a0-c675-491f-835f-2fb3b5f1f72e",
       "projectId": "demo-project-id",
       "date": "2026-06-12",
       "description": "Pedreiro Marcos",
@@ -8618,7 +8618,7 @@
       "deletedAt": null
     },
     {
-      "id": "9c41b6d7-54ab-4d6c-9e1e-b49cd3ec34a1",
+      "id": "72c77ebf-f100-4719-a5ab-1a5154819659",
       "projectId": "demo-project-id",
       "date": "2026-06-12",
       "description": "Pedreiro Dodinha",
@@ -8639,7 +8639,7 @@
       "deletedAt": null
     },
     {
-      "id": "edebb35a-fe2c-41cc-995f-a3e2b80d66a8",
+      "id": "1e9a9092-9284-4531-acfe-6715a200b57d",
       "projectId": "demo-project-id",
       "date": "2026-06-17",
       "description": "Ferros, Cimentos e outros itens",
@@ -8660,7 +8660,7 @@
       "deletedAt": null
     },
     {
-      "id": "fa34f0b7-a122-4019-b73b-aefa4d7a6baf",
+      "id": "68bceb85-b575-494b-b0fb-7fe69587c257",
       "projectId": "demo-project-id",
       "date": "2026-06-19",
       "description": "Servente Daniel",
@@ -8681,7 +8681,7 @@
       "deletedAt": null
     },
     {
-      "id": "f4cc0580-91e0-45e4-951b-8777ebde394f",
+      "id": "871170ca-1706-434e-83d5-d76097271123",
       "projectId": "demo-project-id",
       "date": "2026-06-19",
       "description": "Servente Iroito",
@@ -8702,7 +8702,7 @@
       "deletedAt": null
     },
     {
-      "id": "5aee92f0-cdd1-4e2c-a0d8-6a2ffe26e5f3",
+      "id": "d48cf117-390e-48a3-a986-c1aa5bbda177",
       "projectId": "demo-project-id",
       "date": "2026-06-19",
       "description": "Pedreiro Marcos",
@@ -8723,7 +8723,7 @@
       "deletedAt": null
     },
     {
-      "id": "88c2bc0b-c806-4ec6-8792-289b06bf283f",
+      "id": "2a09f8b2-bd7f-4e56-85eb-9a067011853c",
       "projectId": "demo-project-id",
       "date": "2026-06-19",
       "description": "Pedreiro Dodinha",
@@ -8744,7 +8744,7 @@
       "deletedAt": null
     },
     {
-      "id": "79a02cb4-5c40-4e1d-bc12-49523fd0a5c9",
+      "id": "f6a521aa-ca9d-41b4-acf6-fc78c74dd19e",
       "projectId": "demo-project-id",
       "date": "2025-06-25",
       "description": "Tijolo",
@@ -8765,7 +8765,7 @@
       "deletedAt": null
     },
     {
-      "id": "0324c7be-569b-44fc-8a65-385059093709",
+      "id": "bade80b8-7bf8-4bf7-a351-665cf2046711",
       "projectId": "demo-project-id",
       "date": "2026-06-26",
       "description": "Servente Daniel",
@@ -8786,7 +8786,7 @@
       "deletedAt": null
     },
     {
-      "id": "13fdef8a-8160-40a6-a8df-8be6b2bb4bc0",
+      "id": "e0df0489-39f7-491e-8608-3dc6631d8d99",
       "projectId": "demo-project-id",
       "date": "2026-06-27",
       "description": "Servente Iroito",
@@ -8807,7 +8807,7 @@
       "deletedAt": null
     },
     {
-      "id": "577a363e-7214-46ba-a4de-1ec165c2a773",
+      "id": "4bf22c02-88b9-4923-a683-92e3f14c4913",
       "projectId": "demo-project-id",
       "date": "2026-06-27",
       "description": "Pedreiro Marcos",
@@ -8828,7 +8828,7 @@
       "deletedAt": null
     },
     {
-      "id": "1882c8fe-8c4b-4812-8bd8-e2a768f79085",
+      "id": "773d21f3-9961-4977-8de4-4d3a6a7937b6",
       "projectId": "demo-project-id",
       "date": "2026-06-27",
       "description": "Pedreiro Dodinha",
@@ -8849,7 +8849,7 @@
       "deletedAt": null
     },
     {
-      "id": "90f4e60c-e0db-44ff-b9f5-f9d2dd590350",
+      "id": "67352667-aeef-4619-ac24-357c4adf4a43",
       "projectId": "demo-project-id",
       "date": "2026-06-27",
       "description": "Canos, Tubos e outros itens",
@@ -8870,7 +8870,7 @@
       "deletedAt": null
     },
     {
-      "id": "cf177fd4-ea42-41ce-af04-0e60ae2ae518",
+      "id": "3ee54307-bd7d-45cf-951d-1863fc42b67a",
       "projectId": "demo-project-id",
       "date": "2026-06-27",
       "description": "Cimento",
@@ -8891,7 +8891,7 @@
       "deletedAt": null
     },
     {
-      "id": "5f9e761d-b393-4943-b253-5b1cd185399f",
+      "id": "1faf30d5-07a2-4df3-8032-e8eb1479ac4a",
       "projectId": "demo-project-id",
       "date": "2026-06-27",
       "description": "Laje pré moldada",
@@ -8912,7 +8912,7 @@
       "deletedAt": null
     },
     {
-      "id": "f9c49665-a4d5-4c33-bb5b-7b191e5d72a2",
+      "id": "50eb05c7-660f-4c7c-bd7d-84b3d7f0865f",
       "projectId": "demo-project-id",
       "date": "2026-06-27",
       "description": "Areai",
@@ -8933,7 +8933,7 @@
       "deletedAt": null
     },
     {
-      "id": "7d3b8a3c-1e98-4c44-8d0f-43ef5fe699a3",
+      "id": "f11513af-f990-4dd0-b2b8-cfcb16155cd2",
       "projectId": "demo-project-id",
       "date": "2026-07-04",
       "description": "Servente Daniel",
@@ -8954,7 +8954,7 @@
       "deletedAt": null
     },
     {
-      "id": "009502c1-f188-4787-8a77-c86b6a3b8108",
+      "id": "179d305d-1eb7-4e97-bd34-3f2d05fffc9d",
       "projectId": "demo-project-id",
       "date": "2026-07-04",
       "description": "Servente Iroito",
@@ -8975,7 +8975,7 @@
       "deletedAt": null
     },
     {
-      "id": "dc8fb32c-85c8-4721-bcb0-a899864e5a27",
+      "id": "b751b7c5-6ced-4645-8b8a-5204802c20fe",
       "projectId": "demo-project-id",
       "date": "2026-07-04",
       "description": "Pedreiro Marcos",
@@ -8996,7 +8996,7 @@
       "deletedAt": null
     },
     {
-      "id": "8b04d7f2-c827-4a10-9fa3-05c36391301a",
+      "id": "2eb33cfd-5374-4d8d-94fb-f2eaa1181587",
       "projectId": "demo-project-id",
       "date": "2026-07-04",
       "description": "Pedreiro Dodinha",
@@ -9017,7 +9017,7 @@
       "deletedAt": null
     },
     {
-      "id": "a9e69742-6079-4a3c-bf9c-9f6d91c571be",
+      "id": "e68f329b-03bb-440c-8e08-2607188bbfa2",
       "projectId": "demo-project-id",
       "date": "2026-07-04",
       "description": "Servente ajudou Marcos no Sábado",
@@ -9038,7 +9038,7 @@
       "deletedAt": null
     },
     {
-      "id": "14dc5efe-b8a4-4802-a3d1-917ad952be3c",
+      "id": "f0d144c0-1f1a-4c0a-9263-ceb0d7b6a972",
       "projectId": "demo-project-id",
       "date": "2026-07-01",
       "description": "Itens de eletrica com anderson (Foram apenas itens da eletrica, nenhum serviço foi pago aqui)",
@@ -9059,7 +9059,7 @@
       "deletedAt": null
     },
     {
-      "id": "32694a0b-6768-499c-a8af-c0f68d04f998",
+      "id": "d55aaf5a-3db8-4e50-b2bb-fe4b1a6afd08",
       "projectId": "demo-project-id",
       "date": "2026-07-06",
       "description": "Areia",
@@ -9080,7 +9080,7 @@
       "deletedAt": null
     },
     {
-      "id": "5528d3d3-49a7-4e96-b439-d528b4669134",
+      "id": "e1b6d360-3918-4185-9e9b-f15d2c21e1b4",
       "projectId": "demo-project-id",
       "date": "2026-07-06",
       "description": "Aluguel betoneiras",
@@ -9101,7 +9101,7 @@
       "deletedAt": null
     },
     {
-      "id": "75aaab82-e965-4053-8660-8d2180670447",
+      "id": "d01eb355-c739-41e2-9e73-471d2ccfa8fb",
       "projectId": "demo-project-id",
       "date": "2026-07-10",
       "description": "Servente Daniel",
@@ -9122,7 +9122,7 @@
       "deletedAt": null
     },
     {
-      "id": "7f908397-7e40-494b-ac73-21c50c8b58e1",
+      "id": "64515389-fd18-4f8f-b648-6717312eac7b",
       "projectId": "demo-project-id",
       "date": "2026-07-10",
       "description": "Servente Iroito",
@@ -9143,7 +9143,7 @@
       "deletedAt": null
     },
     {
-      "id": "c0940b00-911b-4a24-a955-506af72b75c1",
+      "id": "032a793c-91b8-4f1b-9653-9f8aff2bedd2",
       "projectId": "demo-project-id",
       "date": "2026-07-10",
       "description": "Pedreiro Dodinha",
@@ -9164,7 +9164,7 @@
       "deletedAt": null
     },
     {
-      "id": "21321b2c-0e3b-4282-bfcd-cad83ecbc377",
+      "id": "ce3fb64b-1764-44cb-ba2b-c59573a2c496",
       "projectId": "demo-project-id",
       "date": "2026-07-11",
       "description": "Pedreiro Marcos",
@@ -9185,7 +9185,7 @@
       "deletedAt": null
     },
     {
-      "id": "ef755dcc-96ee-4f4e-ba19-fe7bda26e8be",
+      "id": "a1c58439-61cd-4dd5-8e45-480d4618bfd1",
       "projectId": "demo-project-id",
       "date": "2026-07-13",
       "description": "Caçambinha de Entulho",
@@ -9206,7 +9206,7 @@
       "deletedAt": null
     },
     {
-      "id": "a2c32906-b459-42f3-8214-bba59d877217",
+      "id": "63f4fd9c-d393-4567-905b-ae334a34aacf",
       "projectId": "demo-project-id",
       "date": "2026-07-17",
       "description": "Areia",
@@ -9227,7 +9227,7 @@
       "deletedAt": null
     },
     {
-      "id": "dc542151-31c8-41bf-a548-6e99c4f6ad87",
+      "id": "5338c9de-5584-4d9f-96b7-fb9cd3a699f7",
       "projectId": "demo-project-id",
       "date": "2026-07-17",
       "description": "Servente Daniel",
@@ -9248,7 +9248,7 @@
       "deletedAt": null
     },
     {
-      "id": "adfbae98-27d5-4f39-a76e-a7fab6966f1d",
+      "id": "109538e7-245e-4459-b178-f6e437ed1ba2",
       "projectId": "demo-project-id",
       "date": "2026-07-17",
       "description": "Servente Iroito",
@@ -9269,7 +9269,7 @@
       "deletedAt": null
     },
     {
-      "id": "b74d6ba8-9f61-41ef-9aa7-86b15579a18a",
+      "id": "94370943-920b-4dde-8ef5-d12c63a1f4f7",
       "projectId": "demo-project-id",
       "date": "2026-07-17",
       "description": "Pedreiro Dodinha",
@@ -9290,7 +9290,7 @@
       "deletedAt": null
     },
     {
-      "id": "b2e8b5f4-8ee7-4f7f-8e0a-884b3eab6e43",
+      "id": "cf428b96-3855-4134-b80e-16a7f7e0270d",
       "projectId": "demo-project-id",
       "date": "2026-07-18",
       "description": "Pedreiro Marcos",
@@ -9311,7 +9311,7 @@
       "deletedAt": null
     },
     {
-      "id": "70a31166-97f5-4e90-8c98-e95089735176",
+      "id": "c2e8465c-6f57-4d9e-b7b1-dbd1bc7bdb07",
       "projectId": "demo-project-id",
       "date": "2026-07-18",
       "description": "Cimento",
@@ -9332,7 +9332,7 @@
       "deletedAt": null
     },
     {
-      "id": "33d834a1-f52b-4633-8485-5e27db0fa091",
+      "id": "26898029-c11b-4bc6-b171-b4136398479d",
       "projectId": "demo-project-id",
       "date": "2026-07-18",
       "description": "Joelho de 40",
@@ -9353,7 +9353,7 @@
       "deletedAt": null
     },
     {
-      "id": "b37ddd96-b748-4b5e-9579-fa7f158a588d",
+      "id": "cff2d8e4-ccfd-45ca-8f95-5455388e7a15",
       "projectId": "demo-project-id",
       "date": "2026-07-18",
       "description": "Joelho de 50",
@@ -9374,7 +9374,7 @@
       "deletedAt": null
     },
     {
-      "id": "4f703242-1629-4cc7-bdc0-124b4ffa3099",
+      "id": "cee028f1-d411-4a71-a187-b780787b1074",
       "projectId": "demo-project-id",
       "date": "2026-07-24",
       "description": "Servente Daniel",
@@ -9395,7 +9395,7 @@
       "deletedAt": null
     },
     {
-      "id": "c6e6b097-56d0-4d92-87ae-208bc8d0c70c",
+      "id": "10c6ac8f-d5d2-4f48-b69e-fd7786c49de9",
       "projectId": "demo-project-id",
       "date": "2026-07-24",
       "description": "Servente Iroito",
@@ -9416,7 +9416,7 @@
       "deletedAt": null
     },
     {
-      "id": "01197a9f-7b3d-4631-9890-3e0084fc29c7",
+      "id": "287554d8-db42-41fc-856e-3879254a2e7a",
       "projectId": "demo-project-id",
       "date": "2026-07-24",
       "description": "Pedreiro Dodinha",
@@ -9437,7 +9437,7 @@
       "deletedAt": null
     },
     {
-      "id": "dad91cac-0b5f-4a71-a13b-61db212ba634",
+      "id": "16225f3e-4a3e-4466-a84c-bb0e29016886",
       "projectId": "demo-project-id",
       "date": "2026-07-25",
       "description": "Pedreiro Marcos",
@@ -9458,7 +9458,7 @@
       "deletedAt": null
     },
     {
-      "id": "379e3f24-2d8a-4294-b749-23f584d06e9e",
+      "id": "ecb0045c-d773-4033-9077-762db0b2c173",
       "projectId": "demo-project-id",
       "date": "2026-07-27",
       "description": "Gesso 3/4",
@@ -9479,7 +9479,7 @@
       "deletedAt": null
     },
     {
-      "id": "2ed349a4-55f7-473c-9a52-850001f57bc1",
+      "id": "388a185d-4e6d-4f79-9141-baceac631ec5",
       "projectId": "demo-project-id",
       "date": "2026-07-31",
       "description": "Servente Daniel",
@@ -9500,7 +9500,7 @@
       "deletedAt": null
     },
     {
-      "id": "0b6322a6-2735-4e55-a8c0-b3cf12e0d433",
+      "id": "0da59ddd-4e22-4aa0-9f7b-75c06bbdd111",
       "projectId": "demo-project-id",
       "date": "2026-07-31",
       "description": "Servente Iroito",
@@ -9521,7 +9521,7 @@
       "deletedAt": null
     },
     {
-      "id": "760ab13c-c63a-4fa8-b583-7e120ba2f1d6",
+      "id": "05ad89a6-5444-4697-a9c2-137415215490",
       "projectId": "demo-project-id",
       "date": "2026-07-31",
       "description": "Pedreiro Dodinha",
@@ -9542,7 +9542,7 @@
       "deletedAt": null
     },
     {
-      "id": "35876537-09d9-44d4-a476-f1aaaff5b29c",
+      "id": "99322bae-1ef1-4cca-bf14-bf3329232cd4",
       "projectId": "demo-project-id",
       "date": "2026-07-31",
       "description": "Madeiras para forma da escada",
@@ -9563,7 +9563,7 @@
       "deletedAt": null
     },
     {
-      "id": "f7dee3a5-bc39-4e1c-8a93-60dfc72b5bd0",
+      "id": "3c57d404-697a-4b0f-b8d9-09d7a63457cb",
       "projectId": "demo-project-id",
       "date": "2026-08-01",
       "description": "Aluguel da betoneira",
@@ -9584,7 +9584,7 @@
       "deletedAt": null
     },
     {
-      "id": "0c5c6ffe-2ac4-4c5e-9578-9f2e8945d760",
+      "id": "f816218f-ad00-4f0c-a543-28a3a0678ed5",
       "projectId": "demo-project-id",
       "date": "2026-08-01",
       "description": "Pedreiro Marcos",
@@ -9607,7 +9607,7 @@
   ],
   "entries": [
     {
-      "id": "3e7f7a76-0579-4768-90a2-96037905c974",
+      "id": "0c7a555a-39a2-4518-bf7e-1c6746941860",
       "projectId": "demo-project-id",
       "date": "2025-02-01",
       "description": "Aporte inicial do sócio",
@@ -9618,7 +9618,7 @@
       "deletedAt": null
     },
     {
-      "id": "9d733c05-9f34-4b88-b29a-7b496b3da671",
+      "id": "b3b492db-4096-475a-81ea-c7048c8f1479",
       "projectId": "demo-project-id",
       "date": "2025-05-01",
       "description": "Financiamento bancário",
