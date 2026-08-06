@@ -1,6 +1,6 @@
 import { CATEGORIES, categoryColors } from './catalog'
 import { compare, currentMonthKey, monthKey } from './dates'
-import type { Cents, Entry, Expense } from './types'
+import type { Cents, Entry, Expense, ExpenseFilters, SortOption } from './types'
 
 export function alive<T extends { deletedAt: string | null }>(records: T[]): T[] {
   return records.filter((r) => r.deletedAt === null)
@@ -121,5 +121,105 @@ export function search(expenses: Expense[], term: string): Expense[] {
       e.description.toLowerCase().includes(needle) ||
       (e.supplier ?? '').toLowerCase().includes(needle),
   )
+}
+
+export function getUniqueSuppliers(expenses: Expense[]): (string | null)[] {
+  const suppliers = new Set<string | null>()
+  for (const e of alive(expenses)) {
+    if (e.supplier) suppliers.add(e.supplier)
+  }
+  return Array.from(suppliers).sort()
+}
+
+export function getUniquePaymentMethods(expenses: Expense[]): (string | null)[] {
+  const methods = new Set<string | null>()
+  for (const e of alive(expenses)) {
+    if (e.paymentMethod) methods.add(e.paymentMethod)
+  }
+  return Array.from(methods).sort()
+}
+
+export function getUniqueBanks(expenses: Expense[]): (string | null)[] {
+  const banks = new Set<string | null>()
+  for (const e of alive(expenses)) {
+    if (e.bank) banks.add(e.bank)
+  }
+  return Array.from(banks).sort()
+}
+
+function applySorting(expenses: Expense[], sortBy: SortOption): Expense[] {
+  const sorted = expenses.slice()
+
+  switch (sortBy) {
+    case 'recent':
+      return sorted.sort((a, b) => compare(b.date, a.date) || b.createdAt.localeCompare(a.createdAt))
+    case 'oldest':
+      return sorted.sort((a, b) => compare(a.date, b.date) || a.createdAt.localeCompare(b.createdAt))
+    case 'highest-value':
+      return sorted.sort((a, b) => b.amount - a.amount)
+    case 'lowest-value':
+      return sorted.sort((a, b) => a.amount - b.amount)
+    case 'supplier-az':
+      return sorted.sort((a, b) => (a.supplier ?? '').localeCompare(b.supplier ?? ''))
+    default:
+      return sorted
+  }
+}
+
+export function applyFilters(expenses: Expense[], filters: ExpenseFilters): Expense[] {
+  let result = alive(expenses)
+
+  if (filters.dateFrom) {
+    result = result.filter((e) => e.date >= filters.dateFrom!)
+  }
+  if (filters.dateTo) {
+    result = result.filter((e) => e.date <= filters.dateTo!)
+  }
+
+  if (filters.suppliers.length > 0) {
+    result = result.filter((e) => e.supplier && filters.suppliers.includes(e.supplier))
+  }
+
+  if (filters.categories.length > 0) {
+    result = result.filter((e) => e.categoryId && filters.categories.includes(e.categoryId))
+  }
+
+  if (filters.paymentMethods.length > 0) {
+    result = result.filter((e) => e.paymentMethod && filters.paymentMethods.includes(e.paymentMethod))
+  }
+
+  if (filters.banks.length > 0) {
+    result = result.filter((e) => e.bank && filters.banks.includes(e.bank))
+  }
+
+  if (filters.minValue > 0) {
+    result = result.filter((e) => e.amount >= filters.minValue)
+  }
+
+  if (filters.maxValue > 0) {
+    result = result.filter((e) => e.amount <= filters.maxValue)
+  }
+
+  if (filters.hasQuantity) {
+    result = result.filter((e) => e.quantity !== null && e.quantity > 0)
+  }
+
+  if (filters.noCategory) {
+    result = result.filter((e) => !e.categoryId)
+  }
+
+  if (filters.withNotes) {
+    result = result.filter((e) => e.notes && e.notes.trim().length > 0)
+  }
+
+  return applySorting(result, filters.sortBy)
+}
+
+export function getFilteredExpensesByMonth(
+  expenses: Expense[],
+  filters: ExpenseFilters,
+): MonthGroup<Expense>[] {
+  const filtered = applyFilters(expenses, filters)
+  return groupByMonth(filtered)
 }
 

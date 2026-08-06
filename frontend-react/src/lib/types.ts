@@ -73,3 +73,20 @@ export interface Account {
   id: string
   email: string
 }
+
+export type SortOption = 'recent' | 'oldest' | 'highest-value' | 'lowest-value' | 'supplier-az'
+
+export interface ExpenseFilters {
+  dateFrom: LocalDate | null
+  dateTo: LocalDate | null
+  suppliers: string[]
+  categories: string[]
+  paymentMethods: string[]
+  banks: string[]
+  minValue: Cents
+  maxValue: Cents
+  hasQuantity: boolean
+  noCategory: boolean
+  withNotes: boolean
+  sortBy: SortOption
+}
