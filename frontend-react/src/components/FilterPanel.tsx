@@ -152,19 +152,19 @@ export function FilterPanel({
         <div className="space-y-4">
           {/* Suppliers */}
           <div>
-            <Label className="text-xs font-medium">Fornecedor</Label>
-            <div className="mt-1.5 space-y-1 max-h-40 overflow-y-auto">
+            <Label className="text-xs font-medium mb-1.5 block">Fornecedor</Label>
+            <div className="space-y-1.5 max-h-40 overflow-y-auto">
               {suppliers.length === 0 ? (
-                <p className="text-xs text-faint py-1">Nenhum fornecedor</p>
+                <p className="text-xs text-faint">Nenhum fornecedor</p>
               ) : (
                 suppliers.map((supplier) => (
-                  <label key={supplier} className="flex items-center gap-1.5 cursor-pointer py-0.5 hover:bg-light px-1 rounded transition-colors">
+                  <div key={supplier} className="flex items-center gap-2 py-1">
                     <Checkbox
                       checked={filters.suppliers.includes(supplier)}
                       onCheckedChange={() => toggleArray('suppliers', supplier)}
                     />
-                    <span className="text-xs">{supplier}</span>
-                  </label>
+                    <span className="text-xs truncate">{supplier}</span>
+                  </div>
                 ))
               )}
             </div>
@@ -172,35 +172,35 @@ export function FilterPanel({
 
           {/* Categories */}
           <div>
-            <Label className="text-xs font-medium">Categoria</Label>
-            <div className="mt-1.5 grid grid-cols-2 gap-1">
+            <Label className="text-xs font-medium mb-1.5 block">Categoria</Label>
+            <div className="space-y-1.5">
               {CATEGORIES.map((cat) => (
-                <label key={cat.id} className="flex items-center gap-1 cursor-pointer py-0.5 hover:bg-light px-1 rounded transition-colors">
+                <div key={cat.id} className="flex items-center gap-2 py-1">
                   <Checkbox
                     checked={filters.categories.includes(cat.id)}
                     onCheckedChange={() => toggleArray('categories', cat.id)}
                   />
-                  <span className="text-xs">{cat.label}</span>
-                </label>
+                  <span className="text-xs truncate">{cat.label}</span>
+                </div>
               ))}
             </div>
           </div>
 
           {/* Payment Methods */}
           <div>
-            <Label className="text-xs font-medium">Forma de Pagamento</Label>
-            <div className="mt-1.5 space-y-1">
+            <Label className="text-xs font-medium mb-1.5 block">Forma de Pagamento</Label>
+            <div className="space-y-1.5">
               {paymentMethods.length === 0 ? (
-                <p className="text-xs text-faint py-1">Nenhum método</p>
+                <p className="text-xs text-faint">Nenhum método</p>
               ) : (
                 paymentMethods.map((method) => (
-                  <label key={method} className="flex items-center gap-1.5 cursor-pointer py-0.5 hover:bg-light px-1 rounded transition-colors">
+                  <div key={method} className="flex items-center gap-2 py-1">
                     <Checkbox
                       checked={filters.paymentMethods.includes(method)}
                       onCheckedChange={() => toggleArray('paymentMethods', method)}
                     />
-                    <span className="text-xs">{method}</span>
-                  </label>
+                    <span className="text-xs truncate">{method}</span>
+                  </div>
                 ))
               )}
             </div>
@@ -208,19 +208,19 @@ export function FilterPanel({
 
           {/* Banks */}
           <div>
-            <Label className="text-xs font-medium">Banco</Label>
-            <div className="mt-1.5 space-y-1">
+            <Label className="text-xs font-medium mb-1.5 block">Banco</Label>
+            <div className="space-y-1.5">
               {banks.length === 0 ? (
-                <p className="text-xs text-faint py-1">Nenhum banco</p>
+                <p className="text-xs text-faint">Nenhum banco</p>
               ) : (
                 banks.map((bank) => (
-                  <label key={bank} className="flex items-center gap-1.5 cursor-pointer py-0.5 hover:bg-light px-1 rounded transition-colors">
+                  <div key={bank} className="flex items-center gap-2 py-1">
                     <Checkbox
                       checked={filters.banks.includes(bank)}
                       onCheckedChange={() => toggleArray('banks', bank)}
                     />
-                    <span className="text-xs">{bank}</span>
-                  </label>
+                    <span className="text-xs truncate">{bank}</span>
+                  </div>
                 ))
               )}
             </div>
@@ -273,30 +273,30 @@ export function FilterPanel({
           </div>
 
           {/* Checkboxes */}
-          <div className="space-y-1">
-            <label className="flex items-center gap-1.5 cursor-pointer py-0.5 hover:bg-light px-1 rounded transition-colors">
+          <div className="space-y-1.5">
+            <div className="flex items-center gap-2 py-1">
               <Checkbox
                 checked={filters.hasQuantity}
                 onCheckedChange={(checked) => updateFilter('hasQuantity', !!checked)}
               />
               <span className="text-xs">Apenas com quantidade</span>
-            </label>
+            </div>
 
-            <label className="flex items-center gap-1.5 cursor-pointer py-0.5 hover:bg-light px-1 rounded transition-colors">
+            <div className="flex items-center gap-2 py-1">
               <Checkbox
                 checked={filters.noCategory}
                 onCheckedChange={(checked) => updateFilter('noCategory', !!checked)}
               />
               <span className="text-xs">Sem categoria</span>
-            </label>
+            </div>
 
-            <label className="flex items-center gap-1.5 cursor-pointer py-0.5 hover:bg-light px-1 rounded transition-colors">
+            <div className="flex items-center gap-2 py-1">
               <Checkbox
                 checked={filters.withNotes}
                 onCheckedChange={(checked) => updateFilter('withNotes', !!checked)}
               />
               <span className="text-xs">Com notas</span>
-            </label>
+            </div>
           </div>
         </div>
       </Section>
