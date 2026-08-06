@@ -1,86 +1,150 @@
-import { useMemo, useState, type ComponentType } from 'react'
-import { Receipt, Search, SearchX } from 'lucide-react'
+import { useEffect, useMemo, useState } from 'react'
+import { Receipt, SearchX } from 'lucide-react'
 import { EmptyState, Screen, ScreenTitle } from '../components/Chrome'
+import { FilterPanel } from '../components/FilterPanel'
 import { SwipeRow } from '../components/SwipeRow'
 import { Input } from '../components/ui/input'
-import { CATEGORIES, categoryLabel } from '../lib/catalog'
+import { categoryLabel } from '../lib/catalog'
 import { formatShort, monthLabel } from '../lib/dates'
 import { formatBRL } from '../lib/money'
 import { notifyWithUndo } from '../lib/notify'
-import { groupByMonth, isFresh, search, sortedExpenses } from '../lib/selectors'
+import { applyFilters, getUniqueSuppliers, getUniquePaymentMethods, getUniqueBanks, isFresh } from '../lib/selectors'
 import { useStore } from '../lib/store'
 import { cn } from '../lib/utils'
-import type { Expense } from '../lib/types'
+import type { Expense, ExpenseFilters } from '../lib/types'
 
-export type ExpenseFilter = null
+const STORAGE_KEY = 'custocasa_expense_filters'
+
+const DEFAULT_FILTERS: ExpenseFilters = {
+  dateFrom: null,
+  dateTo: null,
+  suppliers: [],
+  categories: [],
+  paymentMethods: [],
+  banks: [],
+  minValue: 0,
+  maxValue: 0,
+  hasQuantity: false,
+  noCategory: false,
+  withNotes: false,
+  sortBy: 'recent',
+}
 
 interface ExpensesProps {
-  filter: ExpenseFilter
-  onFilterChange: (filter: ExpenseFilter) => void
   onEdit: (expense: Expense) => void
   onLaunch: () => void
 }
 
-export function Expenses({ filter, onFilterChange, onEdit, onLaunch }: ExpensesProps) {
+export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
   const { state, dispatch } = useStore()
   const [term, setTerm] = useState('')
-  const [category, setCategory] = useState<string | null>(null)
+  const [filters, setFilters] = useState<ExpenseFilters>(DEFAULT_FILTERS)
+
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY)
+    if (saved) {
+      try {
+        setFilters(JSON.parse(saved))
+      } catch {
+        setFilters(DEFAULT_FILTERS)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(filters))
+  }, [filters])
+
+  const suppliers = useMemo(() => getUniqueSuppliers(state.expenses), [state.expenses])
+  const paymentMethods = useMemo(() => getUniquePaymentMethods(state.expenses), [state.expenses])
+  const banks = useMemo(() => getUniqueBanks(state.expenses), [state.expenses])
+
+  const filtered = useMemo(() => applyFilters(state.expenses, filters), [state.expenses, filters])
+  const searched = useMemo(() => {
+    const needle = term.trim().toLowerCase()
+    if (needle === '') return filtered
+    return filtered.filter(
+      (e) =>
+        e.description.toLowerCase().includes(needle) ||
+        (e.supplier ?? '').toLowerCase().includes(needle),
+    )
+  }, [filtered, term])
 
   const groups = useMemo(() => {
-    let list = sortedExpenses(state.expenses)
-    if (category) list = list.filter((e) => e.categoryId === category)
-    return groupByMonth(search(list, term))
-  }, [state.expenses, category, term])
+    const grouped = new Map<string, Expense[]>()
+    for (const e of searched) {
+      const key = e.date.substring(0, 7)
+      const bucket = grouped.get(key)
+      if (bucket) bucket.push(e)
+      else grouped.set(key, [e])
+    }
+
+    return Array.from(grouped.entries())
+      .map(([key, items]) => ({
+        key,
+        items: items.sort((a, b) => b.date.localeCompare(a.date)),
+        total: items.reduce((sum, i) => sum + i.amount, 0),
+      }))
+      .sort((a, b) => (a.key < b.key ? 1 : -1))
+  }, [searched])
 
   const remove = (expense: Expense) => {
     dispatch({ type: 'removeExpense', id: expense.id })
     notifyWithUndo('Gasto excluído', () => dispatch({ type: 'restoreExpense', id: expense.id }))
   }
 
-  const used = new Set(state.expenses.filter((e) => !e.deletedAt).map((e) => e.categoryId))
-  const available = CATEGORIES.filter((c) => used.has(c.id))
-  const filtering = term !== '' || filter !== null || category !== null
+  const isFiltered =
+    term !== '' ||
+    filters.dateFrom ||
+    filters.dateTo ||
+    filters.suppliers.length > 0 ||
+    filters.categories.length > 0 ||
+    filters.paymentMethods.length > 0 ||
+    filters.banks.length > 0 ||
+    filters.minValue > 0 ||
+    filters.maxValue > 0 ||
+    filters.hasQuantity ||
+    filters.noCategory ||
+    filters.withNotes
 
   return (
     <Screen>
       <ScreenTitle title="Gastos" />
 
-      <div className="relative">
-        <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-faint" />
+      <div className="relative mb-6">
         <Input
           value={term}
-          placeholder="Buscar por descrição ou fornecedor"
+          placeholder="Buscar descrição ou fornecedor"
           onChange={(e) => setTerm(e.target.value)}
-          className="pl-9"
         />
       </div>
 
-      <div className="-mx-4 mt-3 mb-5 flex gap-2 overflow-x-auto px-4 pb-1">
-        {available.map((c) => (
-          <Chip
-            key={c.id}
-            label={c.label}
-            active={category === c.id}
-            onClick={() => setCategory(category === c.id ? null : c.id)}
-          />
-        ))}
-      </div>
+      <FilterPanel
+        filters={filters}
+        suppliers={suppliers}
+        paymentMethods={paymentMethods}
+        banks={banks}
+        onFiltersChange={setFilters}
+      />
 
       {groups.length === 0 ? (
         <EmptyState
-          icon={filtering ? SearchX : Receipt}
-          title={filtering ? 'Nada encontrado' : 'Nenhum gasto lançado'}
+          icon={isFiltered ? SearchX : Receipt}
+          title={isFiltered ? 'Nada encontrado' : 'Nenhum gasto lançado'}
           description={
-            filtering
+            isFiltered
               ? 'Nenhum lançamento bate com esse filtro.'
               : 'Assim que você lançar um gasto ele aparece nesta lista.'
           }
-          actionLabel={filtering ? undefined : 'Lançar gasto'}
+          actionLabel={isFiltered ? undefined : 'Lançar gasto'}
           actionVariant="outline"
-          onAction={filtering ? undefined : onLaunch}
+          onAction={isFiltered ? undefined : onLaunch}
         />
       ) : (
         <div className="space-y-6">
+          <div className="text-sm text-muted">
+            {searched.length} {searched.length === 1 ? 'gasto' : 'gastos'}
+          </div>
           {groups.map((group) => (
             <section key={group.key}>
               <div className="mb-2 flex items-baseline justify-between">
@@ -125,30 +189,5 @@ export function Expenses({ filter, onFilterChange, onEdit, onLaunch }: ExpensesP
         </div>
       )}
     </Screen>
-  )
-}
-
-function Chip({
-  label,
-  icon: Icon,
-  active,
-  onClick,
-}: {
-  label: string
-  icon?: ComponentType<{ className?: string }>
-  active: boolean
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={cn(
-        'flex shrink-0 items-center gap-1.5 rounded-full px-3.5 py-2 text-sm transition-colors duration-150 ease-smooth',
-        active ? 'bg-primary font-medium text-white' : 'border border-line bg-surface text-muted hover:border-faint hover:text-ink',
-      )}
-    >
-      {Icon ? <Icon className="size-3.5" /> : null}
-      {label}
-    </button>
   )
 }
