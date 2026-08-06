@@ -70,7 +70,7 @@ export function Sidebar({ active, onChange, projectName, onNewExpense }: Sidebar
         <p className="mt-0.5 truncate text-sm text-muted">{projectName}</p>
       </div>
 
-      <Button full className="mt-5" onClick={onNewExpense}>
+      <Button variant="outline" full className="mt-5" onClick={onNewExpense}>
         <Plus /> Novo gasto
       </Button>
 
@@ -130,7 +130,7 @@ interface EmptyStateProps {
   title: string
   description: string
   actionLabel?: string
-  actionVariant?: 'primary' | 'success'
+  actionVariant?: 'primary' | 'success' | 'outline'
   onAction?: () => void
 }
 

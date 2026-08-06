@@ -57,7 +57,7 @@ function SwipeableRow({ children, onEdit, onDelete }: SwipeRowProps) {
             close()
             onEdit()
           }}
-          className="flex w-19 flex-col items-center justify-center gap-1 bg-blue-600 text-xs font-medium text-white hover:bg-blue-700 active:bg-blue-700"
+          className="flex w-19 flex-col items-center justify-center gap-1 bg-primary text-xs font-medium text-white hover:brightness-110 active:brightness-95"
         >
           <Pencil className="size-4" />
           Editar
@@ -67,7 +67,7 @@ function SwipeableRow({ children, onEdit, onDelete }: SwipeRowProps) {
             close()
             onDelete()
           }}
-          className="flex w-19 flex-col items-center justify-center gap-1 bg-red-600 text-xs font-medium text-white hover:bg-red-700 active:bg-red-700"
+          className="flex w-19 flex-col items-center justify-center gap-1 bg-danger text-xs font-medium text-white hover:brightness-110 active:brightness-95"
         >
           <Trash2 className="size-4" />
           Excluir

@@ -76,6 +76,7 @@ export function Expenses({ filter, onFilterChange, onEdit, onLaunch }: ExpensesP
               : 'Assim que você lançar um gasto ele aparece nesta lista.'
           }
           actionLabel={filtering ? undefined : 'Lançar gasto'}
+          actionVariant="outline"
           onAction={filtering ? undefined : onLaunch}
         />
       ) : (

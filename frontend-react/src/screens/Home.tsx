@@ -50,6 +50,7 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
           title="Nenhum gasto lançado ainda"
           description="Lance o primeiro e o painel começa a mostrar para onde o dinheiro está indo."
           actionLabel="Lançar o primeiro gasto"
+          actionVariant="outline"
           onAction={onLaunch}
         />
       ) : (
