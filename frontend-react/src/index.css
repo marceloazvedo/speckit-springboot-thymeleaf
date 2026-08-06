@@ -128,14 +128,16 @@
   animation: slide-in-bottom 0.3s var(--ease-smooth);
 }
 
-/* Glass cards */
-.glass {
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-border);
-  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12);
-  border-radius: 1rem;
+/* Glass cards - defined BEFORE utilities */
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12);
+    border-radius: 1rem;
+  }
 }
 
 /* Elevated cards */
@@ -214,6 +216,10 @@
 
 /* Component utilities */
 @layer components {
+  .glass-border {
+    @apply border-glass-border;
+  }
+
   .card-glass {
     @apply glass rounded-xl p-4 transition-all duration-200 hover:shadow-lg;
   }

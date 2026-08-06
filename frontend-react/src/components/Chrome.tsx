@@ -19,7 +19,10 @@ interface NavProps {
 
 export function TabBar({ active, onChange }: NavProps) {
   return (
-    <nav className="safe-bottom fixed inset-x-0 bottom-0 z-30 glass border-t border-glass-border md:hidden">
+    <nav className="safe-bottom fixed inset-x-0 bottom-0 z-30 rounded-t-2xl border-t border-line bg-white/60 backdrop-blur-xl md:hidden" style={{
+      background: 'rgba(255, 255, 255, 0.55)',
+      backdropFilter: 'blur(16px) saturate(160%)',
+    }}>
       <ul className="mx-auto flex max-w-md">
         {TABS.map((tab) => {
           const Icon = tab.icon
