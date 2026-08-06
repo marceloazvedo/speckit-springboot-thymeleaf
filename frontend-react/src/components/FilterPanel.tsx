@@ -118,28 +118,25 @@ export function FilterPanel({
             <QuickButton
               label="Últimos 7d"
               onClick={() => {
-                const today = new Date()
-                const sevenDaysAgo = new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000)
-                updateFilter('dateFrom', sevenDaysAgo.toISOString().split('T')[0])
-                updateFilter('dateTo', today.toISOString().split('T')[0])
+                const today = new Date().toISOString().split('T')[0]
+                const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+                onFiltersChange({ ...filters, dateFrom: sevenDaysAgo, dateTo: today })
               }}
             />
             <QuickButton
               label="Este mês"
               onClick={() => {
-                const today = new Date()
-                const firstDay = new Date(today.getFullYear(), today.getMonth(), 1)
-                updateFilter('dateFrom', firstDay.toISOString().split('T')[0])
-                updateFilter('dateTo', today.toISOString().split('T')[0])
+                const today = new Date().toISOString().split('T')[0]
+                const firstDay = new Date(new Date().getFullYear(), new Date().getMonth(), 1).toISOString().split('T')[0]
+                onFiltersChange({ ...filters, dateFrom: firstDay, dateTo: today })
               }}
             />
             <QuickButton
               label="Últimos 30d"
               onClick={() => {
-                const today = new Date()
-                const thirtyDaysAgo = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000)
-                updateFilter('dateFrom', thirtyDaysAgo.toISOString().split('T')[0])
-                updateFilter('dateTo', today.toISOString().split('T')[0])
+                const today = new Date().toISOString().split('T')[0]
+                const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+                onFiltersChange({ ...filters, dateFrom: thirtyDaysAgo, dateTo: today })
               }}
             />
           </div>
