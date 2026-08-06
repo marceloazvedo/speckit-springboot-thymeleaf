@@ -64,19 +64,55 @@ def get_fornecedor(desc: str, current: str = "") -> str:
     return None
 
 def categorize_smart(desc: str, unit: str = "") -> str:
-    """Categoriza com mais inteligência"""
+    """Categoriza com mais inteligência usando categorias válidas do app"""
     desc_lower = (desc or "").lower()
 
     # Mão de obra
     if any(w in desc_lower for w in ["pedreiro", "servente", "diária", "mão de obra", "pintor", "azulejista", "encanador", "eletricista"]):
-        return "labor"
+        return "mao_de_obra"
 
-    # Serviço
-    if any(w in desc_lower for w in ["arquiteto", "cartório", "rrt", "casamba", "escavadeira", "frete", "gasolina", "locação", "aluguel"]):
-        return "service"
+    # Elétrica
+    if any(w in desc_lower for w in ["eletro", "fio", "cabo", "luz", "quadro", "circuito"]):
+        return "eletrica"
 
-    # Material
-    return "material"
+    # Hidráulica
+    if any(w in desc_lower for w in ["cano", "tubo", "água", "encanação", "louça", "vaso", "pia"]):
+        return "hidraulica"
+
+    # Pintura
+    if any(w in desc_lower for w in ["tinta", "pintor", "massa", "reboco"]):
+        return "pintura"
+
+    # Esquadrias
+    if any(w in desc_lower for w in ["janela", "porta", "esquadria", "alumínio", "vidro"]):
+        return "esquadrias"
+
+    # Revestimentos
+    if any(w in desc_lower for w in ["porcelanato", "azulejo", "argamassa", "piso", "parede"]):
+        return "revestimentos"
+
+    # Cobertura
+    if any(w in desc_lower for w in ["telha", "telhado", "cobertura", "madeiramento"]):
+        return "cobertura"
+
+    # Alvenaria
+    if any(w in desc_lower for w in ["tijolo", "bloco", "cerâmica", "alvenaria"]):
+        return "alvenaria"
+
+    # Estrutura
+    if any(w in desc_lower for w in ["ferro", "aço", "concreto", "laje", "viga"]):
+        return "estrutura"
+
+    # Fundação
+    if any(w in desc_lower for w in ["fundação", "escavação", "brita", "areia", "cimento", "sapata"]):
+        return "fundacao"
+
+    # Serviços preliminares/externos
+    if any(w in desc_lower for w in ["arquiteto", "cartório", "rrt", "casamba", "escavadeira", "frete", "gasolina", "locação", "aluguel", "limpeza", "terraplanagem"]):
+        return "preliminares"
+
+    # Default
+    return "outros"
 
 def main():
     csv_path = "/Users/marceloazevedo/workspace/speckit-springboot-thymeleaf/planilha_completa_obra.csv"
