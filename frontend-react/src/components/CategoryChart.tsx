@@ -72,22 +72,22 @@ function PieChartView({
         </button>
       </div>
 
-      <div className="flex gap-6 items-center">
+      <div className="flex gap-3 items-center">
         <div className="flex-shrink-0 flex justify-center">
           <div
-            className="size-28 rounded-full shadow-md"
+            className="size-24 rounded-full shadow-md"
             style={{ background: conicGradient }}
           />
         </div>
 
-        <ul className="flex-1 space-y-2">
+        <ul className="flex-1 min-w-0 space-y-2">
           {slices.map((slice) => (
-            <li key={slice.id ?? 'none'} className="flex items-center gap-2 text-sm">
+            <li key={slice.id ?? 'none'} className="flex items-center gap-2 text-sm min-w-0">
               <div
                 className={cn('size-3 rounded-sm flex-shrink-0', slice.bgColor)}
               />
-              <span className="text-muted flex-1 truncate">{slice.label}</span>
-              <span className="tabular font-medium text-sm">{Math.round(slice.share * 100)}%</span>
+              <span className="text-muted flex-1 truncate text-xs">{slice.label}</span>
+              <span className="tabular font-medium text-xs flex-shrink-0">{Math.round(slice.share * 100)}%</span>
             </li>
           ))}
         </ul>
