@@ -141,53 +141,115 @@ export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
           onAction={isFiltered ? undefined : onLaunch}
         />
       ) : (
-        <div className="space-y-6">
-          <div className="text-sm text-muted">
-            {searched.length} {searched.length === 1 ? 'gasto' : 'gastos'}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between rounded-lg bg-light px-4 py-2.5">
+            <span className="text-sm font-medium text-ink">
+              {searched.length} {searched.length === 1 ? 'gasto' : 'gastos'}
+            </span>
+            <span className="tabular text-sm font-semibold text-primary">
+              {formatBRL(searched.reduce((sum, e) => sum + e.amount, 0))}
+            </span>
           </div>
+
           {groups.map((group) => (
-            <section key={group.key}>
-              <div className="mb-2 flex items-baseline justify-between">
-                <h2 className="text-sm font-semibold text-muted capitalize">
-                  {monthLabel(group.key)}
-                </h2>
-                <span className="tabular text-sm text-muted">{formatBRL(group.total)}</span>
-              </div>
-              <ul className="divide-y divide-line overflow-hidden rounded-xl border border-line bg-surface">
-                {group.items.map((expense) => (
-                  <li key={expense.id}>
-                    <SwipeRow onEdit={() => onEdit(expense)} onDelete={() => remove(expense)}>
-                      <button
-                        onClick={() => onEdit(expense)}
-                        className={cn(
-                          'flex w-full items-center gap-3 px-4 py-3 text-left transition-colors duration-150 ease-smooth hover:bg-light active:bg-light',
-                          isFresh(expense.createdAt) && 'animate-flash-new',
-                        )}
-                      >
-                        <span className="tabular w-11 shrink-0 text-sm text-faint">
-                          {formatShort(expense.date)}
-                        </span>
-                        <span className="min-w-0 flex-1">
-                          <span className="block truncate text-sm">{expense.description}</span>
-                          <span className="mt-0.5 flex flex-wrap items-center gap-x-2 text-xs text-muted">
-                            {expense.supplier ? <span>{expense.supplier}</span> : null}
-                            {expense.categoryId ? (
-                              <span>{categoryLabel(expense.categoryId)}</span>
-                            ) : null}
-                          </span>
-                        </span>
-                        <span className="tabular shrink-0 text-sm font-medium">
-                          {formatBRL(expense.amount)}
-                        </span>
-                      </button>
-                    </SwipeRow>
-                  </li>
-                ))}
-              </ul>
-            </section>
+            <MonthlyCard
+              key={group.key}
+              monthKey={group.key}
+              total={group.total}
+              count={group.items.length}
+              items={group.items}
+              onEdit={onEdit}
+              onRemove={remove}
+            />
           ))}
         </div>
       )}
     </Screen>
+  )
+}
+
+function MonthlyCard({
+  monthKey,
+  total,
+  count,
+  items,
+  onEdit,
+  onRemove,
+}: {
+  monthKey: string
+  total: number
+  count: number
+  items: Expense[]
+  onEdit: (expense: Expense) => void
+  onRemove: (expense: Expense) => void
+}) {
+  const [expanded, setExpanded] = useState(true)
+
+  return (
+    <div className="rounded-xl border border-line bg-surface overflow-hidden">
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="w-full px-4 py-3 flex items-center justify-between hover:bg-light transition-colors"
+      >
+        <div className="flex-1 text-left">
+          <h2 className="text-sm font-semibold text-ink capitalize">
+            {monthLabel(monthKey)}
+          </h2>
+          <p className="text-xs text-muted mt-0.5">
+            {count} {count === 1 ? 'gasto' : 'gastos'}
+          </p>
+        </div>
+        <div className="text-right">
+          <span className="tabular text-sm font-semibold text-primary block">
+            {formatBRL(total)}
+          </span>
+          <svg
+            className={cn(
+              'size-4 text-muted transition-transform mt-1 ml-auto',
+              expanded && 'rotate-180',
+            )}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
+      </button>
+
+      {expanded && (
+        <ul className="divide-y divide-line border-t border-line">
+          {items.map((expense) => (
+            <li key={expense.id}>
+              <SwipeRow onEdit={() => onEdit(expense)} onDelete={() => onRemove(expense)}>
+                <button
+                  onClick={() => onEdit(expense)}
+                  className={cn(
+                    'flex w-full items-center gap-3 px-4 py-3 text-left transition-colors duration-150 ease-smooth hover:bg-light active:bg-light',
+                    isFresh(expense.createdAt) && 'animate-flash-new',
+                  )}
+                >
+                  <span className="tabular w-11 shrink-0 text-sm text-faint">
+                    {formatShort(expense.date)}
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-sm">{expense.description}</span>
+                    <span className="mt-0.5 flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                      {expense.supplier ? <span>{expense.supplier}</span> : null}
+                      {expense.categoryId ? (
+                        <span>{categoryLabel(expense.categoryId)}</span>
+                      ) : null}
+                    </span>
+                  </span>
+                  <span className="tabular shrink-0 text-sm font-medium">
+                    {formatBRL(expense.amount)}
+                  </span>
+                </button>
+              </SwipeRow>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   )
 }
