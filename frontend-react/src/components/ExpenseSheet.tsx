@@ -238,10 +238,10 @@ export function ExpenseSheet({ open, expense, history, onClose, onSave }: Expens
                   type="button"
                   onClick={() => set('categoryId', active ? null : category.id)}
                   className={cn(
-                    'rounded-full px-3.5 py-2 text-sm font-medium transition-all duration-150 ease-smooth border',
-                    active
-                      ? 'ring-2 ring-offset-1 ring-primary scale-105 ' + colors.bgColor + ' ' + colors.textColor + ' border-current'
-                      : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100',
+                    'rounded-full px-3.5 py-2 text-sm font-medium transition-all duration-150 ease-smooth border opacity-40 hover:opacity-60',
+                    active && 'ring-2 ring-offset-1 ring-primary scale-105 opacity-100',
+                    !active && (colors.borderColor + ' ' + colors.bgColor + ' ' + colors.textColor),
+                    active && (colors.bgColor + ' ' + colors.textColor + ' border-current'),
                   )}
                 >
                   {category.label}
