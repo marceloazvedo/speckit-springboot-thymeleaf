@@ -285,7 +285,6 @@ export function ExpenseSheet({ open, expense, history, onClose, onSave }: Expens
         ) : null}
 
         <div className="space-y-3">
-          <ToggleRow label="Está pago" checked={form.paid} onChange={(v) => set('paid', v)} />
           <ToggleRow
             label="Está entregue"
             checked={form.delivered}
