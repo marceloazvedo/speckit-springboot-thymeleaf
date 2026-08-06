@@ -37,6 +37,12 @@
   --shadow-xl: 0 16px 40px rgba(15, 23, 42, 0.18);
 
   --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Glasmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-bg-strong: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-blur: blur(16px) saturate(160%);
 }
 
 @layer base {
@@ -50,6 +56,10 @@
     color: var(--color-ink);
     font-family: var(--font-sans);
     overscroll-behavior-y: none;
+    background-image:
+      radial-gradient(circle 520px at top -10% left 5%, rgba(59, 130, 246, 0.15), transparent),
+      radial-gradient(circle 460px at bottom -10% right 5%, rgba(34, 197, 94, 0.15), transparent);
+    background-attachment: fixed;
   }
 
   button {
@@ -90,8 +100,107 @@
   }
 }
 
+@keyframes slide-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
 .animate-flash-new {
   animation: flash-new 1.6s var(--ease-smooth);
+}
+
+.animate-slide-in {
+  animation: slide-in-bottom 0.3s var(--ease-smooth);
+}
+
+/* Glass cards */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12);
+  border-radius: 1rem;
+}
+
+/* Elevated cards */
+.card-elevated {
+  background: var(--color-surface);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1);
+  border-radius: 1rem;
+  border: 1px solid var(--color-line);
+  transition: all 0.2s var(--ease-smooth);
+}
+
+.card-elevated:hover {
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.15);
+  transform: translateY(-2px);
+}
+
+/* List items */
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-line);
+  transition: background-color 0.15s var(--ease-smooth);
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item:hover {
+  background-color: rgba(15, 23, 42, 0.02);
+}
+
+/* Icon badge */
+.icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  flex-shrink: 0;
+}
+
+.icon-badge.success {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.icon-badge.warning {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.icon-badge.danger {
+  background: rgba(220, 38, 38, 0.12);
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.icon-badge.primary {
+  background: rgba(13, 110, 253, 0.12);
+  border-color: rgba(13, 110, 253, 0.3);
 }
 
 [data-sonner-toaster] {
@@ -101,4 +210,55 @@
   --success-bg: var(--color-dark);
   --success-text: #ffffff;
   --success-border: var(--color-dark);
+}
+
+/* Component utilities */
+@layer components {
+  .card-glass {
+    @apply glass rounded-xl p-4 transition-all duration-200 hover:shadow-lg;
+  }
+
+  .card-surface {
+    @apply rounded-xl border border-line bg-surface p-4 transition-all duration-200 hover:shadow-md;
+  }
+
+  .btn-primary {
+    @apply rounded-lg bg-primary px-4 py-2 font-medium text-white transition-all duration-200 hover:shadow-lg hover:brightness-110 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply rounded-lg bg-secondary px-4 py-2 font-medium text-white transition-all duration-200 hover:shadow-lg hover:brightness-110 active:scale-95;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full bg-primary-soft px-2 py-1 text-xs font-semibold text-primary;
+  }
+
+  .badge-success {
+    @apply bg-success-soft text-success-text;
+  }
+
+  .badge-danger {
+    @apply bg-danger-soft text-danger-text;
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center gap-1 rounded-full bg-yellow-100 px-2 py-1 text-xs font-semibold text-yellow-800;
+  }
+
+  .status-paid {
+    @apply text-success-text font-semibold;
+  }
+
+  .status-unpaid {
+    @apply text-warning-text font-semibold;
+  }
+
+  .text-highlight {
+    @apply text-2xl font-bold tabular text-ink;
+  }
+
+  .text-large {
+    @apply text-lg font-semibold tabular;
+  }
 }
