@@ -241,7 +241,7 @@ export function ExpenseSheet({ open, expense, history, onClose, onSave }: Expens
                     'rounded-full px-3.5 py-2 text-sm font-medium transition-all duration-150 ease-smooth border',
                     active
                       ? 'ring-2 ring-offset-1 ring-primary scale-105 ' + colors.bgColor + ' ' + colors.textColor + ' border-current'
-                      : colors.borderColor + ' ' + colors.bgColor + ' ' + colors.textColor + ' ' + colors.hoverBgColor,
+                      : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100',
                   )}
                 >
                   {category.label}
