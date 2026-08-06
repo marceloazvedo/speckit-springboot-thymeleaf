@@ -1,5 +1,6 @@
 import { ChevronRight, Receipt } from 'lucide-react'
 import { EmptyState, Screen } from '../components/Chrome'
+import { CategoryChart } from '../components/CategoryChart'
 import { InstallBanner } from '../components/Banners'
 import { formatBRL, formatWhole } from '../lib/money'
 import { currentMonthKey, formatShort, monthLabel } from '../lib/dates'
@@ -56,25 +57,7 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
 
 
           <section className="mb-6">
-            <h2 className="mb-3 text-sm font-semibold text-muted">Onde foi o dinheiro</h2>
-            <ul className="space-y-3 rounded-xl border border-line bg-surface px-4 py-4">
-              {slices.map((slice) => (
-                <li key={slice.id ?? 'none'}>
-                  <div className="flex items-baseline justify-between gap-3">
-                    <span className="truncate text-sm">{slice.label}</span>
-                    <span className="tabular shrink-0 text-sm font-medium">
-                      {formatBRL(slice.amount)}
-                    </span>
-                  </div>
-                  <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-primary-soft">
-                    <div
-                      className="h-full rounded-full bg-primary"
-                      style={{ width: `${Math.max(slice.share * 100, 2)}%` }}
-                    />
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <CategoryChart slices={slices} />
           </section>
 
           <section>

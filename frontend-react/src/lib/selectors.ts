@@ -1,4 +1,4 @@
-import { CATEGORIES } from './catalog'
+import { CATEGORIES, categoryColors } from './catalog'
 import { compare, currentMonthKey, monthKey } from './dates'
 import type { Cents, Entry, Expense } from './types'
 
@@ -37,6 +37,8 @@ export interface CategorySlice {
   label: string
   amount: Cents
   share: number
+  bgColor: string
+  textColor: string
 }
 
 export function byCategory(expenses: Expense[]): CategorySlice[] {
@@ -51,12 +53,17 @@ export function byCategory(expenses: Expense[]): CategorySlice[] {
   }
 
   return Array.from(totals.entries())
-    .map(([id, amount]) => ({
-      id,
-      label: id ? (CATEGORIES.find((c) => c.id === id)?.label ?? 'Sem categoria') : 'Sem categoria',
-      amount,
-      share: amount / grand,
-    }))
+    .map(([id, amount]) => {
+      const colors = categoryColors(id)
+      return {
+        id,
+        label: id ? (CATEGORIES.find((c) => c.id === id)?.label ?? 'Sem categoria') : 'Sem categoria',
+        amount,
+        share: amount / grand,
+        bgColor: colors.bgColor,
+        textColor: colors.textColor,
+      }
+    })
     .sort((a, b) => b.amount - a.amount)
 }
 
