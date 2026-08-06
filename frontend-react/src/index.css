@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #0d6efd;
+  --color-secondary: #2e8b57;
+  --color-success: #22c55e;
+  --color-danger: #dc2626;
+  --color-warning: #f59e0b;
+  --color-info: #0dcaf0;
+  --color-light: #eef2f7;
+  --color-dark: #0f172a;
+
+  --color-bg: #eef2f7;
+  --color-surface: #ffffff;
+  --color-ink: #0f172a;
+  --color-muted: #5b6b82;
+  --color-faint: #8a95aa;
+  --color-line: #d2dce5;
+  --color-primary-soft: #cfe2ff;
+  --color-success-soft: rgba(34, 197, 94, 0.12);
+  --color-danger-soft: rgba(220, 38, 38, 0.12);
+
+  --color-warning-text: #92400e;
+  --color-success-text: #15803d;
+  --color-danger-text: #b91c1c;
+
+  --font-sans:
+    'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 16px 40px rgba(15, 23, 42, 0.18);
+
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overscroll-behavior-y: none;
+  }
+
+  button {
+    touch-action: manipulation;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+@utility safe-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
+}
+
+@utility safe-top {
+  padding-top: max(env(safe-area-inset-top), 0.5rem);
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes flash-new {
+  from {
+    background-color: color-mix(in oklab, var(--color-success) 16%, transparent);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.animate-flash-new {
+  animation: flash-new 1.6s var(--ease-smooth);
+}
+
+[data-sonner-toaster] {
+  --normal-bg: var(--color-dark);
+  --normal-text: #ffffff;
+  --normal-border: var(--color-dark);
+  --success-bg: var(--color-dark);
+  --success-text: #ffffff;
+  --success-border: var(--color-dark);
+}
