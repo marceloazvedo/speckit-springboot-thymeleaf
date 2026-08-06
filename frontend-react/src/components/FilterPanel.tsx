@@ -158,12 +158,12 @@ export function FilterPanel({
                 <p className="text-xs text-faint">Nenhum fornecedor</p>
               ) : (
                 suppliers.map((supplier) => (
-                  <div key={supplier} className="flex items-center gap-2 py-1">
+                  <div key={supplier} className="flex items-start gap-2 py-1">
                     <Checkbox
                       checked={filters.suppliers.includes(supplier)}
                       onCheckedChange={() => toggleArray('suppliers', supplier)}
                     />
-                    <span className="text-xs truncate">{supplier}</span>
+                    <span className="text-xs break-words">{supplier}</span>
                   </div>
                 ))
               )}
@@ -175,12 +175,12 @@ export function FilterPanel({
             <Label className="text-xs font-medium mb-1.5 block">Categoria</Label>
             <div className="space-y-1.5">
               {CATEGORIES.map((cat) => (
-                <div key={cat.id} className="flex items-center gap-2 py-1">
+                <div key={cat.id} className="flex items-start gap-2 py-1">
                   <Checkbox
                     checked={filters.categories.includes(cat.id)}
                     onCheckedChange={() => toggleArray('categories', cat.id)}
                   />
-                  <span className="text-xs truncate">{cat.label}</span>
+                  <span className="text-xs break-words">{cat.label}</span>
                 </div>
               ))}
             </div>
@@ -194,12 +194,12 @@ export function FilterPanel({
                 <p className="text-xs text-faint">Nenhum método</p>
               ) : (
                 paymentMethods.map((method) => (
-                  <div key={method} className="flex items-center gap-2 py-1">
+                  <div key={method} className="flex items-start gap-2 py-1">
                     <Checkbox
                       checked={filters.paymentMethods.includes(method)}
                       onCheckedChange={() => toggleArray('paymentMethods', method)}
                     />
-                    <span className="text-xs truncate">{method}</span>
+                    <span className="text-xs break-words">{method}</span>
                   </div>
                 ))
               )}
@@ -214,12 +214,12 @@ export function FilterPanel({
                 <p className="text-xs text-faint">Nenhum banco</p>
               ) : (
                 banks.map((bank) => (
-                  <div key={bank} className="flex items-center gap-2 py-1">
+                  <div key={bank} className="flex items-start gap-2 py-1">
                     <Checkbox
                       checked={filters.banks.includes(bank)}
                       onCheckedChange={() => toggleArray('banks', bank)}
                     />
-                    <span className="text-xs truncate">{bank}</span>
+                    <span className="text-xs break-words">{bank}</span>
                   </div>
                 ))
               )}
