@@ -8,7 +8,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import { Expense } from '@/lib/types';
+import type { Expense } from '@/lib/types';
 
 interface MonthlyChartProps {
   expenses: Expense[];
@@ -16,7 +16,7 @@ interface MonthlyChartProps {
 
 export function MonthlyChart({ expenses }: MonthlyChartProps) {
   const monthlyData = expenses.reduce(
-    (acc, expense) => {
+    (acc: Array<{ monthKey: string; monthLabel: string; total: number }>, expense) => {
       const date = new Date(expense.date);
       const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
       const monthLabel = new Date(date.getFullYear(), date.getMonth()).toLocaleDateString('pt-BR', {
@@ -39,7 +39,7 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
     [] as Array<{ monthKey: string; monthLabel: string; total: number }>
   );
 
-  monthlyData.sort((a, b) => a.monthKey.localeCompare(b.monthKey));
+  monthlyData.sort((a: { monthKey: string }, b: { monthKey: string }) => a.monthKey.localeCompare(b.monthKey));
 
   return (
     <div className="w-full h-96 bg-white rounded-lg shadow p-6">
@@ -50,7 +50,10 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
           <XAxis dataKey="monthLabel" />
           <YAxis />
           <Tooltip
-            formatter={(value) => `R$ ${(value / 100).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`}
+            formatter={(value: any) => {
+              if (!value) return ''
+              return `R$ ${(value / 100).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`
+            }}
           />
           <Legend />
           <Bar dataKey="total" fill="#8884d8" name="Total" />
