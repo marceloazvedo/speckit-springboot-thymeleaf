@@ -1,4 +1,5 @@
-import { ChevronRight, Receipt } from 'lucide-react'
+import { useState } from 'react'
+import { ChevronRight, Receipt, Eye, EyeOff } from 'lucide-react'
 import { EmptyState, Screen } from '../components/Chrome'
 import { CategoryChart } from '../components/CategoryChart'
 import { MonthlyChart } from '../components/MonthlyChart'
@@ -21,6 +22,7 @@ interface HomeProps {
 }
 
 export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
+  const [showTotal, setShowTotal] = useState(true)
   const { state, dispatch, demo } = useStore()
   const list = sortedExpenses(state.expenses)
   const grand = total(state.expenses)
@@ -33,12 +35,29 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
   return (
     <Screen>
       <header className="safe-top pt-4 pb-6">
-        <p className="text-sm text-muted">{state.project?.name}</p>
-        <p className="tabular mt-2 text-4xl font-semibold">{formatBRL(grand)}</p>
-        <p className="mt-1 text-sm text-muted">
-          total gasto · <span className="tabular">R$ {formatWhole(month)}</span> em{' '}
-          {monthLabel(currentMonthKey()).split(' de ')[0]}
-        </p>
+        <div className="flex items-start justify-between">
+          <div className="flex-1">
+            <p className="text-sm text-muted">{state.project?.name}</p>
+            <p className="tabular mt-2 text-4xl font-semibold">
+              {showTotal ? formatBRL(grand) : '••••••'}
+            </p>
+            <p className="mt-1 text-sm text-muted">
+              total gasto · <span className="tabular">{showTotal ? `R$ ${formatWhole(month)}` : '••••'}</span> em{' '}
+              {monthLabel(currentMonthKey()).split(' de ')[0]}
+            </p>
+          </div>
+          <button
+            onClick={() => setShowTotal(!showTotal)}
+            className="p-2 hover:bg-light rounded-lg transition-colors"
+            title={showTotal ? 'Ocultar total' : 'Mostrar total'}
+          >
+            {showTotal ? (
+              <Eye className="size-5 text-muted" />
+            ) : (
+              <EyeOff className="size-5 text-muted" />
+            )}
+          </button>
+        </div>
       </header>
 
       {showInstall ? (
