@@ -85,7 +85,7 @@ export function Drawer({ open, title, description, onClose, children, footer }: 
           </div>
 
           {footer ? (
-            <div className="safe-bottom shrink-0 border-t border-line bg-surface px-4 pt-3 pb-safe">
+            <div className="safe-bottom shrink-0 border-t border-line bg-surface px-4 py-4 pb-6">
               {footer}
             </div>
           ) : null}
