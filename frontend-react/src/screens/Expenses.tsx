@@ -161,6 +161,37 @@ export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
             </span>
           </div>
 
+          {isFiltered && (
+            <div className="space-y-2">
+              <div className="flex items-center justify-between text-xs">
+                <span className="text-muted">
+                  {formatBRL(searched.reduce((sum, e) => sum + e.amount, 0))} de {formatBRL(state.expenses.reduce((sum, e) => sum + e.amount, 0))}
+                </span>
+                <span className="text-muted font-medium">
+                  {(
+                    (searched.reduce((sum, e) => sum + e.amount, 0) /
+                      (state.expenses.reduce((sum, e) => sum + e.amount, 0) || 1)) *
+                    100
+                  ).toFixed(1)}
+                  %
+                </span>
+              </div>
+              <div className="h-2 bg-light rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-primary transition-all"
+                  style={{
+                    width: `${Math.min(
+                      (searched.reduce((sum, e) => sum + e.amount, 0) /
+                        (state.expenses.reduce((sum, e) => sum + e.amount, 0) || 1)) *
+                        100,
+                      100
+                    )}%`,
+                  }}
+                />
+              </div>
+            </div>
+          )}
+
           {groups.map((group) => (
             <MonthlyCard
               key={group.key}
