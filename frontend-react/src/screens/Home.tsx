@@ -38,25 +38,27 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <p className="text-sm text-muted">{state.project?.name}</p>
-            <p className="tabular mt-2 text-4xl font-semibold">
-              {showTotal ? formatBRL(grand) : '••••••'}
-            </p>
+            <div className="flex items-baseline gap-2">
+              <p className="tabular mt-2 text-4xl font-semibold">
+                {showTotal ? formatBRL(grand) : '••••••'}
+              </p>
+              <button
+                onClick={() => setShowTotal(!showTotal)}
+                className="p-1 hover:bg-light rounded transition-colors"
+                title={showTotal ? 'Ocultar total' : 'Mostrar total'}
+              >
+                {showTotal ? (
+                  <Eye className="size-4 text-muted" />
+                ) : (
+                  <EyeOff className="size-4 text-muted" />
+                )}
+              </button>
+            </div>
             <p className="mt-1 text-sm text-muted">
-              total gasto · <span className="tabular">{showTotal ? `R$ ${formatWhole(month)}` : '••••'}</span> em{' '}
+              total gasto · <span className="tabular">R$ {formatWhole(month)}</span> em{' '}
               {monthLabel(currentMonthKey()).split(' de ')[0]}
             </p>
           </div>
-          <button
-            onClick={() => setShowTotal(!showTotal)}
-            className="p-2 hover:bg-light rounded-lg transition-colors"
-            title={showTotal ? 'Ocultar total' : 'Mostrar total'}
-          >
-            {showTotal ? (
-              <Eye className="size-5 text-muted" />
-            ) : (
-              <EyeOff className="size-5 text-muted" />
-            )}
-          </button>
         </div>
       </header>
 
