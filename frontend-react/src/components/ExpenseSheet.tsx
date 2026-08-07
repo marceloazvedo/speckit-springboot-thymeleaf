@@ -150,7 +150,7 @@ export function ExpenseSheet({ open, expense, history, onClose, onSave }: Expens
         <MoneyInput
           label="Valor total"
           value={form.detailed ? total : form.amount}
-          autoFocus={!expense}
+          autoFocus={false}
           large
           readOnly={form.detailed}
           hint={form.detailed ? 'Calculado por quantidade × valor unitário' : undefined}
@@ -176,6 +176,7 @@ export function ExpenseSheet({ open, expense, history, onClose, onSave }: Expens
             type="date"
             value={form.date}
             onChange={(e) => set('date', e.target.value)}
+            className="max-w-xs text-base"
           />
         </div>
 

@@ -6,6 +6,7 @@ import { MonthlyChart } from '../components/MonthlyChart'
 import { InstallBanner } from '../components/Banners'
 import { formatBRL, formatWhole } from '../lib/money'
 import { currentMonthKey, formatShort, monthLabel } from '../lib/dates'
+import { APP_VERSION } from '../lib/version'
 import {
   byCategory,
   monthTotal,
@@ -121,6 +122,11 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
               ))}
             </ul>
           </section>
+
+          {/* Version label */}
+          <div className="mt-8 text-center">
+            <span className="text-xs text-faint">v{APP_VERSION}</span>
+          </div>
         </>
       )}
     </Screen>
