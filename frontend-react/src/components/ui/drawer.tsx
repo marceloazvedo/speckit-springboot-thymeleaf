@@ -85,7 +85,10 @@ export function Drawer({ open, title, description, onClose, children, footer }: 
           </div>
 
           {footer ? (
-            <div className="safe-bottom shrink-0 border-t border-line bg-surface px-4 py-4 pb-6">
+            <div
+              className="shrink-0 border-t border-line bg-surface px-4 py-4"
+              style={{ paddingBottom: 'calc(1.5rem + max(env(safe-area-inset-bottom), 1rem))' }}
+            >
               {footer}
             </div>
           ) : null}
