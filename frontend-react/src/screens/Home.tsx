@@ -1,6 +1,7 @@
 import { ChevronRight, Receipt } from 'lucide-react'
 import { EmptyState, Screen } from '../components/Chrome'
 import { CategoryChart } from '../components/CategoryChart'
+import { MonthlyChart } from '../components/MonthlyChart'
 import { InstallBanner } from '../components/Banners'
 import { formatBRL, formatWhole } from '../lib/money'
 import { currentMonthKey, formatShort, monthLabel } from '../lib/dates'
@@ -55,7 +56,9 @@ export function Home({ onLaunch, onOpenExpense, onSeeAll }: HomeProps) {
         />
       ) : (
         <>
-
+          <section className="mb-6">
+            <MonthlyChart expenses={list} />
+          </section>
 
           <section className="mb-6">
             <CategoryChart slices={slices} />

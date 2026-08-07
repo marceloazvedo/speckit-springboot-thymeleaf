@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react'
 import { Receipt, SearchX } from 'lucide-react'
 import { EmptyState, Screen, ScreenTitle } from '../components/Chrome'
 import { FilterPanel } from '../components/FilterPanel'
-import { MonthlyChart } from '../components/MonthlyChart'
 import { SwipeRow } from '../components/SwipeRow'
 import { Input } from '../components/ui/input'
 import { categoryLabel } from '../lib/catalog'
@@ -161,8 +160,6 @@ export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
               {formatBRL(searched.reduce((sum, e) => sum + e.amount, 0))}
             </span>
           </div>
-
-          {searched.length > 0 && <MonthlyChart expenses={searched} />}
 
           {groups.map((group) => (
             <MonthlyCard

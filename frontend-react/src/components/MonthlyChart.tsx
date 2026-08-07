@@ -1,11 +1,10 @@
 import {
-  BarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from 'recharts';
 import type { Expense } from '@/lib/types';
@@ -42,22 +41,33 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
   monthlyData.sort((a: { monthKey: string }, b: { monthKey: string }) => a.monthKey.localeCompare(b.monthKey));
 
   return (
-    <div className="w-full h-96 bg-white rounded-lg shadow p-6">
-      <h2 className="text-xl font-bold mb-4">Gastos por Mês</h2>
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={monthlyData}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="monthLabel" />
-          <YAxis />
+    <div className="w-full bg-surface rounded-xl border border-line p-6">
+      <h2 className="text-sm font-semibold text-ink mb-4">Evolução de gastos</h2>
+      <ResponsiveContainer width="100%" height={250}>
+        <LineChart data={monthlyData}>
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--color-line)" />
+          <XAxis dataKey="monthLabel" stroke="var(--color-muted)" style={{ fontSize: '12px' }} />
+          <YAxis stroke="var(--color-muted)" style={{ fontSize: '12px' }} />
           <Tooltip
             formatter={(value: any) => {
               if (!value) return ''
               return `R$ ${(value / 100).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`
             }}
+            contentStyle={{
+              backgroundColor: 'var(--color-surface)',
+              border: '1px solid var(--color-line)',
+              borderRadius: '8px',
+            }}
           />
-          <Legend />
-          <Bar dataKey="total" fill="#8884d8" name="Total" />
-        </BarChart>
+          <Line
+            type="monotone"
+            dataKey="total"
+            stroke="var(--color-primary)"
+            strokeWidth={2}
+            dot={{ fill: 'var(--color-primary)', r: 4 }}
+            activeDot={{ r: 6 }}
+          />
+        </LineChart>
       </ResponsiveContainer>
     </div>
   );
