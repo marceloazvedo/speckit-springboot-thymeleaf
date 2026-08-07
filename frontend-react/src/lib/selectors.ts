@@ -52,7 +52,7 @@ export function byCategory(expenses: Expense[]): CategorySlice[] {
     totals.set(key, (totals.get(key) ?? 0) + e.amount)
   }
 
-  return Array.from(totals.entries())
+  const slices = Array.from(totals.entries())
     .map(([id, amount]) => {
       const colors = categoryColors(id)
       return {
@@ -65,6 +65,24 @@ export function byCategory(expenses: Expense[]): CategorySlice[] {
       }
     })
     .sort((a, b) => b.amount - a.amount)
+
+  const major = slices.filter((s) => s.share > 0.03)
+  const minor = slices.filter((s) => s.share <= 0.03)
+
+  if (minor.length === 0) return major
+
+  const otherAmount = minor.reduce((sum, s) => sum + s.amount, 0)
+  const otherColors = categoryColors(null)
+  major.push({
+    id: null,
+    label: 'Outros',
+    amount: otherAmount,
+    share: otherAmount / grand,
+    bgColor: otherColors.bgColor,
+    textColor: otherColors.textColor,
+  })
+
+  return major.sort((a, b) => b.amount - a.amount)
 }
 
 export interface MonthGroup<T> {
