@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   LineChart,
   Line,
@@ -21,29 +22,39 @@ interface MonthlyChartProps {
 }
 
 export function MonthlyChart({ expenses }: MonthlyChartProps) {
-  const monthlyData = expenses.reduce(
-    (acc: Array<{ monthKey: string; monthLabel: string; total: number }>, expense) => {
-      const date = new Date(expense.date);
-      const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-      const monthLabel = new Date(date.getFullYear(), date.getMonth()).toLocaleDateString('pt-BR', {
-        month: 'short',
-        year: 'numeric',
-      });
+  const [months, setMonths] = useState(4);
+  const [showMonthly, setShowMonthly] = useState(true);
+  const [showBurnup, setShowBurnup] = useState(true);
+  const [showBurndown, setShowBurndown] = useState(true);
 
-      const existing = acc.find((item) => item.monthKey === monthKey);
-      if (existing) {
-        existing.total += expense.amount;
-      } else {
-        acc.push({
-          monthKey,
-          monthLabel,
-          total: expense.amount,
+  const now = new Date();
+  const cutoffDate = new Date(now.getFullYear(), now.getMonth() - (months - 1), 1);
+
+  const monthlyData = expenses
+    .filter((e) => new Date(e.date) >= cutoffDate)
+    .reduce(
+      (acc: Array<{ monthKey: string; monthLabel: string; total: number }>, expense) => {
+        const date = new Date(expense.date);
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        const monthLabel = new Date(date.getFullYear(), date.getMonth()).toLocaleDateString('pt-BR', {
+          month: 'short',
+          year: 'numeric',
         });
-      }
-      return acc;
-    },
-    [] as Array<{ monthKey: string; monthLabel: string; total: number }>
-  );
+
+        const existing = acc.find((item) => item.monthKey === monthKey);
+        if (existing) {
+          existing.total += expense.amount;
+        } else {
+          acc.push({
+            monthKey,
+            monthLabel,
+            total: expense.amount,
+          });
+        }
+        return acc;
+      },
+      [] as Array<{ monthKey: string; monthLabel: string; total: number }>
+    );
 
   monthlyData.sort((a: { monthKey: string }, b: { monthKey: string }) => a.monthKey.localeCompare(b.monthKey));
 
@@ -61,53 +72,114 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
 
   return (
     <div className="w-full bg-surface rounded-xl border border-line p-6">
-      <h2 className="text-sm font-semibold text-ink mb-4">Evolução de gastos</h2>
-      <ResponsiveContainer width="100%" height={250}>
-        <LineChart data={chartData}>
-          <CartesianGrid strokeDasharray="3 3" stroke="var(--color-line)" />
-          <XAxis dataKey="monthLabel" stroke="var(--color-muted)" style={{ fontSize: '12px' }} />
-          <YAxis stroke="var(--color-muted)" style={{ fontSize: '12px' }} tickFormatter={formatLabel} />
-          <Tooltip
-            formatter={(value: any) => {
-              if (!value) return ''
-              return `R$ ${(value / 100).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`
-            }}
-            contentStyle={{
-              backgroundColor: 'var(--color-surface)',
-              border: '1px solid var(--color-line)',
-              borderRadius: '8px',
-            }}
-          />
-          <Legend />
-          <Line
-            type="monotone"
-            dataKey="total"
-            stroke="var(--color-primary)"
-            strokeWidth={2}
-            dot={{ fill: 'var(--color-primary)', r: 4 }}
-            name="Gasto mensal"
-            activeDot={{ r: 6 }}
-          />
-          <Line
-            type="monotone"
-            dataKey="burnup"
-            stroke="#10b981"
-            strokeWidth={2}
-            dot={{ fill: '#10b981', r: 4 }}
-            name="Burnup (acumulado)"
-            activeDot={{ r: 6 }}
-          />
-          <Line
-            type="monotone"
-            dataKey="burndown"
-            stroke="#ef4444"
-            strokeWidth={2}
-            dot={{ fill: '#ef4444', r: 4 }}
-            name="Burndown (restante)"
-            activeDot={{ r: 6 }}
-          />
-        </LineChart>
-      </ResponsiveContainer>
+      <div className="mb-4">
+        <h2 className="text-sm font-semibold text-ink mb-3">Evolução de gastos</h2>
+
+        <div className="flex flex-col gap-3">
+          {/* Período */}
+          <div className="flex gap-2">
+            <label className="text-xs text-muted">Período:</label>
+            <select
+              value={months}
+              onChange={(e) => setMonths(Number(e.currentTarget.value))}
+              className="text-xs bg-light border border-line rounded px-2 py-1 text-ink"
+            >
+              <option value={4}>Últimos 4 meses</option>
+              <option value={6}>Últimos 6 meses</option>
+              <option value={12}>Últimos 12 meses</option>
+              <option value={999}>Todos</option>
+            </select>
+          </div>
+
+          {/* Linhas */}
+          <div className="flex gap-3 flex-wrap">
+            <label className="flex items-center gap-2 text-xs cursor-pointer">
+              <input
+                type="checkbox"
+                checked={showMonthly}
+                onChange={(e) => setShowMonthly(e.currentTarget.checked)}
+                className="w-4 h-4"
+              />
+              <span className="text-ink">Gasto mensal</span>
+            </label>
+            <label className="flex items-center gap-2 text-xs cursor-pointer">
+              <input
+                type="checkbox"
+                checked={showBurnup}
+                onChange={(e) => setShowBurnup(e.currentTarget.checked)}
+                className="w-4 h-4"
+              />
+              <span className="text-ink">Burnup</span>
+            </label>
+            <label className="flex items-center gap-2 text-xs cursor-pointer">
+              <input
+                type="checkbox"
+                checked={showBurndown}
+                onChange={(e) => setShowBurndown(e.currentTarget.checked)}
+                className="w-4 h-4"
+              />
+              <span className="text-ink">Burndown</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      {chartData.length === 0 ? (
+        <div className="text-center text-sm text-muted py-8">Nenhum dado para este período</div>
+      ) : (
+        <ResponsiveContainer width="100%" height={250}>
+          <LineChart data={chartData}>
+            <CartesianGrid strokeDasharray="3 3" stroke="var(--color-line)" />
+            <XAxis dataKey="monthLabel" stroke="var(--color-muted)" style={{ fontSize: '12px' }} />
+            <YAxis stroke="var(--color-muted)" style={{ fontSize: '12px' }} tickFormatter={formatLabel} />
+            <Tooltip
+              formatter={(value: any) => {
+                if (!value) return ''
+                return `R$ ${(value / 100).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`
+              }}
+              contentStyle={{
+                backgroundColor: 'var(--color-surface)',
+                border: '1px solid var(--color-line)',
+                borderRadius: '8px',
+              }}
+            />
+            <Legend />
+            {showMonthly && (
+              <Line
+                type="monotone"
+                dataKey="total"
+                stroke="var(--color-primary)"
+                strokeWidth={2}
+                dot={{ fill: 'var(--color-primary)', r: 4 }}
+                name="Gasto mensal"
+                activeDot={{ r: 6 }}
+              />
+            )}
+            {showBurnup && (
+              <Line
+                type="monotone"
+                dataKey="burnup"
+                stroke="#10b981"
+                strokeWidth={2}
+                dot={{ fill: '#10b981', r: 4 }}
+                name="Burnup (acumulado)"
+                activeDot={{ r: 6 }}
+              />
+            )}
+            {showBurndown && (
+              <Line
+                type="monotone"
+                dataKey="burndown"
+                stroke="#ef4444"
+                strokeWidth={2}
+                dot={{ fill: '#ef4444', r: 4 }}
+                name="Burndown (restante)"
+                activeDot={{ r: 6 }}
+              />
+            )}
+          </LineChart>
+        </ResponsiveContainer>
+      )}
     </div>
   );
 }
