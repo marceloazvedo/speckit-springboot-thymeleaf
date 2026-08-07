@@ -26,6 +26,7 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
   const [showActual, setShowActual] = useState(true);
   const [showBest, setShowBest] = useState(true);
   const [showWorst, setShowWorst] = useState(true);
+  const [showMedian, setShowMedian] = useState(false);
 
   const now = new Date();
   const cutoffDate = new Date(now.getFullYear(), now.getMonth() - (months - 1), 1);
@@ -64,8 +65,14 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
   const piorCaso = Math.max(...amounts);
   const media = Math.round(amounts.reduce((a, b) => a + b, 0) / amounts.length);
 
+  // Calcula mediana
+  const sortedAmounts = [...amounts].sort((a, b) => a - b);
+  const mediana = sortedAmounts.length % 2 === 0
+    ? Math.round((sortedAmounts[sortedAmounts.length / 2 - 1] + sortedAmounts[sortedAmounts.length / 2]) / 2)
+    : sortedAmounts[Math.floor(sortedAmounts.length / 2)];
+
   // Cria projeção para os próximos 3 meses
-  const chartData: Array<{ monthKey: string; monthLabel: string; total: number; best?: number; worst?: number; isProjection?: boolean }> = [...monthlyData];
+  const chartData: Array<{ monthKey: string; monthLabel: string; total: number; best?: number; worst?: number; median?: number; isProjection?: boolean }> = monthlyData.map((m) => ({ ...m, median: mediana }));
   const lastMonthDate = new Date(now.getFullYear(), now.getMonth());
 
   for (let i = 1; i <= 3; i++) {
@@ -81,6 +88,7 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
       total: media,
       best: melhorCaso,
       worst: piorCaso,
+      median: mediana,
       isProjection: true,
     });
   }
@@ -135,10 +143,19 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
               />
               <span className="text-ink">Pior caso</span>
             </label>
+            <label className="flex items-center gap-2 text-xs cursor-pointer">
+              <input
+                type="checkbox"
+                checked={showMedian}
+                onChange={(e) => setShowMedian(e.currentTarget.checked)}
+                className="w-4 h-4"
+              />
+              <span className="text-ink">Mediana</span>
+            </label>
           </div>
 
           {/* Resumo */}
-          <div className="grid grid-cols-3 gap-2 text-xs pt-2 border-t border-line">
+          <div className="grid grid-cols-4 gap-2 text-xs pt-2 border-t border-line">
             <div>
               <p className="text-muted">Melhor</p>
               <p className="font-semibold">R$ {(melhorCaso / 100).toLocaleString('pt-BR')}</p>
@@ -146,6 +163,10 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
             <div>
               <p className="text-muted">Média</p>
               <p className="font-semibold">R$ {(media / 100).toLocaleString('pt-BR')}</p>
+            </div>
+            <div>
+              <p className="text-muted">Mediana</p>
+              <p className="font-semibold">R$ {(mediana / 100).toLocaleString('pt-BR')}</p>
             </div>
             <div>
               <p className="text-muted">Pior</p>
@@ -206,6 +227,17 @@ export function MonthlyChart({ expenses }: MonthlyChartProps) {
                 strokeDasharray="5 5"
                 dot={false}
                 name="Pior caso"
+              />
+            )}
+            {showMedian && (
+              <Line
+                type="monotone"
+                dataKey="median"
+                stroke="#9ca3af"
+                strokeWidth={2}
+                strokeDasharray="3 3"
+                dot={false}
+                name="Mediana"
               />
             )}
           </LineChart>
