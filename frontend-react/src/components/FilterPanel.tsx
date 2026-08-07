@@ -6,7 +6,6 @@ import { Label } from './ui/label'
 import { Select } from './ui/select'
 import { Checkbox } from './ui/checkbox'
 import { CATEGORIES } from '../lib/catalog'
-import { formatBRL } from '../lib/money'
 import { cn } from '../lib/utils'
 import type { ExpenseFilters, SortOption } from '../lib/types'
 
@@ -329,7 +328,7 @@ export function FilterPanel({
               { value: 'lowest-value', label: 'Menor valor' },
               { value: 'supplier-az', label: 'Fornecedor (A-Z)' },
             ]}
-            onChange={(value) => updateFilter('sortBy', value as SortOption)}
+            onChange={(e) => updateFilter('sortBy', e.currentTarget.value as SortOption)}
           />
         </div>
       </Section>

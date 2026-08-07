@@ -4,6 +4,7 @@ import { Fab, Sidebar, TabBar, type Tab } from './components/Chrome'
 import { DemoBanner } from './components/Banners'
 import { ExpenseSheet } from './components/ExpenseSheet'
 import { EntrySheet } from './components/EntrySheet'
+import { ImportSheet } from './components/ImportSheet'
 import { StoreProvider, useStore, type EntryDraft, type ExpenseDraft } from './lib/store'
 import { notify } from './lib/notify'
 import { isDemoPath, usePathname } from './lib/router'
@@ -38,6 +39,7 @@ function Shell({ demo }: { demo: boolean }) {
     open: false,
     entry: null,
   })
+  const [importSheet, setImportSheet] = useState(false)
 
   if (!state.project) {
     return <Onboarding onCreate={(name) => dispatch({ type: 'createProject', name })} />
@@ -74,6 +76,16 @@ function Shell({ demo }: { demo: boolean }) {
     setEntrySheet({ open: false, entry: null })
   }
 
+  const handleImport = (expenses: Expense[], entries: Entry[]) => {
+    for (const expense of expenses) {
+      dispatch({ type: 'addExpense', draft: expense })
+    }
+    for (const entry of entries) {
+      dispatch({ type: 'addEntry', draft: entry })
+    }
+    notify(`Importados ${expenses.length} gastos${entries.length > 0 ? ` e ${entries.length} entradas` : ''}`)
+  }
+
   return (
     <div className="min-h-dvh md:flex">
       <Sidebar
@@ -108,7 +120,7 @@ function Shell({ demo }: { demo: boolean }) {
           />
         ) : null}
 
-        {tab === 'settings' ? <Settings /> : null}
+        {tab === 'settings' ? <Settings onImport={() => setImportSheet(true)} /> : null}
       </main>
 
       {tab === 'entries' || tab === 'settings' ? null : (
@@ -130,6 +142,12 @@ function Shell({ demo }: { demo: boolean }) {
         entry={entrySheet.entry}
         onClose={() => setEntrySheet({ open: false, entry: null })}
         onSave={saveEntry}
+      />
+
+      <ImportSheet
+        open={importSheet}
+        onClose={() => setImportSheet(false)}
+        onImport={handleImport}
       />
     </div>
   )

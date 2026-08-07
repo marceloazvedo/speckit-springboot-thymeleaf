@@ -56,9 +56,9 @@ export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(filters))
   }, [filters])
 
-  const suppliers = useMemo(() => getUniqueSuppliers(state.expenses), [state.expenses])
-  const paymentMethods = useMemo(() => getUniquePaymentMethods(state.expenses), [state.expenses])
-  const banks = useMemo(() => getUniqueBanks(state.expenses), [state.expenses])
+  const suppliers = useMemo(() => getUniqueSuppliers(state.expenses).filter((s): s is string => s !== null), [state.expenses])
+  const paymentMethods = useMemo(() => getUniquePaymentMethods(state.expenses).filter((m): m is string => m !== null), [state.expenses])
+  const banks = useMemo(() => getUniqueBanks(state.expenses).filter((b): b is string => b !== null), [state.expenses])
 
   const filtered = useMemo(() => applyFilters(state.expenses, filters), [state.expenses, filters])
   const searched = useMemo(() => {

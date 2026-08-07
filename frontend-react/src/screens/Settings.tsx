@@ -6,6 +6,7 @@ import {
   RotateCcw,
   Trash2,
   TriangleAlert,
+  Upload,
   UserRound,
 } from 'lucide-react'
 import { Screen, ScreenTitle } from '../components/Chrome'
@@ -18,7 +19,11 @@ import { alive } from '../lib/selectors'
 import { useStore } from '../lib/store'
 import { SYNC_ENABLED } from '../lib/sync'
 
-export function Settings() {
+interface SettingsProps {
+  onImport?: () => void
+}
+
+export function Settings({ onImport }: SettingsProps) {
   const { state, dispatch, demo, resetAll } = useStore()
   const [name, setName] = useState(state.project?.name ?? '')
   const [confirming, setConfirming] = useState(false)
@@ -60,8 +65,16 @@ export function Settings() {
         )}
       </Section>
 
-      <Section title="Exportar" icon={<Download className="size-4" />}>
+      <Section title="Importar/Exportar" icon={<Download className="size-4" />}>
         <div className="space-y-3">
+          <Button
+            variant="neutral"
+            full
+            size="lg"
+            onClick={() => onImport?.()}
+          >
+            <Upload /> Importar de JSON
+          </Button>
           <Button
             variant="neutral"
             full

@@ -1,5 +1,3 @@
-import { uuidv7 } from './id'
-import { EMPTY } from './storage'
 import type { Entry, Expense, Project, Snapshot } from './types'
 import demoData from './demo-data.json'
 
@@ -51,13 +49,13 @@ export function buildDemoSnapshot(): Snapshot {
     date: row.date,
     description: row.description,
     amount: row.amount,
-    unit: row.unit,
-    quantity: row.quantity ?? 0,
-    unitValue: row.unitValue ?? 0,
+    unit: row.unit ?? null,
+    quantity: row.quantity ?? null,
+    unitAmount: row.unitValue ?? null,
     supplier: row.supplier ?? null,
     paymentMethod: row.paymentMethod ?? null,
     bank: row.bank ?? null,
-    categoryId: row.categoryId ?? 'other',
+    categoryId: row.categoryId ?? null,
     notes: row.notes ?? null,
     createdAt: row.createdAt,
     updatedAt: row.updatedAt,
@@ -68,9 +66,8 @@ export function buildDemoSnapshot(): Snapshot {
     id: row.id,
     projectId: project.id,
     date: row.date,
-    description: row.description,
     amount: row.amount,
-    supplier: row.supplier ?? null,
+    notes: null,
     createdAt: row.createdAt,
     updatedAt: row.updatedAt,
     deletedAt: null,
@@ -83,5 +80,6 @@ export function buildDemoSnapshot(): Snapshot {
     pending: [],
     installBannerSeen: false,
     launchCount: 0,
+    cursor: 0,
   }
 }
