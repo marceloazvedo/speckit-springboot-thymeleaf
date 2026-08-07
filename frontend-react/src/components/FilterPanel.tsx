@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronDown, X } from 'lucide-react'
+import { ChevronDown, X, Search } from 'lucide-react'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { Label } from './ui/label'
@@ -26,6 +26,7 @@ export function FilterPanel({
   onFiltersChange,
 }: FilterPanelProps) {
   const [openSections, setOpenSections] = useState<Set<string>>(new Set(['period']))
+  const [supplierSearch, setSupplierSearch] = useState('')
 
   const toggleSection = (section: string) => {
     const next = new Set(openSections)
@@ -153,19 +154,31 @@ export function FilterPanel({
           {/* Suppliers */}
           <div>
             <Label className="text-xs font-medium mb-1.5 block">Fornecedor</Label>
+            <div className="relative mb-2">
+              <Search className="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 size-3 text-faint" />
+              <input
+                type="text"
+                placeholder="Buscar fornecedor..."
+                value={supplierSearch}
+                onChange={(e) => setSupplierSearch(e.target.value)}
+                className="w-full pl-7 pr-2 py-1.5 text-xs border border-line rounded bg-surface focus:outline-none focus:border-primary"
+              />
+            </div>
             <div className="space-y-1.5 max-h-40 overflow-y-auto">
-              {suppliers.length === 0 ? (
-                <p className="text-xs text-faint">Nenhum fornecedor</p>
+              {suppliers.filter(s => s.toLowerCase().includes(supplierSearch.toLowerCase())).length === 0 ? (
+                <p className="text-xs text-faint">Nenhum fornecedor encontrado</p>
               ) : (
-                suppliers.map((supplier) => (
-                  <div key={supplier} className="flex items-start gap-2 py-1">
+                suppliers
+                  .filter(s => s.toLowerCase().includes(supplierSearch.toLowerCase()))
+                  .map((supplier) => (
                     <Checkbox
+                      key={supplier}
+                      label={supplier}
                       checked={filters.suppliers.includes(supplier)}
                       onCheckedChange={() => toggleArray('suppliers', supplier)}
+                      className="!px-2 !py-1"
                     />
-                    <span className="text-xs break-words">{supplier}</span>
-                  </div>
-                ))
+                  ))
               )}
             </div>
           </div>
@@ -175,13 +188,13 @@ export function FilterPanel({
             <Label className="text-xs font-medium mb-1.5 block">Categoria</Label>
             <div className="space-y-1.5">
               {CATEGORIES.map((cat) => (
-                <div key={cat.id} className="flex items-start gap-2 py-1">
-                  <Checkbox
-                    checked={filters.categories.includes(cat.id)}
-                    onCheckedChange={() => toggleArray('categories', cat.id)}
-                  />
-                  <span className="text-xs break-words">{cat.label}</span>
-                </div>
+                <Checkbox
+                  key={cat.id}
+                  label={cat.label}
+                  checked={filters.categories.includes(cat.id)}
+                  onCheckedChange={() => toggleArray('categories', cat.id)}
+                  className="!px-2 !py-1"
+                />
               ))}
             </div>
           </div>
@@ -194,13 +207,13 @@ export function FilterPanel({
                 <p className="text-xs text-faint">Nenhum método</p>
               ) : (
                 paymentMethods.map((method) => (
-                  <div key={method} className="flex items-start gap-2 py-1">
-                    <Checkbox
-                      checked={filters.paymentMethods.includes(method)}
-                      onCheckedChange={() => toggleArray('paymentMethods', method)}
-                    />
-                    <span className="text-xs break-words">{method}</span>
-                  </div>
+                  <Checkbox
+                    key={method}
+                    label={method}
+                    checked={filters.paymentMethods.includes(method)}
+                    onCheckedChange={() => toggleArray('paymentMethods', method)}
+                    className="!px-2 !py-1"
+                  />
                 ))
               )}
             </div>
@@ -214,13 +227,13 @@ export function FilterPanel({
                 <p className="text-xs text-faint">Nenhum banco</p>
               ) : (
                 banks.map((bank) => (
-                  <div key={bank} className="flex items-start gap-2 py-1">
-                    <Checkbox
-                      checked={filters.banks.includes(bank)}
-                      onCheckedChange={() => toggleArray('banks', bank)}
-                    />
-                    <span className="text-xs break-words">{bank}</span>
-                  </div>
+                  <Checkbox
+                    key={bank}
+                    label={bank}
+                    checked={filters.banks.includes(bank)}
+                    onCheckedChange={() => toggleArray('banks', bank)}
+                    className="!px-2 !py-1"
+                  />
                 ))
               )}
             </div>
@@ -274,29 +287,26 @@ export function FilterPanel({
 
           {/* Checkboxes */}
           <div className="space-y-1.5">
-            <div className="flex items-center gap-2 py-1">
-              <Checkbox
-                checked={filters.hasQuantity}
-                onCheckedChange={(checked) => updateFilter('hasQuantity', !!checked)}
-              />
-              <span className="text-xs">Apenas com quantidade</span>
-            </div>
+            <Checkbox
+              label="Apenas com quantidade"
+              checked={filters.hasQuantity}
+              onCheckedChange={(checked) => updateFilter('hasQuantity', !!checked)}
+              className="!px-2 !py-1"
+            />
 
-            <div className="flex items-center gap-2 py-1">
-              <Checkbox
-                checked={filters.noCategory}
-                onCheckedChange={(checked) => updateFilter('noCategory', !!checked)}
-              />
-              <span className="text-xs">Sem categoria</span>
-            </div>
+            <Checkbox
+              label="Sem categoria"
+              checked={filters.noCategory}
+              onCheckedChange={(checked) => updateFilter('noCategory', !!checked)}
+              className="!px-2 !py-1"
+            />
 
-            <div className="flex items-center gap-2 py-1">
-              <Checkbox
-                checked={filters.withNotes}
-                onCheckedChange={(checked) => updateFilter('withNotes', !!checked)}
-              />
-              <span className="text-xs">Com notas</span>
-            </div>
+            <Checkbox
+              label="Com notas"
+              checked={filters.withNotes}
+              onCheckedChange={(checked) => updateFilter('withNotes', !!checked)}
+              className="!px-2 !py-1"
+            />
           </div>
         </div>
       </Section>

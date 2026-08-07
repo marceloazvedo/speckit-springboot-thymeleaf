@@ -39,6 +39,7 @@ export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
   const { state, dispatch } = useStore()
   const [term, setTerm] = useState('')
   const [filters, setFilters] = useState<ExpenseFilters>(DEFAULT_FILTERS)
+  const [showAdvanced, setShowAdvanced] = useState(false)
 
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY)
@@ -111,7 +112,7 @@ export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
     <Screen>
       <ScreenTitle title="Gastos" />
 
-      <div className="relative mb-6">
+      <div className="relative mb-3">
         <Input
           value={term}
           placeholder="Buscar descrição ou fornecedor"
@@ -119,13 +120,22 @@ export function Expenses({ onEdit, onLaunch }: ExpensesProps) {
         />
       </div>
 
-      <FilterPanel
-        filters={filters}
-        suppliers={suppliers}
-        paymentMethods={paymentMethods}
-        banks={banks}
-        onFiltersChange={setFilters}
-      />
+      <button
+        onClick={() => setShowAdvanced(!showAdvanced)}
+        className="text-xs text-primary hover:text-primary/80 mb-4 transition-colors"
+      >
+        {showAdvanced ? '▼' : '▶'} Busca avançada
+      </button>
+
+      {showAdvanced && (
+        <FilterPanel
+          filters={filters}
+          suppliers={suppliers}
+          paymentMethods={paymentMethods}
+          banks={banks}
+          onFiltersChange={setFilters}
+        />
+      )}
 
       {groups.length === 0 ? (
         <EmptyState
